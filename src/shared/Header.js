@@ -10,7 +10,7 @@ function Header() {
                     <div id="header_and_navbar">
                         <div id="header">
                             <img id="logo" src={logo} alt="logo image"/>
-                            <p>STAJNIA POD <br/> WIŚLANYM WAŁEM</p>
+                            <h1 id="header_text">STAJNIA POD <br/> WIŚLANYM WAŁEM</h1>
                         </div>
                         <MainMenu />
                     </div>
