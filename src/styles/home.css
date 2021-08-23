@@ -7,20 +7,27 @@
 #about_section {
     display: flex;
     flex-direction: column;
+    margin-top: 1em;
 }
 
 #goals_section {
     display: flex;
     flex-direction: row;
+    margin-top: 2em;
 }
 
 #animals_section {
-
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
 }
 
 #contact_section {
-
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
 }
+
 
 .goal {
     display: flex;
@@ -40,4 +47,5 @@
 
 .goal_description {
     padding-left: 0.4em;
+    padding-right: 0.4em;
 }

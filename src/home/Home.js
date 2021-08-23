@@ -8,7 +8,7 @@ function Home() {
         <>
             <div id="content">
                 <div id="about_section">
-                    <h3 id="about_header">Poznaj naszą stajnię!</h3>
+                    <h2 id="about_header">Poznaj naszą stajnię!</h2>
                     <p id="about_description">Nasza stajnia oferuje naukę jazdy konnej dla dzieci, młodzieży oraz dorosłych.
                         Spokojna i cicha okolica stwarza warunki idealne do aktywnego wypoczynku, a przede wszystkim
                         zabawy na końskim grzbiecie.
@@ -30,7 +30,7 @@ function Home() {
                     <div className="goal">
                         <img className="goal_image" src={earth}/>
                         <p className="goal_description">
-                            Czuj się bezpiecznie na jedynej w Polsce ujeżdżalni ze specjalnym podkładem wykonanym z opon
+                            Jedyna w Polsce ujeżdżalnia ze specjalnym podkładem wykonanym z opon
                         </p>
                     </div>
                     <div className="goal">
@@ -41,18 +41,17 @@ function Home() {
                     </div>
                 </div>
                 <div id="animals_section">
-                    <h3 id="animal_header">Nasze zwierzęta</h3>
+                    <h2 id="animal_header">Nasze zwierzęta</h2>
                     <p id="animal_description">W naszej stajni oczywiście mieszkają konie. Jednak prócz nich są
                         także koty i psy. <br/>Zobacz galerię oraz opisy naszych małych i dużych przyjaciół tutaj[LINK]</p>
                 </div>
                 <div id="contact_section">
-                    <h3 id="contact_header">Kontakt</h3>
-                    <p id="contact_description">
-                        Stajnia pod wiślanym wałem<br/>
-                        ul.Wiślana 34<br/>
-                        32-051 Jaśkowice<br/>
-                        Tel: 665 246 359<br/>
-                        Mail: stajnia@podwislanymwalem.pl</p>
+                    <h2 id="contact_header">Kontakt</h2>
+                    <address>
+                        <p><a href="mailto:stajnia@podwislanymwalem.pl">stajnia@podwislanymwalem.pl</a> </p>
+                        <p>ul.Wiślana 34, 32-051 Jaśkowice</p>
+                        <a href="tel:+48-665-246-359">665 246 359</a>
+                    </address>
                 </div>
             </div>
         </>
