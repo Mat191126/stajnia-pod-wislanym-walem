@@ -26,8 +26,6 @@ function MainMenu() {
     return (
         <>
             <nav id="navbar" role="navigation">
-                {/*<a href="#" className="content-header--navigation-link">Log in</a>*/}
-                {/*<a href="#" className="content-header--navigation-link">Sign up</a>*/}
                 <Link to="/">
                     <span className="navigation-link">Strona główna</span>
                 </Link>

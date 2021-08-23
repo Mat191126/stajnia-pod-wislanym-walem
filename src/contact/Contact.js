@@ -3,11 +3,13 @@ import React from 'react';
 function Contact() {
     return (
         <>
-            <p>Contact page</p>
-            <p>Contact page</p>
-            <p>Contact page</p>
-            <p>Contact page</p>
-            <p>Contact page</p>
+            <div id="content">
+                <p>Contact page</p>
+                <p>Contact page</p>
+                <p>Contact page</p>
+                <p>Contact page</p>
+                <p>Contact page</p>
+            </div>
         </>
     );
 }
