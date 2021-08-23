@@ -4,11 +4,16 @@ function Contact() {
     return (
         <>
             <div id="content">
-                <p>Contact page</p>
-                <p>Contact page</p>
-                <p>Contact page</p>
-                <p>Contact page</p>
-                <p>Contact page</p>
+                <div id="contact">
+                    <h2 id="contact_header">Kontakt</h2>
+                    <address>
+                        <p>Stajnia pod wiślanym wałem</p>
+                        <p>ul.Wiślana 34</p>
+                        <p>32-051 Jaśkowice</p>
+                        <p><a href="mailto:stajnia@podwislanymwalem.pl">stajnia@podwislanymwalem.pl</a> </p>
+                        <a href="tel:+48-665-246-359">665 246 359</a>
+                    </address>
+                </div>
             </div>
         </>
     );
