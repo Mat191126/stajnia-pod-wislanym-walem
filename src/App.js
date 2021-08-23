@@ -1,4 +1,5 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 import Header from "./shared/Header";
 import Home from "./home/Home";
 import Contact from "./contact/Contact";
@@ -10,6 +11,12 @@ function App() {
   return (
       <Router>
         <ScrollRestoration />
+          <Helmet>
+              <meta charSet="utf-8" />
+              <title>Pod wislanym walem</title>
+              <link href='http://fonts.googleapis.com/css?family=Akaya+Kanadaka&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
+              <link href='http://fonts.googleapis.com/css?family=Arima+Madurai&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
+          </Helmet>
         <Header />
         <Switch>
           <Route path="/" exact component={Home}/>

@@ -1,3 +1,7 @@
+body {
+  font-family: 'Arima Madurai', sans-serif;
+}
+
 #header_and_navbar {
   width: 80%;
   padding-left: 10%;
@@ -28,6 +32,7 @@
 /* Page content */
 #content {
   padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -37,6 +42,9 @@
   width: 79%;
 }
 
+.sticky_inserted {
+  margin-top: 3.5em;
+}
 
 #header {
   height: 18em;
@@ -52,13 +60,10 @@
   width: 100%;
   height: auto;
   padding-left: 0.5em;
+  font-family: 'Akaya Kanadaka', sans-serif;
 }
 
 #logo {
   height: 6em;
   width: 6em;
-}
-
-p {
-  font-size: 5em;
 }

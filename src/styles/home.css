@@ -1,0 +1,43 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#about_section {
+    display: flex;
+    flex-direction: column;
+}
+
+#goals_section {
+    display: flex;
+    flex-direction: row;
+}
+
+#animals_section {
+
+}
+
+#contact_section {
+
+}
+
+.goal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 33%;
+}
+
+.goal_image {
+    height: 5em;
+    width: auto;
+    padding: 0.4em;
+    border-radius: 10%;
+    background-color: #86592d;
+}
+
+.goal_description {
+    padding-left: 0.4em;
+}

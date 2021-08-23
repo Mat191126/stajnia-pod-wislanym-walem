@@ -8,7 +8,7 @@ function Header() {
             <header className="header_content">
                 <div id="header_and_navbar">
                     <div id="header">
-                        <img id="logo" src={logo} alt="logo image"/>
+                        <img id="logo" src={logo}/>
                         <h1 id="header_text">STAJNIA POD <br/> WIŚLANYM WAŁEM</h1>
                     </div>
                     <MainMenu />
