@@ -1,69 +1,82 @@
 body {
   font-family: 'Arima Madurai', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 #header_and_navbar {
-  width: 80%;
-  padding-left: 10%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
+#top-bar {
+  background-image: url("../assets/images/board.png");
+  height: 3em;
+  width: 100%;
+  z-index: 1;
+  box-shadow: -1px 5px 5px black;
+}
+
+.main-video-wrapper > video {
+  margin-top: -8em;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  z-index: 0;
+}
+
 /* Style the navbar */
 #navbar {
-  overflow: hidden;
-  background-color: #86592d;
+  margin-top: -3em;
+  z-index: 2;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url("../assets/images/board.png");
+  box-shadow: -1px -3px 5px black;
 }
 
 /* Navbar links */
-#navbar .navigation-link {
+.navigation-link {
   float: left;
   display: block;
   color: #d9b38c;
   text-align: center;
-  padding: 14px;
+  padding: 0.5em;
   text-decoration: none;
 }
 
 .navigation-link:hover {
-  background-color: #996633;
+  color: #996633;
 }
 
-/* Page content */
-#content {
-  padding-left: 10%;
-  padding-right: 10%;
+#logo {
+  position: absolute;
+  margin-left: 47%;
+  margin-top: 31em;
+  padding: 0.4em;
+  width: 7em;
+  height: auto;
+  background-image: url("../assets/images/board.png");
+  border-radius: 100% 100% 60% 60%;
+  z-index: 3;
+  box-shadow: -1px -2px 5px black;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
-  top: 0;
-  width: 79%;
-}
-
-.sticky_inserted {
-  margin-top: 3.5em;
-}
-
-#header {
-  height: 18em;
+  z-index: 2;
+  margin-top: 3em;
+  height: 5em;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  background-image: url("../assets/images/widok_stajnia.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-#header_text {
-  width: 100%;
-  height: auto;
-  padding-left: 0.5em;
-  font-family: 'Akaya Kanadaka', sans-serif;
-}
-
-#logo {
-  height: 6em;
-  width: 6em;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url("../assets/images/board.png");
+  box-shadow: -1px 3px 5px black;
 }
