@@ -17,7 +17,7 @@ function Header() {
                     <div className="main-video-wrapper">
                         <video autoPlay loop muted playsInline src={headerVideo}/>
                     </div>
-                    <img src={logo} id="logo"/>
+                    {/*<img src={logo} id="logo"/>*/}
                     <MainMenu />
                 </div>
             </header>
