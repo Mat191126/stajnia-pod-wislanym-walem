@@ -11,6 +11,29 @@
     margin-top: 2em;
 }
 
+#about-video {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 95%;
+    border-radius: 100%;
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+    margin-right: 5em;
+}
+
+
+#about_description {
+    font-size: 1.2em;
+}
+
+
+#about_content {
+    display: flex;
+    flex-direction: row;
+}
+
+
 #goals_section {
     display: flex;
     flex-direction: row;
