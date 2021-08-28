@@ -6,6 +6,7 @@ import Contact from "./contact/Contact";
 import News from "./news/News";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import ScrollRestoration from "./config/ScrollRestoration";
+import Footer from "./shared/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact" component={Contact}/>
           <Route path="/news" component={News}/>
         </Switch>
+        <Footer />
       </Router>
   );
 }

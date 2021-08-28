@@ -1,9 +1,17 @@
+/*....................
+2.1 MAIN HOME SETTINGS
+....................*/
+
 #content {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     padding: 2em;
 }
+
+/*.................
+2.2 ABOUT SECTION
+.................*/
 
 #about_section {
     display: flex;
@@ -15,7 +23,9 @@
     display: flex;
     align-content: center;
     align-items: center;
-    width: 95%;
+    width: 60em;
+    height: auto;
+    min-height: 20em;
     border-radius: 100%;
     overflow: hidden;
     -webkit-transform: translateZ(0);
@@ -33,26 +43,22 @@
     flex-direction: row;
 }
 
+@media screen and (max-width: 1300px) {
+    #about-video {
+        display: none;
+    }
+}
+
+
+/*................
+2.3 GOALS SECTION
+.................*/
 
 #goals_section {
     display: flex;
     flex-direction: row;
     margin-top: 3em;
 }
-
-#animals_section {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3em;
-}
-
-#contact_section {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3em;
-    margin-bottom: 2em;
-}
-
 
 .goal {
     display: flex;
@@ -73,4 +79,15 @@
 .goal_description {
     padding-left: 0.4em;
     padding-right: 0.4em;
+}
+
+
+/*.................
+2.4 ANIMALS SECTION
+..................*/
+
+#animals_section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
 }

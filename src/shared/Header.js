@@ -1,6 +1,5 @@
 import React from 'react';
 import MainMenu from "./MainMenu";
-import logo from "../assets/images/logo.png";
 import headerVideo from "../assets/video/header_video.mp4";
 
 function Header() {
@@ -17,7 +16,6 @@ function Header() {
                     <div className="main-video-wrapper">
                         <video autoPlay loop muted playsInline src={headerVideo}/>
                     </div>
-                    {/*<img src={logo} id="logo"/>*/}
                     <MainMenu />
                 </div>
             </header>
