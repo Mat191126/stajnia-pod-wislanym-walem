@@ -4,9 +4,6 @@ import logo from "../assets/images/logo.jpg";
 
 function MainMenu() {
     document.addEventListener('DOMContentLoaded', function(event) {
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
-
         // Get the navbar
         let navbar = document.getElementById("navbar");
 
@@ -16,27 +13,34 @@ function MainMenu() {
         // Get the offset position of the navbar
         let navbarOffsetTop = navbar.offsetTop;
 
-        //let logoOffsetBottom = logo.offsetTop + logo.offsetHeight;
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
 
         // Add the sticky class to the navbar when you reach its scroll position.
         // Remove "sticky" when you leave the scroll position
         function myFunction() {
-            if (window.pageYOffset > navbarOffsetTop + 80) {
-                navbar.classList.add("sticky")
-                navbar.style.marginTop = "0em";
-                logo.style.marginTop = "8.5em";
-                logo.style.borderRadius = "60% 60% 100% 100%";
-            } else {
-                navbar.classList.remove("sticky");
-                navbar.style.marginTop = "-3em";
-                logo.style.marginTop = "-0.5em";
-                logo.style.borderRadius = "100% 100% 60% 60%";
+            if (window.innerWidth > 845) {
+                if (window.pageYOffset > navbarOffsetTop + 80) {
+                    navbar.classList.add("sticky")
+                    navbar.style.marginTop = "0em";
+                    logo.style.marginTop = "8.5em";
+                    logo.style.borderRadius = "60% 60% 100% 100%";
+                } else {
+                    navbar.classList.remove("sticky");
+                    navbar.style.marginTop = "-3em";
+                    logo.style.marginTop = "-0.5em";
+                    logo.style.borderRadius = "100% 100% 60% 60%";
+                }
             }
         }
     });
 
     return (
         <>
+            <input id={"hamburger_menu_button"} type={"checkbox"}/>
+            <span></span>
+            <span></span>
+            <span></span>
             <nav id="navbar" role="navigation">
                 <div id="left-side-menu">
                     <Link to="/">
@@ -50,7 +54,7 @@ function MainMenu() {
                     </Link>
                 </div>
                 <div id="center-menu">
-                    <img src={logo} id="logo"/>
+                    <img src={logo} id="logo" alt=""/>
                 </div>
                 <div id="right-side-menu">
                     <Link to="/gallery">

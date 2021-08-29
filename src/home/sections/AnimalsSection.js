@@ -1,7 +1,4 @@
 import React from 'react';
-import rider from "../../assets/images/rider.png";
-import earth from "../../assets/images/earth.png";
-import star from "../../assets/images/star.png";
 
 
 function AnimalsSection() {

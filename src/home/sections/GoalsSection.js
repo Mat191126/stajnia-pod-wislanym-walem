@@ -11,19 +11,19 @@ function GoalsSection() {
         <>
             <div id="goals_section">
                 <div className="goal">
-                    <img className="goal_image" src={rider}/>
+                    <img className="goal_image" src={rider} alt=""/>
                     <p className="goal_description">
                         Trenuj pod okiem doświadczonej instruktorki jazdy konnej
                     </p>
                 </div>
                 <div className="goal">
-                    <img className="goal_image" src={earth}/>
+                    <img className="goal_image" src={earth} alt=""/>
                     <p className="goal_description">
                         Jedyna w Polsce ujeżdżalnia ze specjalnym podkładem wykonanym z opon
                     </p>
                 </div>
                 <div className="goal">
-                    <img className="goal_image" src={star}/>
+                    <img className="goal_image" src={star} alt=""/>
                     <p className="goal_description">
                         Rozwijaj swoje umiejętności świetnie się przy tym bawiąc
                     </p>
