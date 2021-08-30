@@ -153,14 +153,14 @@ body {
     user-select: none;
   }
 
-  #menuToggle a {
+  #menuToggle .navigation-link {
     text-decoration: none;
     color: white;
     font-weight: bold;
     transition: color 0.3s ease;
   }
 
-  #menuToggle a:hover {
+  #menuToggle .navigation-link:hover {
     color: #996633;
   }
 
@@ -179,7 +179,7 @@ body {
   }
 
 
-  #menuToggle span {
+  #menuToggle .hamburger_part {
     display: block;
     width: 33px;
     height: 4px;
@@ -196,11 +196,11 @@ body {
     opacity 0.55s ease;
   }
 
-  #menuToggle span:first-child {
+  #menuToggle .hamburger_part:first-child {
     transform-origin: 0% 0%;
   }
 
-  #menuToggle span:nth-last-child(2) {
+  #menuToggle .hamburger_part:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
 
@@ -208,7 +208,7 @@ body {
    * Transform all the slices of hamburger
    * into a crossmark.
    */
-  #menuToggle input:checked ~ span {
+  #menuToggle input:checked ~ .hamburger_part {
     top: 0.7rem;
     right: 0.2rem;
     opacity: 1;
@@ -219,7 +219,7 @@ body {
   /*
    * Let's hide the middle one.
    */
-  #menuToggle input:checked ~ span:nth-last-child(3) {
+  #menuToggle input:checked ~ .hamburger_part:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
@@ -227,7 +227,7 @@ body {
   /*
    * And the last one should go the other direction
    */
-  #menuToggle input:checked ~ span:nth-last-child(2) {
+  #menuToggle input:checked ~ .hamburger_part:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
 
@@ -260,6 +260,12 @@ body {
    */
   #menuToggle input:checked ~ ul {
     transform: none;
+  }
+
+  #menuToggle ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   #footer {

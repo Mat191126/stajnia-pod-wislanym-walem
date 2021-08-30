@@ -61,16 +61,31 @@ function MainMenu() {
             <nav id="hamburger_menu" role="navigation">
                 <div id="menuToggle">
                     <input type="checkbox" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span className="hamburger_part"></span>
+                    <span className="hamburger_part"></span>
+                    <span className="hamburger_part"></span>
 
                     <ul id="menu">
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>About</li></a>
-                        <a href="#"><li>Info</li></a>
-                        <a href="#"><li>Contact</li></a>
-                        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                        <li>
+                            <Link to="/">
+                                <span className="navigation-link">Strona główna</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">
+                                <span className="navigation-link">Kontakt</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/news">
+                                <span className="navigation-link">Aktualności</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/gallery">
+                                <span className="navigation-link">Galeria</span>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </nav>
