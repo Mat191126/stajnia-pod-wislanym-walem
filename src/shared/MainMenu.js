@@ -37,10 +37,6 @@ function MainMenu() {
 
     return (
         <>
-            <input id={"hamburger_menu_button"} type={"checkbox"}/>
-            <span></span>
-            <span></span>
-            <span></span>
             <nav id="navbar" role="navigation">
                 <div id="left-side-menu">
                     <Link to="/">
@@ -60,6 +56,22 @@ function MainMenu() {
                     <Link to="/gallery">
                         <span className="navigation-link">Galeria</span>
                     </Link>
+                </div>
+            </nav>
+            <nav id="hamburger_menu" role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu">
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>About</li></a>
+                        <a href="#"><li>Info</li></a>
+                        <a href="#"><li>Contact</li></a>
+                        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                    </ul>
                 </div>
             </nav>
         </>
