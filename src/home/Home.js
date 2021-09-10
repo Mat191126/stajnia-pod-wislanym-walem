@@ -2,6 +2,7 @@ import React from 'react';
 import AboutSection from "./sections/AboutSection";
 import GoalsSection from "./sections/GoalsSection";
 import AnimalsSection from "./sections/AnimalsSection";
+import NewsSliderSection from "./sections/NewsSliderSection";
 
 function Home() {
 
@@ -13,6 +14,7 @@ function Home() {
         <>
             <div id="content">
                 <AboutSection />
+                <NewsSliderSection />
                 <GoalsSection />
                 <AnimalsSection />
             </div>
