@@ -25,11 +25,13 @@ function MainMenu() {
                     navbar.style.marginTop = "0em";
                     logo.style.marginTop = "8.5em";
                     logo.style.borderRadius = "60% 60% 100% 100%";
+                    navbar.style.boxShadow = "-1px 10px 5px black";
                 } else {
                     navbar.classList.remove("sticky");
                     navbar.style.marginTop = "-3em";
                     logo.style.marginTop = "-0.5em";
                     logo.style.borderRadius = "100% 100% 60% 60%";
+                    navbar.style.boxShadow = "-1px -3px 5px black";
                 }
             }
         }
