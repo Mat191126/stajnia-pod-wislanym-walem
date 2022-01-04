@@ -13,7 +13,7 @@ function AboutSection() {
                         <video id="about-video-main" autoPlay loop muted playsInline src={aboutVideo}/>
                     </div>
                     <div id="about_description">
-                        <h2 id="about_header">Poznaj naszą stajnię!</h2>
+                        <h1 id="about_header">Poznaj naszą stajnię!</h1>
                         <p>Nasza stajnia oferuje naukę jazdy konnej dla dzieci, młodzieży oraz dorosłych.
                             Spokojna i cicha okolica stwarza warunki idealne do aktywnego wypoczynku, a przede wszystkim
                             zabawy na końskim grzbiecie.

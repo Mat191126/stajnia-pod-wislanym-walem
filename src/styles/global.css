@@ -319,7 +319,7 @@ body {
   flex-direction: column;
   margin-top: 3em;
   background-image: url("../assets/images/footer_board.jpg");
-  background-repeat: repeat-y;
+  background-size: cover;
   width: 100%;
   box-shadow: -1px -3px 5px black;
   opacity: 0.9;

@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --heights: 50vh;
+  --widths: 100%;
+  --main-theme-color: white;
+  --arrows-and-dots-hover-color: rgb(44, 44, 44);
+  --arrows-and-dots-color: rgb(153, 153, 153);
+  --arrows-and-dots-background-color: rgba(201, 201, 201, 0.349);
+}
+
+.slider-container {
+  height: var(--heights);
+  width: 50vw;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.active {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  gap: 1em;
+}
+
+.inactive {
+  display: none;
+}
+
+.left-panel {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.right-panel {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.slide-title,
+.slide-date,
+.slide-text {
+  width: fit-content;
+  height: fit-content;
+  color: var(--main-theme-color);
+  text-align: start;
+}
+
+.slide-text {
+  margin-top: 2rem;
+}
+
+.slide-text-cutted {
+  height: 20vh;
+  overflow: hidden;
+}
+
+.read-more {
+  display: none;
+}
+
+.read-more-visible {
+  display: block;
+  color: var(--main-theme-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-image {
+  width: 100%;
+  height: auto;
+  flex-shrink: 3;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -3rem;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 10%;
+  color: var(--arrows-and-dots-color);
+}
+
+.prev:hover,
+.next:hover {
+  color: var(--arrows-and-dots-hover-color);
+  background-color: var(--arrows-and-dots-background-color);
+  transition: all 0.5s ease-in;
+}
+
+.next {
+  right: 0;
+}
+
+.all-dots {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 90%;
+  right: 20%;
+  display: flex;
+  justify-content: center;
+  z-index: 200;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0px 3px;
+  background-color: var(--arrows-and-dots-color);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active-dot,
+.dot:hover {
+  background-color: var(--arrows-and-dots-hover-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .right-panel {
+    display: none;
+  }
+
+  .all-dots {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 90%;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+  }
+}
