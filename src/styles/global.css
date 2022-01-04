@@ -45,7 +45,7 @@ body {
 
 #navbar {
   margin-top: -3rem;
-  z-index: 2;
+  z-index: 1000;
   height: 3rem;
   display: flex;
   flex-direction: row;
