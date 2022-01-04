@@ -31,6 +31,7 @@
     border-radius: 100%;
     overflow: hidden;
     flex-shrink: 0;
+    transform: scale();
     -webkit-transform: translateZ(0);
     margin-right: 5em;
     box-shadow: -10px 25px 25px black;
