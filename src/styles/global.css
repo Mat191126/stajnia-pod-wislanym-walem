@@ -52,7 +52,8 @@ body {
   align-items: center;
   justify-content: space-between;
   background-image: url("../assets/images/board.png");
-  box-shadow: -1px -3px 5px black;
+  /* box-shadow: 100px 100px 150px black, 100px -100px 150px black; */
+  /* border-style: solid; */
 }
 
 
