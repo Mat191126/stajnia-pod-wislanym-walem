@@ -5,7 +5,7 @@
 
 :root {
   --heights: 50vh;
-  --widths: 100%;
+  --widths: 60vw;
   --main-theme-color: white;
   --arrows-and-dots-hover-color: rgb(44, 44, 44);
   --arrows-and-dots-color: rgb(153, 153, 153);
@@ -14,10 +14,12 @@
 
 .slider-container {
   height: var(--heights);
-  width: 50vw;
+  width: var(--widths);
   position: relative;
   margin: auto;
   overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .active {
@@ -76,6 +78,7 @@
   color: var(--main-theme-color);
   text-decoration: none;
   font-weight: bold;
+  z-index: 100;
 }
 
 .news-image {

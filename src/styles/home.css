@@ -57,13 +57,18 @@
 /* Slider styling is placed in slider directory */
 
 #news_slider_section {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    padding: 1rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    height: fit-content;
     background-image: url("../assets/images/footer_board.jpg");
     background-size: cover;
+    position: relative;
+}
+
+#link-to-news {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
 
 /*................
