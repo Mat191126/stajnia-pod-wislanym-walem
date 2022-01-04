@@ -13,7 +13,7 @@ function SliderContent({ activeIndex, sliderNews }) {
             <span className="slide-date">{slide.date}</span>
             <h2 className="slide-title">{slide.title}</h2>
             <p className="slide-text">{slide.text}</p>
-            <a className="read-more" href="">Read more...</a>
+            <a className="read-more" href="/news">Read more...</a>
           </div>
           <div className="right-panel">
             <img className="news-image" src={slide.image_url} alt="" />
