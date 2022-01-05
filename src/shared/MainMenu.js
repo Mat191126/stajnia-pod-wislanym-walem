@@ -55,6 +55,9 @@ function MainMenu() {
                     <img src={logo} id="logo" alt=""/>
                 </div>
                 <div id="right-side-menu">
+                    <Link to="/prices">
+                        <span className="navigation-link">Cennik</span>
+                    </Link>
                     <Link to="/gallery">
                         <span className="navigation-link">Galeria</span>
                     </Link>
@@ -81,6 +84,11 @@ function MainMenu() {
                         <li>
                             <Link to="/news">
                                 <span className="navigation-link">Aktualności</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/prices">
+                                <span className="navigation-link">Cennik</span>
                             </Link>
                         </li>
                         <li>

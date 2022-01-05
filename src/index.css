@@ -1,8 +1,9 @@
-@import "styles/global.css";
-@import "styles/home.css";
-@import "styles/contact.css";
-@import "styles/news.css";
-@import "styles/gallery.css";
+@import "./styles/global.css";
+@import "./styles/home.css";
+@import "./styles/contact.css";
+@import "./styles/news.css";
+@import "./styles/gallery.css";
+@import "./styles/prices.css";
 
 /*--------------------------------------------------
 1. GLOBAL
@@ -13,7 +14,7 @@
     2.1 MAIN HOME SETTINGS
     2.2 ABOUT SECTION
     2.3 NEWS SECTION
-    2.4 GOALS SECTION
+    2.4 CURIOSITIES SECTION
     2.5 ANIMALS SECTION
 3. CONTACT
     3.1 MAIN CONTACT SETTINGS
@@ -21,4 +22,6 @@
     4.1 MAIN NEWS SETTINGS
 5. Gallery
     5.1 MAIN GALLERY SETTINGS
+6. PRICES
+    6.1 MAIN PRICES SETTINGS
 --------------------------------------------------*/

@@ -4,6 +4,7 @@ import Header from "./shared/Header";
 import Home from "./home/Home";
 import Contact from "./contact/Contact";
 import News from "./news/News";
+import Prices from "./prices/Prices";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import ScrollRestoration from "./config/ScrollRestoration";
 import Footer from "./shared/Footer";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/contact" component={Contact}/>
           <Route path="/news" component={News}/>
           <Route path="/gallery" component={Gallery}/>
+          <Route path="/prices" component={Prices}/>
         </Switch>
         <Footer />
       </Router>
