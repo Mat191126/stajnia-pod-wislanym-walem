@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutSection from "./sections/AboutSection";
 import CuriositySection from "./sections/CuriositySection";
-import AnimalsSection from "./sections/AnimalsSection";
+import GallerySection from "./sections/GallerySection";
 import NewsSliderSection from "./sections/NewsSliderSection";
 
 function Home() {
@@ -16,7 +16,7 @@ function Home() {
                 <AboutSection />
                 <NewsSliderSection />
                 <CuriositySection />
-                <AnimalsSection />
+                <GallerySection />
             </div>
         </>
     );
