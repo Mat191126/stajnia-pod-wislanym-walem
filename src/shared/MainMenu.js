@@ -8,7 +8,7 @@ function MainMenu() {
         let navbar = document.getElementById("navbar");
 
         //Get the logo
-        let logo = document.getElementById("logo");
+        let logo = document.getElementById("logo-image");
 
         // Get the offset position of the navbar
         let navbarOffsetTop = navbar.offsetTop;
@@ -23,7 +23,7 @@ function MainMenu() {
                 if (window.pageYOffset >= navbarOffsetTop) {
                     navbar.classList.add("sticky")
                     navbar.style.marginTop = "0em";
-                    logo.style.marginTop = "8.5em";
+                    logo.style.marginTop = "8em";
                     logo.style.borderRadius = "60% 60% 100% 100%";
                     navbar.style.boxShadow = "-1px 10px 5px black";
                 } else {
@@ -52,7 +52,9 @@ function MainMenu() {
                     </Link>
                 </div>
                 <div id="center-menu">
-                    <img src={logo} id="logo" alt=""/>
+                    <Link id="logo" to='/'>
+                        <img id='logo-image' src={logo} alt=""/>
+                    </Link>
                 </div>
                 <div id="right-side-menu">
                     <Link to="/prices">

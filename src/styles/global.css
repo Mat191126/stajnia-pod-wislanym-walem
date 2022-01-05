@@ -44,15 +44,15 @@ body {
 }
 
 #top-bar-instagram-icon {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   margin: 0rem 1rem 1rem 1rem;
   transition: margin 1s linear;
 }
 
 #top-bar-facebook-icon {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   margin: 0rem 1rem 1rem 1rem;
   transition: margin 1s linear;
 }
@@ -135,13 +135,18 @@ body {
 
 
 #logo {
-  margin-bottom: 4rem;
   width: 7rem;
   height: auto;
-  /*background-image: url("../assets/images/board.png");*/
-  border-radius: 100% 100% 60% 60%;
   z-index: 10;
+}
+
+#logo-image {
+  width: 8rem;
+  height: auto;
+  border-radius: 100% 100% 60% 60%;
+  margin-bottom: 3rem;
   box-shadow: -3px 0px 8px black;
+  transition: all 1s ease-in;
 }
 
 
