@@ -1,6 +1,6 @@
 import React from 'react';
-import InstagramIcon from "../assets/images/icons/instagram-icon.png"
-import FacebookIcon from "../assets/images/icons/facebook-icon.png"
+import InstagramIcon from "../assets/images/icons/instagram-icon.png";
+import FacebookIcon from "../assets/images/icons/facebook-icon.png";
 
 function Footer() {
 
@@ -19,8 +19,10 @@ function Footer() {
                     </address>
                 </div>
                 <div id="footer-social-media-icons">
-                    <a href='https://www.instagram.com/stajniapodwislanym' target='_blank'><img id="instagram-icon" src={InstagramIcon} alt=""/></a>
-                    <a href='https://www.facebook.com/podwislanymwalem' target='_blank'><img id="facebook-icon" src={FacebookIcon} alt=""/></a>
+                    <a href='https://www.instagram.com/stajniapodwislanym' target='_blank' rel="noopener noreferrer">
+                        <img id="instagram-icon" src={InstagramIcon} alt="instagram icon"/></a>
+                    <a href='https://www.facebook.com/podwislanymwalem' target='_blank' rel="noopener noreferrer">
+                        <img id="facebook-icon" src={FacebookIcon} alt="facebook icon"/></a>
                 </div>
             </div>
         </>
