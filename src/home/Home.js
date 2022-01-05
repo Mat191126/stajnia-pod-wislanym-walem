@@ -3,6 +3,7 @@ import AboutSection from "./sections/AboutSection";
 import CuriositySection from "./sections/CuriositySection";
 import GallerySection from "./sections/GallerySection";
 import NewsSliderSection from "./sections/NewsSliderSection";
+import OwnerSection from './sections/OwnerSection';
 
 function Home() {
 
@@ -16,6 +17,7 @@ function Home() {
                 <AboutSection />
                 <NewsSliderSection />
                 <CuriositySection />
+                <OwnerSection />
                 <GallerySection />
             </div>
         </>

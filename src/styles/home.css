@@ -69,6 +69,7 @@
 #news_slider_section {
     height: 40rem;
     display: flex;
+    margin-bottom: 4rem;
     justify-content: center;
     align-items: center;
     background-image: url("../assets/images/footer_board.jpg");
@@ -102,7 +103,80 @@
 }
 
 /*.................
-2.5 GALLERY SECTION
+2.5 OWNER SECTION
+..................*/
+
+#owner_section {
+    width: 100%;
+    height: fit-content;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    background-image: url("../assets/images/footer_board.jpg");
+    box-shadow: -1px -5px 5px black, -1px 5px 5px black;
+}
+
+#owner-description-part {
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+}
+
+.description-point {
+    margin-top: 3rem;
+}
+
+#owner-description-title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.description-icon {
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    float: left;
+}
+
+#owner-photo-part {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left-style: double;
+    border-color: white;
+    border-width: 1rem;
+}
+
+#owner-image {
+    width: auto;
+    height: 90vh;
+}
+
+/*.................
+2.6 INSTRUCTORS SECTION
+..................*/
+
+
+
+/*.................
+2.7 BANNERS SECTION
+..................*/
+
+
+
+/*.................
+2.8 GALLERY SECTION
 ..................*/
 
 #gallery_section {
