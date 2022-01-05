@@ -1,6 +1,6 @@
 import React from "react";
 
-function SliderContent({ activeIndex, sliderNews }) {
+function NewsSliderContent({ activeIndex, sliderNews }) {
 
   return (
     <section>
@@ -24,4 +24,4 @@ function SliderContent({ activeIndex, sliderNews }) {
   );
 }
 
-export default SliderContent;
+export default NewsSliderContent;

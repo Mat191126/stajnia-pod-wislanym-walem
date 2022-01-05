@@ -62,9 +62,9 @@
 }
 
 /*................
-2.4 GOALS SECTION
+2.3 NEWS SECTION
 .................*/
-/* Slider styling is placed in slider directory */
+/* Slider styling is placed in newsSlider directory */
 
 #news_slider_section {
     height: 40rem;
@@ -74,6 +74,7 @@
     background-image: url("../assets/images/footer_board.jpg");
     background-size: cover;
     position: relative;
+    box-shadow: -1px -5px 5px black, -1px 5px 5px black;
 }
 
 #link-to-news {
@@ -85,83 +86,19 @@
 }
 
 /*................
-2.4 GOALS SECTION
+2.4 CURIOSITY SECTION
 .................*/
+/* Slider styling is placed in curiositiesSlider directory */
 
-#goals_section {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    padding: 1rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.goal {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 33%;
-}
-
-.goal_image {
+#curiosities_slider_section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: var(--section-margin);
+    margin-right: var(--section-margin);
     height: 10rem;
-    width: auto;
-    padding: 0.4em;
-    border-radius: 10%;
-    background-color: #86592d;
-}
-
-.goal_description {
-    padding-left: 0.4em;
-    padding-right: 0.4em;
-    font-size: 1.5rem;
-}
-
-@media screen and (max-width: 845px) {
-    #goals_section {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 3em;
-        justify-content: flex-start;
-    }
-
-    .goal {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-
-    .goal_image {
-        height: 10rem;
-        width: auto;
-        padding: 0.4em;
-        border-radius: 10%;
-        background-color: #86592d;
-    }
-
-    .goal_description {
-        padding-left: 0.4em;
-        padding-right: 0.4em;
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .goal_image {
-        height: 5rem;
-        width: auto;
-    }
-
-    .goal_description {
-        font-size: 1rem;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*.................

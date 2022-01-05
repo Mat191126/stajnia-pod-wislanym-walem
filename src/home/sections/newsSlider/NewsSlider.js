@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SliderContent from "./SliderContent";
+import NewsSliderContent from "./NewsSliderContent";
 import Dots from "./Dots";
 import Arrows from "./Arrows";
 import sliderNews from "./sliderNews";
@@ -8,7 +8,7 @@ import waitForElementTransition from 'wait-for-element-transition';
 
 const len = sliderNews.length - 1;
 
-function Slider(props) {
+function NewsSlider(props) {
   const [activeIndex, setActiveIndex] = useState(0);
   document.addEventListener('DOMContentLoaded', function(event) {
     window.onload = function() {
@@ -43,7 +43,7 @@ function Slider(props) {
 
   return (
     <div className="slider-container">
-      <SliderContent 
+      <NewsSliderContent 
         activeIndex={activeIndex} 
         sliderNews={sliderNews}
       />
@@ -78,4 +78,4 @@ function Slider(props) {
   );
 }
 
-export default Slider;
+export default NewsSlider;

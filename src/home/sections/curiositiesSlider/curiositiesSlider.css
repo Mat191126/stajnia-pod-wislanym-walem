@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --main-theme-color: white;
+}
+
+.curiosities-slider-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curiosity-active {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curiosity-inactive {
+  display: none;
+}
+
+.curiosity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curiosity-text {
+  font-size: 2rem;
+  color: var(--main-theme-color);
+}
