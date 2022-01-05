@@ -18,8 +18,9 @@
     flex-direction: column;
     padding: 1rem;
     color: white;
-    margin: 10rem;
+    margin-left: 10rem;
     margin-top: 5rem;
+    margin-right: var(--section-margin);
     margin-bottom: 5rem;
 }
 

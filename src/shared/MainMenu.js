@@ -20,7 +20,7 @@ function MainMenu() {
         // Remove "sticky" when you leave the scroll position
         function myFunction() {
             if (window.innerWidth > 845) {
-                if (window.pageYOffset > navbarOffsetTop + 80) {
+                if (window.pageYOffset >= navbarOffsetTop) {
                     navbar.classList.add("sticky")
                     navbar.style.marginTop = "0em";
                     logo.style.marginTop = "8.5em";
@@ -31,7 +31,7 @@ function MainMenu() {
                     navbar.style.marginTop = "-3em";
                     logo.style.marginTop = "-0.5em";
                     logo.style.borderRadius = "100% 100% 60% 60%";
-                    navbar.style.boxShadow = "-1px -3px 5px black";
+                    navbar.style.boxShadow = "-1px -3px 5px black, -1px 10px 5px black";
                 }
             }
         }
