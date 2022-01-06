@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutSection from "./sections/AboutSection";
+import BannerSection from './sections/BanerSection';
 import CuriositySection from "./sections/CuriositySection";
 import GallerySection from "./sections/GallerySection";
 import InstructorsSection from './sections/InstructorsSection';
@@ -20,6 +21,7 @@ function Home() {
                 <CuriositySection />
                 <OwnerSection />
                 <InstructorsSection />
+                <BannerSection />
                 <GallerySection />
             </div>
         </>

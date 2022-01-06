@@ -172,6 +172,20 @@
     margin-left: var(--section-margin);
     margin-right: var(--section-margin);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#instructors-section-title {
+    justify-content: flex-start;
+    font-size: 3rem;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+}
+
+#all-instructors {
+    width: 100%;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -237,7 +251,18 @@
 2.7 BANNERS SECTION
 ..................*/
 
-
+#banner-section {
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    background-image: url("../assets/images/footer_board.jpg");
+    box-shadow: -1px -5px 5px black, -1px 5px 5px black;
+}
 
 /*.................
 2.8 GALLERY SECTION
