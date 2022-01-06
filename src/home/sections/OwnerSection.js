@@ -7,7 +7,7 @@ function OwnerSection() {
 
     return (
         <>
-            <div id="owner_section">
+            <div id="owner-section">
                 <div id="owner-description-part">
                     <h2 id="owner-description-title">Katarzyna Legień</h2>
                     <div className="description-point">

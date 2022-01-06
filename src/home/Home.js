@@ -2,6 +2,7 @@ import React from 'react';
 import AboutSection from "./sections/AboutSection";
 import CuriositySection from "./sections/CuriositySection";
 import GallerySection from "./sections/GallerySection";
+import InstructorsSection from './sections/InstructorsSection';
 import NewsSliderSection from "./sections/NewsSliderSection";
 import OwnerSection from './sections/OwnerSection';
 
@@ -18,6 +19,7 @@ function Home() {
                 <NewsSliderSection />
                 <CuriositySection />
                 <OwnerSection />
+                <InstructorsSection />
                 <GallerySection />
             </div>
         </>
