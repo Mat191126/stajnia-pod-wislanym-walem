@@ -1,3 +1,17 @@
 /*.........................
 5.1 MAIN GALLERY SETTINGS
 ..........................*/
+
+#gallery-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: var(--section-margin);
+    margin-right: var(--section-margin);
+}
+
+.album-image {
+    width: 20vw;
+    height: auto;
+}
