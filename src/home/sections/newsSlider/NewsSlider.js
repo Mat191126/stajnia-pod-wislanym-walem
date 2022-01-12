@@ -33,8 +33,6 @@ function NewsSlider(props) {
     // Get the offset position of the dots
     let dotsOffsetTop = dots.offsetTop; 
 
-    console.log("textOffset: " + textOffsetBottom);
-    console.log("dotsOffset: " + dotsOffsetTop);
     if (textOffsetBottom >= dotsOffsetTop) {
         readMoreButton.classList.add("read-more-visible");
         text.classList.add("slide-text-cutted");

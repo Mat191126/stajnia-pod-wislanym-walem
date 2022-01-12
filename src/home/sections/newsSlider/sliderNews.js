@@ -1,7 +1,7 @@
 import ExampleImage1 from "../../../assets/images/sliderImages/image1.jpg";
 import ExampleImage2 from "../../../assets/images/sliderImages/image2.jpg";
 
-export default [
+const sliderNews = [
     {
         title: "Happy New Year!",
         date: "31.12.2021",
@@ -27,3 +27,5 @@ export default [
         image_url: ExampleImage2
     }
 ];
+
+export default sliderNews;

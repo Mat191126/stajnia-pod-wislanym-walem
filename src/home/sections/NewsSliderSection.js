@@ -6,7 +6,7 @@ function NewsSliderSection() {
     return (
         <>
             <div id="news_slider_section">
-                <a id='link-to-news' href='/news'></a>
+                <a id='link-to-news' href='/news'> </a>
                 <NewsSlider />
             </div>
         </>

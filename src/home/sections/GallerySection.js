@@ -13,24 +13,24 @@ function GallerySection() {
     return (
         <>
             <div id="gallery_section">
-                <div class="gallery">
-                    <figure class="gallery-item gallery-item-1">
-                        <img src={Image1} alt="Gallery image 1" class="gallery-img"/>
+                <div className="gallery">
+                    <figure className="gallery-item gallery-item-1">
+                        <img src={Image1} alt="" className="gallery-img"/>
                     </figure>
-                    <figure class="gallery-item gallery-item-2">
-                        <img src={Image2} alt="Gallery image 2" class="gallery-img"/>
+                    <figure className="gallery-item gallery-item-2">
+                        <img src={Image2} alt="" className="gallery-img"/>
                     </figure>
-                    <figure class="gallery-item gallery-item-3">
-                        <img src={Image3} alt="Gallery image 3" class="gallery-img"/>
+                    <figure className="gallery-item gallery-item-3">
+                        <img src={Image3} alt="" className="gallery-img"/>
                     </figure>
-                    <figure class="gallery-item gallery-item-4">
-                        <img src={Image4} alt="Gallery image 4" class="gallery-img"/>
+                    <figure className="gallery-item gallery-item-4">
+                        <img src={Image4} alt="" className="gallery-img"/>
                     </figure>
-                    <figure class="gallery-item gallery-item-5">
-                        <img src={Image5} alt="Gallery image 5" class="gallery-img"/>
+                    <figure className="gallery-item gallery-item-5">
+                        <img src={Image5} alt="" className="gallery-img"/>
                     </figure>
-                    <figure class="gallery-item gallery-item-6">
-                        <img src={Image6} alt="Gallery image 6" class="gallery-img"/>
+                    <figure className="gallery-item gallery-item-6">
+                        <img src={Image6} alt="" className="gallery-img"/>
                     </figure>
                 </div>
             </div>

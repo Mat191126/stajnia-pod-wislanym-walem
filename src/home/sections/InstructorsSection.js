@@ -12,7 +12,7 @@ function InstructorsSection() {
                     <div className="instructor">
                         <div className="instructor-decor"/>
                         <div className="instructor-photo">
-                            <img className="instructor-image" src={InstructorImage1} alt="Instructor image"/>
+                            <img className="instructor-image" src={InstructorImage1} alt=""/>
                         </div>
                         <div className="instructor-description">
                             <h2 className="instructor-name">Kasia</h2>
@@ -22,7 +22,7 @@ function InstructorsSection() {
                     <div className="instructor">
                         <div className="instructor-decor"/>
                         <div className="instructor-photo">
-                            <img className="instructor-image" src={InstructorImage1} alt="Instructor image"/>
+                            <img className="instructor-image" src={InstructorImage1} alt=""/>
                         </div>
                         <div className="instructor-description">
                             <h2 className="instructor-name">Emilka</h2>
@@ -32,7 +32,7 @@ function InstructorsSection() {
                     <div className="instructor">
                         <div className="instructor-decor"/>
                         <div className="instructor-photo">
-                            <img className="instructor-image" src={InstructorImage1} alt="Instructor image"/>
+                            <img className="instructor-image" src={InstructorImage1} alt=""/>
                         </div>
                         <div className="instructor-description">
                             <h2 className="instructor-name">Gosia</h2>

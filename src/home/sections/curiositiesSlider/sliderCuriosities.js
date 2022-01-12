@@ -1,4 +1,4 @@
-export default [
+const sliderCuriosities = [
     {
         curiosity_text: "'Konie mogą spać zarówno w pozycji leżącej, jak i stojącej.'"
     },
@@ -15,3 +15,5 @@ export default [
         curiosity_text: "'Konie domowe mają żywotność około 25 lat.'"
     }
 ];
+
+export default sliderCuriosities;

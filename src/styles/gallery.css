@@ -2,16 +2,43 @@
 5.1 MAIN GALLERY SETTINGS
 ..........................*/
 
+:root {
+    --gallery-image-width: 20vw;
+}
+
 #gallery-content {
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     margin-left: var(--section-margin);
     margin-right: var(--section-margin);
 }
 
-.album-image {
-    width: 20vw;
+.image-container-invisible {
+    display: none !important;
+}
+
+.image-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.album-cover {
+    width: var(--gallery-image-width);
     height: auto;
+    opacity: 0.3;
+    border-style: solid;
+}
+
+.single-image {
+    width: var(--gallery-image-width);
+    height: auto;
+    border-style: solid;
 }
