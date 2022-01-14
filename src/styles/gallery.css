@@ -15,30 +15,19 @@
     margin-right: var(--section-margin);
 }
 
-.image-container-invisible {
-    display: none !important;
+.album {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-.image-container {
-    width: 100%;
-    height: fit-content;
+.album-title {
+    font-size: 3rem;
+}
+
+.gallery-slider {
+    padding: 2rem;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 5rem;
-}
-
-.album-cover {
-    width: var(--gallery-image-width);
-    height: auto;
-    opacity: 0.3;
-    border-style: solid;
-}
-
-.single-image {
-    width: var(--gallery-image-width);
-    height: auto;
-    border-style: solid;
+    justify-content: center;
+    align-items: center;
+    background-color: #6d6e33;
 }
