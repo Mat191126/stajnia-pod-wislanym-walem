@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import galleryImagesSources from "./galleryImagesSources";
 import ImageGallery from "react-image-gallery";
 import "./imageGalleryStyles/image-gallery.scss";
 
 function Gallery() {
 
+    useEffect(() => {
+        const galleryContent = document.getElementById("scroll-to-element");
+        galleryContent.scrollIntoView(true);
+    });
+
     return (
         <>
+        <p id="scroll-to-element"></p>
         <div id="gallery-content">
             <div id="album-1" className="album">
                 <h2 className="album-title">{galleryImagesSources[0].album_name}</h2>

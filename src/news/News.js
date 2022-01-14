@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function News() {
     
+    useEffect(() => {
+        const galleryContent = document.getElementById("scroll-to-element");
+        galleryContent.scrollIntoView(true);
+    });
+
     return (
         <>
+            <p id="scroll-to-element"></p>
             <div id="content">
                 <div id="news-page-content">
                     <div className="single-news">
