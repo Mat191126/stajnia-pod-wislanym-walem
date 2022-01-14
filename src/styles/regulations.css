@@ -1,0 +1,32 @@
+/*......................
+8.1 MAIN REGULATIONS SETTINGS
+.......................*/
+
+#regulations-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: var(--section-margin);
+    margin-right: var(--section-margin);
+}
+
+#regulations-header {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.single-regulation {
+    margin-top: 0.5rem;
+}
+
+.single-forbidden-info {
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+#regulations-actualization-info {
+    font-size: 0.5rem;
+    margin-bottom: 2rem;
+}

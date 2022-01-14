@@ -1,7 +1,6 @@
 import React from "react";
 import { Helmet} from 'react-helmet-async';
 import Header from "./shared/Header";
-import Home from "./home/Home";
 import Contact from "./contact/Contact";
 import News from "./news/News";
 import Prices from "./prices/Prices";
@@ -9,6 +8,8 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import ScrollRestoration from "./config/ScrollRestoration";
 import Footer from "./shared/Footer";
 import Gallery from "./gallery/Gallery";
+import AboutUs from "./aboutUs/AboutUs";
+import Regulations from "./regulations/Regulations";
 
 function App() {
   return (
@@ -23,11 +24,12 @@ function App() {
           </Helmet>
         <Header />
         <Switch>
-          <Route path="/" exact component={Home}/>
+          <Route path="/about-us" exact component={AboutUs}/>
           <Route path="/contact" component={Contact}/>
           <Route path="/news" component={News}/>
           <Route path="/gallery" component={Gallery}/>
           <Route path="/prices" component={Prices}/>
+          <Route path="/regulations" component={Regulations}/>
         </Switch>
         <Footer />
       </Router>

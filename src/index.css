@@ -4,6 +4,8 @@
 @import "./styles/news.css";
 @import "./styles/gallery.css";
 @import "./styles/prices.css";
+@import "./styles/aboutUs.css";
+@import "./styles/regulations.css";
 
 /*--------------------------------------------------
 1. GLOBAL
@@ -27,4 +29,8 @@
     5.1 MAIN GALLERY SETTINGS
 6. PRICES
     6.1 MAIN PRICES SETTINGS
+7. ABOUT_US
+    7.1 MAIN ABOUT US SETTINGS
+8. REGULATIONS
+    8.1 MAIN REGULATIONS SETTINGS
 --------------------------------------------------*/

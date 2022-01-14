@@ -1,0 +1,48 @@
+/*..................
+7.1 MAIN ABOUT US SETTINGS
+...................*/
+
+#about-us-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: var(--section-margin);
+    margin-right: var(--section-margin);
+}
+
+#scroll-to-element {
+    margin-bottom: 4rem;
+}
+
+#about-page-video {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 440px;
+    height: 440px;
+    min-height: 20em;
+    border-radius: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    transform: scale();
+    -webkit-transform: translateZ(0);
+    margin-right: 5em;
+    box-shadow: -10px 25px 25px black;
+}
+
+#about-page-video-main {
+    width: 440px;
+    height: 440px;
+}
+
+#about-page-description {
+    font-size: 1.2em;
+    text-justify: inter-word;
+}
+
+@media screen and (max-width: 1300px) {
+    #about-page-video {
+        display: none;
+    }
+}

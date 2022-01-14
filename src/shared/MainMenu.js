@@ -41,8 +41,8 @@ function MainMenu() {
         <>
             <nav id="navbar" role="navigation">
                 <div id="left-side-menu">
-                    <Link to="/">
-                        <span className="navigation-link">Strona główna</span>
+                    <Link to="/about-us">
+                        <span className="navigation-link">O nas</span>
                     </Link>
                     <Link to="/contact">
                         <span className="navigation-link">Kontakt</span>
@@ -63,6 +63,9 @@ function MainMenu() {
                     <Link to="/gallery">
                         <span className="navigation-link">Galeria</span>
                     </Link>
+                    <Link to="/regulations">
+                        <span className="navigation-link">Regulamin</span>
+                    </Link>
                 </div>
             </nav>
             <nav id="hamburger_menu" role="navigation">
@@ -76,6 +79,11 @@ function MainMenu() {
                         <li>
                             <Link to="/">
                                 <span className="navigation-link">Strona główna</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/about-us">
+                                <span className="navigation-link">O nas</span>
                             </Link>
                         </li>
                         <li>
@@ -96,6 +104,11 @@ function MainMenu() {
                         <li>
                             <Link to="/gallery">
                                 <span className="navigation-link">Galeria</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/regulations">
+                                <span className="navigation-link">Regulamin</span>
                             </Link>
                         </li>
                     </ul>
