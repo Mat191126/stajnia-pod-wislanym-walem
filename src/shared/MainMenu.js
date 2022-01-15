@@ -44,11 +44,11 @@ function MainMenu() {
                     <Link to="/about-us">
                         <span className="navigation-link">O nas</span>
                     </Link>
-                    <Link to="/contact">
-                        <span className="navigation-link">Kontakt</span>
-                    </Link>
                     <Link to="/news">
                         <span className="navigation-link">Aktualności</span>
+                    </Link>
+                    <Link to="/gallery">
+                        <span className="navigation-link">Galeria</span>
                     </Link>
                 </div>
                 <div id="center-menu">
@@ -60,11 +60,11 @@ function MainMenu() {
                     <Link to="/prices">
                         <span className="navigation-link">Cennik</span>
                     </Link>
-                    <Link to="/gallery">
-                        <span className="navigation-link">Galeria</span>
-                    </Link>
                     <Link to="/regulations">
                         <span className="navigation-link">Regulamin</span>
+                    </Link>
+                    <Link to="/contact">
+                        <span className="navigation-link">Kontakt</span>
                     </Link>
                 </div>
             </nav>
@@ -87,18 +87,8 @@ function MainMenu() {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/contact">
-                                <span className="navigation-link">Kontakt</span>
-                            </Link>
-                        </li>
-                        <li>
                             <Link to="/news">
                                 <span className="navigation-link">Aktualności</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/prices">
-                                <span className="navigation-link">Cennik</span>
                             </Link>
                         </li>
                         <li>
@@ -107,8 +97,18 @@ function MainMenu() {
                             </Link>
                         </li>
                         <li>
+                            <Link to="/prices">
+                                <span className="navigation-link">Cennik</span>
+                            </Link>
+                        </li>
+                        <li>
                             <Link to="/regulations">
                                 <span className="navigation-link">Regulamin</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">
+                                <span className="navigation-link">Kontakt</span>
                             </Link>
                         </li>
                     </ul>
