@@ -3,6 +3,7 @@ import { Helmet} from 'react-helmet-async';
 import Header from "./shared/Header";
 import Contact from "./contact/Contact";
 import News from "./news/News";
+import Home from "./home/Home";
 import Prices from "./prices/Prices";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import ScrollRestoration from "./config/ScrollRestoration";
@@ -24,6 +25,7 @@ function App() {
           </Helmet>
         <Header />
         <Switch>
+          <Route path="/" exact component={Home}/>
           <Route path="/about-us" exact component={AboutUs}/>
           <Route path="/contact" component={Contact}/>
           <Route path="/news" component={News}/>
