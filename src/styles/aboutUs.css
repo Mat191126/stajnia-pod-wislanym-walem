@@ -2,7 +2,36 @@
 7.1 MAIN ABOUT US SETTINGS
 ...................*/
 
-#about-us-content {
+#scroll-to-element {
+    margin-bottom: 5rem;
+}
+
+#section-menu-buttons {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    width: 10vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-between;
+}
+
+.link-to-section {
+    width: 100%;
+    height: 5vh;
+    background-color: gray;
+    border-radius: 0 50% 50% 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*..................
+7.2 ABOUT US DESCRIPTION SECTION SETTINGS
+...................*/
+#about-us-section-content {
     display: flex;
     flex-direction: column;
     margin-top: 2em;
@@ -11,11 +40,7 @@
     margin-right: var(--section-margin);
 }
 
-#scroll-to-element {
-    margin-bottom: 4rem;
-}
-
-#about-page-video {
+#about-us-section-video {
     display: flex;
     align-content: center;
     align-items: center;
@@ -31,18 +56,75 @@
     box-shadow: -10px 25px 25px black;
 }
 
-#about-page-video-main {
+#about-us-section-video-main {
     width: 440px;
     height: 440px;
 }
 
-#about-page-description {
+#about-us-section-description {
     font-size: 1.2em;
     text-justify: inter-word;
 }
 
 @media screen and (max-width: 1300px) {
-    #about-page-video {
+    #about-us-section-video {
         display: none;
     }
+}
+
+/*..................
+7.3 OUR INSTRUCTORS SECTION SETTINGS
+...................*/
+
+#our-instructors-section-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: var(--section-margin);
+    margin-right: var(--section-margin);
+}
+
+.single-instructor {
+    display: flex;
+    flex-direction: row;
+}
+
+/*..................
+7.4 OUR HORSES SECTION SETTINGS
+...................*/
+
+#our-horses-section-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: var(--section-margin);
+    margin-right: var(--section-margin);
+}
+
+.single-horse {
+    display: flex;
+    flex-direction: row;
+}
+
+.horse-image {
+    width: 10vw;
+}
+
+/*..................
+7.5 OTHER ANIMALS SECTION SETTINGS
+...................*/
+
+#other-animals-section-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: var(--section-margin);
+    margin-right: var(--section-margin);
+}
+
+.animal-image {
+    width: 10vw;
 }
