@@ -3,8 +3,8 @@
 ....................*/
 
 :root {
-    --section-bottom-shadow: ;
-    --section-top-shadow: ;
+    --section-top-shadow: -1px 7px 5px black;
+    --section-bottom-shadow: -1px -7px 5px black;
 }
 
 #content {
@@ -80,7 +80,7 @@
     background-image: url("../assets/images/footer_board.jpg");
     background-size: cover;
     position: relative;
-    box-shadow: -1px -5px 5px black, -1px 5px 5px black;
+    box-shadow: var(--section-top-shadow), var(--section-bottom-shadow);
 }
 
 #link-to-news {
@@ -121,7 +121,7 @@
     align-items: center;
     padding: 2.5rem;
     background-image: url("../assets/images/footer_board.jpg");
-    box-shadow: -1px -5px 5px black, -1px 5px 5px black;
+    box-shadow: var(--section-top-shadow), var(--section-bottom-shadow);
 }
 
 #owner-description-part {
@@ -269,7 +269,7 @@
     align-items: center;
     padding: 2.5rem;
     background-image: url("../assets/images/footer_board.jpg");
-    box-shadow: -1px -5px 5px black, -1px 5px 5px black;
+    box-shadow: var(--section-top-shadow), var(--section-bottom-shadow);
 }
 
 .banner-image {
