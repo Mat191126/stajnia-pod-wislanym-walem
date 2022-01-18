@@ -2,6 +2,11 @@
 2.1 MAIN HOME SETTINGS
 ....................*/
 
+:root {
+    --section-bottom-shadow: ;
+    --section-top-shadow: ;
+}
+
 #content {
     display: flex;
     flex-direction: column;
@@ -204,9 +209,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 50;
+    z-index: 3;
     border-radius: 0 50% 50% 20%;
     background-color: white;
+    opacity: 0.8;
     transition: all 0.3s ease-out;
 }
 
@@ -223,7 +229,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    z-index: 100;
+    z-index: 5;
 }
 
 .instructor-image {
@@ -234,10 +240,15 @@
 .instructor-description {
     width: fit-content;
     display: flex;
+    color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    z-index: 5;
+}
+
+.instructor:hover > .instructor-description {
+    color: black;
 }
 
 .instructor-name, .instructor-role {
@@ -259,6 +270,10 @@
     padding: 2.5rem;
     background-image: url("../assets/images/footer_board.jpg");
     box-shadow: -1px -5px 5px black, -1px 5px 5px black;
+}
+
+.banner-image {
+    width: 10vw;
 }
 
 /*.................

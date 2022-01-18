@@ -5,7 +5,8 @@
 #news-page-content {
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
+    gap: 2rem;
+    margin-top: 4em;
     margin-bottom: 2em;
     margin-left: var(--section-margin);
     margin-right: var(--section-margin);
@@ -21,4 +22,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.single-news-image {
+    width: 15em;
 }
