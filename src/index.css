@@ -7,6 +7,15 @@
 @import "./styles/aboutUs.css";
 @import "./styles/regulations.css";
 
+@font-face {
+    font-family: 'Aka Posse';
+    src: local('Aka Posse'), url(./fonts/akaPosse.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Pirata One';
+    src: local('Pirata One'), url(./fonts/PirataOne-Regular.ttf) format('truetype');
+}
+
 /*--------------------------------------------------
 1. GLOBAL
     1.1 GLOBAL SETTINGS

@@ -5,6 +5,8 @@ import headerVideoMobile from "../assets/video/header_video_mobile_cutted.mp4";
 import InstagramIcon from "../assets/images/icons/insta_icon_top.png";
 import FacebookIcon from "../assets/images/icons/fb_icon_top.png";
 import YouTubeIcon from "../assets/images/icons/yt_icon_top.png";
+import {Link} from "react-router-dom";
+import logo from "../assets/images/logo.png";
 
 function Header() {
 
@@ -17,6 +19,11 @@ function Header() {
             <header className="header_content">
                 <div id="header_and_navbar">
                     <div id="top-bar"></div>
+                    <div id="top-bar-logo-container">
+                        <Link id="top-bar-logo" to='/'>
+                            <img id='top-bar-logo-image' src={logo} alt=""/>
+                        </Link>
+                    </div>
                     <div id="top-bar-social-media-icons">
                             <a href='https://www.instagram.com/stajniapodwislanym' target='_blank' rel="noopener noreferrer">
                                 <img id="top-bar-instagram-icon" src={InstagramIcon} alt="instagram icon"/></a>

@@ -3,6 +3,8 @@
 .................*/
 :root {
   --section-margin: 16rem;
+  --headers-font-family: 'Aka Posse';
+  --second-headers-font-family: 'Pirata One';
 }
 
 body {
@@ -10,6 +12,10 @@ body {
   padding: 0;
   margin: 0;
   background-color: #67682f;
+}
+
+h1, h2 {
+  font-family: var(--headers-font-family);
 }
 
 /*...............
@@ -22,6 +28,14 @@ body {
   flex-direction: column;
   position: relative;
   z-index: 10;
+  font-family: var(--headers-font-family);
+}
+
+#top-bar-logo-container {
+  position: absolute;
+  top: 0;
+  left: var(--section-margin);
+  z-index: 200;
 }
 
 #top-bar {
@@ -30,6 +44,25 @@ body {
   width: 100%;
   z-index: 15;
   box-shadow: -1px 5px 5px black;
+  position: relative;
+}
+
+#top-bar-logo {
+  width: 12rem;
+  height: auto;
+  z-index: 10;
+}
+
+#top-bar-logo-image {
+  width: 12rem;
+  height: auto;
+  padding: 0.5rem;
+  border-radius: 60% 60% 100% 100%;
+  margin-bottom: 3rem;
+  box-shadow: -3px 0px 8px black;
+  transition: all 1s ease-in;
+  background-image: url("../assets/images/section_board.jpg");
+  background-size: 100%;
 }
 
 #top-bar-social-media-icons {
@@ -37,7 +70,7 @@ body {
   height: 10vh;
   position: absolute;
   top: 0;
-  left: var(--section-margin);
+  right: var(--section-margin);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -79,12 +112,12 @@ body {
 }
 
 #navbar {
-  margin-top: -3rem;
+  margin-top: -3.5rem;
   z-index: 1000;
-  height: 3rem;
+  height: 3.7rem;
   display: flex;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
