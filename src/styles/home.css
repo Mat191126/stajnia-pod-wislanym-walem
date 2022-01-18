@@ -152,9 +152,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-left-style: double;
-    border-color: white;
-    border-width: 1rem;
 }
 
 #owner-image {
