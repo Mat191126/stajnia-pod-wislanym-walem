@@ -12,7 +12,7 @@ function Contact() {
             <p id="scroll-to-element"></p>
             <div id="content">
                 <div id="contact-content">
-                <h2 id="contact_header">Kontakt</h2>
+                <h2 id="contact-page-header">Kontakt</h2>
                     <div id="contact-part">
                         <div id="address-content">
                             <address>
@@ -21,11 +21,14 @@ function Contact() {
                             <p className="address-line">32-051 Jaśkowice</p>
                             </address>
                         </div>
-                        <div id="email-content">
-                            <p><a href="mailto:stajnia@podwislanymwalem.pl">stajnia@podwislanymwalem.pl</a></p>
+                        <div id="address-social-media-icons">
+                            <h3 id="address-social-media-header">Media Społecznościowe</h3>
+                            
                         </div>
-                        <div id="phone-content">
-                            <p><a href="tel:+48-665-246-359">665 246 359</a></p>
+                        <div id="email-phone-content">
+                            <h3 id="email-and-phone-header">Dane kontaktowe</h3>
+                            <p>E-mail: <a href="mailto:stajnia@podwislanymwalem.pl">stajnia@podwislanymwalem.pl</a></p>
+                            <p>Tel: <a href="tel:+48-665-246-359">665 246 359</a></p>
                         </div>
                     </div>
                     <div id="map-part">

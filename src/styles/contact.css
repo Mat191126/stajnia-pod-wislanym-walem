@@ -5,10 +5,19 @@
 #contact-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-top: 2em;
     margin-bottom: 2em;
     margin-left: var(--section-margin);
     margin-right: var(--section-margin);
+}
+
+#contact-page-header {
+    font-size: 3rem;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    display: flex;
+    justify-content: center;
 }
 
 #contact-part {
@@ -19,8 +28,34 @@
     align-items: flex-start;
 }
 
+#company-header, #email-and-phone-header, #address-social-media-header {
+    font-size: 2rem;
+}
+
+.address-line {
+    font-size: 1.5rem;
+}
+
+#email-phone-content > p > a, #email-phone-content > p > a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    display: inline;
+}
+
+#email-phone-content > p, #email-phone-content > p {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
 #map {
-    width: 600px; 
-    height: 450px; 
+    margin-top: 4vh;
+    width: 100%; 
+    height: 59vh; 
     border: 0; 
+}
+
+#footer {
+    display: none;
 }
