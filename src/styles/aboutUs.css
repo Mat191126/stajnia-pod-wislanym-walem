@@ -6,6 +6,11 @@
     margin-bottom: 4rem;
 }
 
+#scroll-to-about-description-element, #scroll-to-instructors-element,
+#scroll-to-horses-element, #scroll-to-animals-element {
+    margin-bottom: 4rem;
+}
+
 #section-menu-buttons {
     position: fixed;
     top: 20vh;
@@ -65,7 +70,7 @@
     float: left;
     height: 25rem;
     width: auto;
-    margin: 1rem 1rem 1rem 0;
+    margin: 2rem 2rem 1rem 0;
     box-shadow: 5px 5px 25px black;
     overflow: hidden;
 }
@@ -76,7 +81,7 @@
 }
 
 #about-us-section-description > p {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 /*..................

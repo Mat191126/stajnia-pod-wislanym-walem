@@ -32,7 +32,7 @@ function Contact() {
                         </div>
                     </div>
                     <div id="map-part">
-                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6261.616360813898!2d19.677688436099636!3d49.9714831525975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471660228cb9ad39%3A0x2db209c47be923f8!2sStajnia%20pod%20Wi%C5%9Blanym%20Wa%C5%82em!5e1!3m2!1sen!2spl!4v1642525891942!5m2!1sen!2spl" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6261.616360813898!2d19.677688436099636!3d49.9714831525975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471660228cb9ad39%3A0x2db209c47be923f8!2sStajnia%20pod%20Wi%C5%9Blanym%20Wa%C5%82em!5e1!3m2!1sen!2spl!4v1642525891942!5m2!1sen!2spl" allowfullscreen="" loading="lazy" title="google map"></iframe>
                     </div>
                 </div>
             </div>

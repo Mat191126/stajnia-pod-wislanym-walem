@@ -25,13 +25,13 @@ function App() {
           </Helmet>
         <Header />
         <Switch>
-          <Route path="/" exact component={Home}/>
-          <Route path="/about-us" exact component={AboutUs}/>
-          <Route path="/contact" component={Contact}/>
-          <Route path="/news" component={News}/>
-          <Route path="/gallery" component={Gallery}/>
-          <Route path="/prices" component={Prices}/>
-          <Route path="/regulations" component={Regulations}/>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/about-us" component={AboutUs}/>
+          <Route exact path="/contact" component={Contact}/>
+          <Route exact path="/news" component={News}/>
+          <Route exact path="/gallery" component={Gallery}/>
+          <Route exact path="/prices" component={Prices}/>
+          <Route exact path="/regulations" component={Regulations}/>
         </Switch>
         <Footer />
       </Router>
