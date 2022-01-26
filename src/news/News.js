@@ -19,19 +19,21 @@ function News() {
         content = sliderNews.map((singleNews) => (
             <div>
                 <div key={singleNews.id} className="single-news">
+                    <div className="single-news-content">
+                        <div className="single-news-left-panel">
+                            <span className="single-news-date">{singleNews.date}</span>
+                            <h2 className="single-news-title">{singleNews.title}</h2>
+                            <p className="single-news-text">{singleNews.text}</p>
+                        </div>
+                        <div className="single-news-right-panel">
+                            <img className="single-news-image" src={singleNews.image_url} alt="zdjęcie aktualności" />
+                        </div>
+                    </div>
                     <div className="link-to-single-news">
                         <Link to={`/single-news/${singleNews.id}`}
-                              onClick={() => saveNewsToLocalStorage(singleNews)}>
-                            <span className="navigation-link">Zobacz więcej...</span>
+                            onClick={() => saveNewsToLocalStorage(singleNews)}>
+                            <span className="navigation-link">Zobacz więcej szczegółów</span>
                         </Link>
-                    </div>
-                    <div className="single-news-left-panel">
-                        <span className="single-news-date">{singleNews.date}</span>
-                        <h2 className="single-news-title">{singleNews.title}</h2>
-                        <p className="single-news-text">{singleNews.text}</p>
-                    </div>
-                    <div className="single-news-right-panel">
-                        <img className="single-news-image" src={singleNews.image_url} alt="zdjęcie aktualności" />
                     </div>
                 </div>
             </div>

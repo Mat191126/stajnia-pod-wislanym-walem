@@ -26,7 +26,7 @@ function SingleNews() {
                                 <img className="single-news-page-image" src={news.image_url} alt="zdjęcie aktualności" />
                             </div>
                         </div>
-                        <div className="additional-content">
+                        <div className="single-news-additional-content">
                             <img className="single-news-page-addon-image" src={news.addon_image_url} alt="zdjęcie załącznika" />
                         </div>
                     </div>

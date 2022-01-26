@@ -5,17 +5,33 @@
 #news-page-content {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 5rem;
     margin-top: 4em;
     margin-bottom: 2em;
     margin-left: var(--section-margin);
     margin-right: var(--section-margin);
+    font-size: 1.5rem;
 }
 
 .single-news {
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #6d6e33;
+}
+
+.single-news-content {
+    display: flex;
     flex-direction: row;
     gap: 2rem;
+}
+
+.single-news-left-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .single-news-right-panel {
@@ -25,11 +41,12 @@
 }
 
 .single-news-image {
-    width: 15em;
+    width: 30rem;
+    height: 30rem;
 }
 
 /*..................
-4.2 MAIN NEWS SETTINGS
+4.2 SINGLE NEWS SETTINGS
 ...................*/
 
 #single-news-page-content {
@@ -40,6 +57,7 @@
     margin-bottom: 2em;
     margin-left: var(--section-margin);
     margin-right: var(--section-margin);
+    font-size: 1.5rem;
 }
 
 .single-news-regular-content {
@@ -48,12 +66,32 @@
     gap: 2rem;
 }
 
+.single-news-page-left-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 .single-news-page-right-panel {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.single-news-page-image, .single-news-page-addon-image {
-    width: 15em;
+.single-news-page-image {
+    width: 30rem;
+    height: 30rem;
+}
+
+.single-news-additional-content {
+    margin-top: 2rem;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-news-page-addon-image {
+    width: 80%;
 }
