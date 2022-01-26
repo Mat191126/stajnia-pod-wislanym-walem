@@ -3,6 +3,7 @@ import { Helmet} from 'react-helmet-async';
 import Header from "./shared/Header";
 import Contact from "./contact/Contact";
 import News from "./news/News";
+import SingleNews from "./news/SingleNews";
 import Home from "./home/Home";
 import Prices from "./prices/Prices";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/about-us" component={AboutUs}/>
           <Route exact path="/contact" component={Contact}/>
           <Route exact path="/news" component={News}/>
+          <Route exact path="/single-news/:id" component={SingleNews}/>
           <Route exact path="/gallery" component={Gallery}/>
           <Route exact path="/prices" component={Prices}/>
           <Route exact path="/regulations" component={Regulations}/>

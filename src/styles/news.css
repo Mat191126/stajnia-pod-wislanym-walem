@@ -27,3 +27,33 @@
 .single-news-image {
     width: 15em;
 }
+
+/*..................
+4.2 MAIN NEWS SETTINGS
+...................*/
+
+#single-news-page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    margin-left: var(--section-margin);
+    margin-right: var(--section-margin);
+}
+
+.single-news-regular-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.single-news-page-right-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-news-page-image, .single-news-page-addon-image {
+    width: 15em;
+}
