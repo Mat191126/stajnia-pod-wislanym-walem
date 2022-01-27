@@ -5,10 +5,16 @@
 #prices-content {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     margin-top: 2em;
     margin-bottom: 2em;
     margin-left: var(--section-margin);
     margin-right: var(--section-margin);
+    gap: 2rem;
+}
+
+#prices-header {
+    font-size: 3em;
 }
 
 .vertical-table-header {
@@ -18,7 +24,19 @@
     transform: rotate(90deg);
 }
 
+table {
+    color: black;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    font-size: 1.5em;
+    background-image: url("../assets/images/paper.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 td {
     width: fit-content;
+    height: fit-content;
     padding: 0.5em;
 }

@@ -59,15 +59,51 @@ function Prices() {
                         </table>
                     </div>
                     <div className="membership-table">
-
+                    <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Karnet</th>
+                                    <th>Czas</th>
+                                    <th>Ważność</th>
+                                    <th>Cena</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="5" className="vertical-table-header">Karnety</td>
+                                    <td>Karnet Huculski</td>
+                                    <td>8x 30min</td>
+                                    <td>8 tygodni</td>
+                                    <td>440zł</td>
+                                </tr>
+                                <tr>
+                                    <td>Karnet Huculski</td>
+                                    <td>8x 30min</td>
+                                    <td>4 tygodnie</td>
+                                    <td>400zł</td>
+                                </tr>
+                                <tr>
+                                    <td>Karnet Albino</td>
+                                    <td>8x 60min</td>
+                                    <td>8 tygodni</td>
+                                    <td>650zł</td>
+                                </tr>
+                                <tr>
+                                    <td>Karnet Albino</td>
+                                    <td>8x 60min</td>
+                                    <td>4 tygodnie</td>
+                                    <td>620zł</td>
+                                </tr>
+                                <tr>
+                                    <td>Karnet Andaluzyjski</td>
+                                    <td>12x 60min</td>
+                                    <td>8 tygodni</td>
+                                    <td>880zł</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    
-                    <h3>Karnety</h3>
-                    <p>Karnet 8x 30min (ważny 8 tygodni) - 440zł</p>
-                    <p>Karnet 8x 30min (ważny 4 tygodnie) - 400zł</p>
-                    <p>Karnet 8x 60min w parze (ważny 8 tygodni) - 650zł</p>
-                    <p>Karnet 8x 60min w parze (ważny 4 tygodnie) - 620zł</p>
-                    <p>Karnet 12x 60min w parze (ważny 8 tygodni) - 880zł</p>
                     <p></p>
                     <p>*Grafik jazd jest stały. Dodatkowe zapisy na jazdy odbywają się poprzez SMS z kilkudniowym wyprzedzeniem.</p>
                     <p>**Odwołanie jazdy przez klienta później niż 24 h przed jej planowanym termin skutkuje koniecznością wpłaty 50 % jej wartości lub skreśleniem z karnetu. Bez względu na przyczynę odwołania.</p>
