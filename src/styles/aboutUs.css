@@ -106,7 +106,7 @@
     margin-right: var(--section-margin);
 }
 
-.single-instructor {
+.our-instructors-single-instructor {
     display: flex;
     flex-direction: row-reverse;
     gap: 1rem;
@@ -114,28 +114,28 @@
     padding: 1rem;
 }
 
-.instructor-image-part {
+.our-instructors-instructor-image-part {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.instructor-image {
+.our-instructors-instructor-image {
     width: 25em;
     height: 35em;
     box-shadow: 5px 5px 25px black;
 }
 
-.instructor-description-part {
+.our-instructors-instructor-description-part {
     display: flex;
     flex-direction: column;
 }
 
-.instructor-data {
+.our-instructors-instructor-data {
     font-size: 3em;
 }
 
-.instructor-description {
+.our-instructors-instructor-description {
     font-size: 1.5em;
 }
 
