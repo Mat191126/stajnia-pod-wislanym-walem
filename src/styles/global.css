@@ -412,12 +412,8 @@ h1, h2 {
 #footer-contact-part {
   display: flex;
   flex-direction: row;
-}
-
-#footer-contact-page-header {
-  font-size: 3rem;
-  display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 #footer-contact-part {
@@ -425,7 +421,7 @@ h1, h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
 }
 
@@ -433,6 +429,10 @@ h1, h2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+#footer-address-content > address {
+  font-style: normal;
 }
 
 #footer-company-header, #footer-email-and-phone-header, #footer-address-social-media-header {

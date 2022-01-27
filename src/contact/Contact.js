@@ -25,6 +25,11 @@ function Contact() {
                             <p className="address-line">32-051 Jaśkowice</p>
                             </address>
                         </div>
+                        <div id="email-phone-content">
+                            <h3 id="email-and-phone-header">Dane kontaktowe</h3>
+                            <p>E-mail: <a href="mailto:stajnia@podwislanymwalem.pl">stajnia@podwislanymwalem.pl</a></p>
+                            <p>Tel: <a href="tel:+48-665-246-359">665 246 359</a></p>
+                        </div>
                         <div id="address-social-media-icons">
                             <h3 id="address-social-media-header">Media Społecznościowe</h3>
                             <div id="address-social-media-icons-container">
@@ -35,11 +40,6 @@ function Contact() {
                                 <a href='https://www.youtube.com/channel/UCF3tX7kxJKA0pI-OlewYfRg' target='_blank' rel="noopener noreferrer">
                                     <img id="contact-youtube-icon" src={YouTubeIcon} alt="youtube icon"/></a>
                             </div>
-                        </div>
-                        <div id="email-phone-content">
-                            <h3 id="email-and-phone-header">Dane kontaktowe</h3>
-                            <p>E-mail: <a href="mailto:stajnia@podwislanymwalem.pl">stajnia@podwislanymwalem.pl</a></p>
-                            <p>Tel: <a href="tel:+48-665-246-359">665 246 359</a></p>
                         </div>
                     </div>
                     <div id="map-part">
