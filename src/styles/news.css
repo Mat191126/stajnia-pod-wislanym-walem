@@ -75,6 +75,8 @@
     margin-left: var(--section-margin);
     margin-right: var(--section-margin);
     font-size: 1.5rem;
+    padding: 0.5em;
+    background-color: #6d6e33;
 }
 
 .single-news-regular-content {

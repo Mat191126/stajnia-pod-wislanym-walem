@@ -18,10 +18,15 @@
 .album {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .album-title {
     font-size: 3rem;
+    display: flex;
+    justify-content: center;
 }
 
 .gallery-slider {

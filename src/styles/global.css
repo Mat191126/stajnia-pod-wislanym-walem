@@ -405,6 +405,8 @@ h1, h2 {
 #footer-contact {
   margin-left: var(--section-margin);
   margin-right: var(--section-margin);
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 #footer-contact-part {
@@ -414,8 +416,6 @@ h1, h2 {
 
 #footer-contact-page-header {
   font-size: 3rem;
-  margin-top: 2vh;
-  margin-bottom: 4vh;
   display: flex;
   justify-content: flex-start;
 }
