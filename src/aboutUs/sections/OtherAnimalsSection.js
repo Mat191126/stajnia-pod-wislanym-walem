@@ -1,5 +1,5 @@
 import React from 'react';
-import ExampleHorse from "../../assets/images/owner.jpg";
+import ExampleAnimal from "../../assets/images/animal_section_image.jpg";
 
 
 function OtherAnimalsSection() {
@@ -9,7 +9,7 @@ function OtherAnimalsSection() {
             <div id="other-animals-section-content">
                 <div className="single-animal">
                     <div className="animal-image-part" >
-                        <img className="animal-image" src={ExampleHorse} alt="" />
+                        <img className="animal-image" src={ExampleAnimal} alt="" />
                     </div>
                     <div className="animal-description-part">
                         <h1 className="animal-data">Mania</h1>
@@ -20,7 +20,7 @@ function OtherAnimalsSection() {
                 </div>
                 <div className="single-animal">
                     <div className="animal-image-part" >
-                        <img className="animal-image" src={ExampleHorse} alt="" />
+                        <img className="animal-image" src={ExampleAnimal} alt="" />
                     </div>
                     <div className="animal-description-part">
                         <h1 className="animal-data">Toffi</h1>
@@ -31,7 +31,7 @@ function OtherAnimalsSection() {
                 </div>
                 <div className="single-animal">
                     <div className="animal-image-part" >
-                        <img className="animal-image" src={ExampleHorse} alt="" />
+                        <img className="animal-image" src={ExampleAnimal} alt="" />
                     </div>
                     <div className="animal-description-part">
                         <h1 className="animal-data">Milord</h1>
@@ -42,7 +42,7 @@ function OtherAnimalsSection() {
                 </div>
                 <div className="single-animal">
                     <div className="animal-image-part" >
-                        <img className="animal-image" src={ExampleHorse} alt="" />
+                        <img className="animal-image" src={ExampleAnimal} alt="" />
                     </div>
                     <div className="animal-description-part">
                         <h1 className="animal-data">Misia i Maniek</h1>

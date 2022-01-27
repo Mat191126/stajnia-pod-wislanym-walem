@@ -1,5 +1,5 @@
 import React from 'react';
-import ExampleHorse from "../../assets/images/owner.jpg";
+import ExampleHorse from "../../assets/images/horse_section_image.jpg";
 
 
 function OurHorsesSection() {

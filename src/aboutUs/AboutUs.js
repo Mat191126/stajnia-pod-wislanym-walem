@@ -17,10 +17,10 @@ function AboutUs() {
             <p id="scroll-to-element"></p>
             <div id="content">
                 <div id="section-menu-buttons">
-                    <div className='link-to-section'><a href='#scroll-to-about-description-element'> O nas </a><div className="rounded-corners"/></div>
-                    <div className='link-to-section'><a href='#scroll-to-instructors-element'> Nasi Instruktorzy </a><div className="rounded-corners"/></div>
-                    <div className='link-to-section'><a href='#scroll-to-horses-element'> Konie </a><div className="rounded-corners"/></div>
-                    <div className='link-to-section'><a href='#scroll-to-animals-element'> Inne Zwierzęta </a><div className="rounded-corners"/></div>
+                    <a id='about-us-button' className='link-to-section' href='#scroll-to-about-description-element'> O nas </a>
+                    <a id='instructors-button' className='link-to-section' href='#scroll-to-instructors-element'> Nasi Instruktorzy </a>
+                    <a id='horses-button' className='link-to-section' href='#scroll-to-horses-element'> Konie </a>
+                    <a id='animals-button' className='link-to-section' href='#scroll-to-animals-element'> Inne Zwierzęta </a>
                 </div>
                 <p id="scroll-to-about-description-element"></p>
                 <AboutDescriptionSection />
