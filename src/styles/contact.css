@@ -36,6 +36,28 @@
     font-size: 1.5rem;
 }
 
+#address-social-media-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+#address-social-media-icons-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+
+#contact-instagram-icon, #contact-facebook-icon, #contact-youtube-icon {
+    width: 4rem;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+  }
+  
+#contact-instagram-icon:hover, #contact-facebook-icon:hover, #contact-youtube-icon:hover {
+    filter: brightness(75%);
+}
+
 #email-phone-content > p > a, #email-phone-content > p > a {
     text-decoration: none;
     font-size: 1.5rem;

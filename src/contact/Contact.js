@@ -1,4 +1,8 @@
 import React, { useEffect } from 'react';
+import InstagramIcon from '../assets/images/icons/inst_small.png';
+import FacebookIcon from '../assets/images/icons/fb_small.png';
+import YouTubeIcon from '../assets/images/icons/yt_small.png';
+
 
 function Contact() {
 
@@ -23,7 +27,14 @@ function Contact() {
                         </div>
                         <div id="address-social-media-icons">
                             <h3 id="address-social-media-header">Media Społecznościowe</h3>
-                            
+                            <div id="address-social-media-icons-container">
+                                <a href='https://www.instagram.com/stajniapodwislanym' target='_blank' rel="noopener noreferrer">
+                                    <img id="contact-instagram-icon" src={InstagramIcon} alt="instagram icon"/></a>
+                                <a href='https://www.facebook.com/podwislanymwalem' target='_blank' rel="noopener noreferrer">
+                                    <img id="contact-facebook-icon" src={FacebookIcon} alt="facebook icon"/></a>
+                                <a href='https://www.youtube.com/channel/UCF3tX7kxJKA0pI-OlewYfRg' target='_blank' rel="noopener noreferrer">
+                                    <img id="contact-youtube-icon" src={YouTubeIcon} alt="youtube icon"/></a>
+                            </div>
                         </div>
                         <div id="email-phone-content">
                             <h3 id="email-and-phone-header">Dane kontaktowe</h3>
