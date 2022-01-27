@@ -32,7 +32,7 @@ function News() {
                     <div className="link-to-single-news">
                         <Link to={`/single-news/${singleNews.id}`}
                             onClick={() => saveNewsToLocalStorage(singleNews)}>
-                            <span className="navigation-link">Zobacz więcej szczegółów</span>
+                            <span className="news-navigation-link">Zobacz więcej szczegółów</span>
                         </Link>
                     </div>
                 </div>

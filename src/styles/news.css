@@ -45,6 +45,23 @@
     height: 30rem;
 }
 
+.news-navigation-link {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: var(--headers-font-family);
+    padding: 0.5rem;
+    text-decoration: none;
+    background-image: url(../assets//images/board.png);
+    background-size: cover;
+    box-shadow: 5px 5px 10px black;
+}
+
+.news-navigation-link:hover {
+    color: #996633;
+}
+
 /*..................
 4.2 SINGLE NEWS SETTINGS
 ...................*/
