@@ -16,7 +16,7 @@ function Contact() {
             <p id="scroll-to-element"></p>
             <div id="content">
                 <div id="contact-content">
-                <h2 id="contact-page-header">Kontakt</h2>
+                    <h2 id="contact-page-header">Kontakt</h2>
                     <div id="contact-part">
                         <div id="address-content">
                             <address>

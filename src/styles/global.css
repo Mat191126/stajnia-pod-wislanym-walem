@@ -394,10 +394,6 @@ h1, h2 {
 
 #footer {
   color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   margin-top: 3em;
   background-image: url("../assets/images/footer_board.jpg");
   background-size: cover;
@@ -406,47 +402,78 @@ h1, h2 {
   opacity: 0.9;
 }
 
-#contact {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
+#footer-contact {
   margin-left: var(--section-margin);
-}
-
-#footer-social-media-icons {
-  width: 40%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
   margin-right: var(--section-margin);
 }
 
-#instagram-icon {
-  width: 4.5rem;
-  height: 4.5rem;
-  margin: 1rem;
+#footer-contact-part {
+  display: flex;
+  flex-direction: row;
 }
 
-#facebook-icon {
-  margin: 1rem;
-  width: 5rem;
-  height: 5rem;
+#footer-contact-page-header {
+  font-size: 3rem;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+  display: flex;
+  justify-content: flex-start;
 }
 
-#instagram-icon:hover {
-  opacity: 0.7;
+#footer-contact-part {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
-#facebook-icon:hover {
-  opacity: 0.7;
+#footer-address-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-#footer a {
-  color: white;
+#footer-company-header, #footer-email-and-phone-header, #footer-address-social-media-header {
+  font-size: 1.5rem;
+}
+
+.footer-address-line {
+  font-size: 1rem;
+}
+
+#footer-address-social-media-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-address-social-media-icons-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+}
+
+#footer-contact-instagram-icon, #footer-contact-facebook-icon, #footer-contact-youtube-icon {
+  width: 4rem;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+#footer-contact-instagram-icon:hover, #footer-contact-facebook-icon:hover, #footer-contact-youtube-icon:hover {
+  filter: brightness(75%);
+}
+
+#footer-email-phone-content > p > a, #footer-email-phone-content > p > a {
   text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  display: inline;
 }
 
-#footer a:hover {
-  color: #996633;
+#footer-email-phone-content > p, #footer-email-phone-content > p {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
 }
