@@ -10,3 +10,15 @@
     margin-left: var(--section-margin);
     margin-right: var(--section-margin);
 }
+
+.vertical-table-header {
+    text-align:center;
+    white-space:nowrap;
+    transform-origin:50% 50%;
+    transform: rotate(90deg);
+}
+
+td {
+    width: fit-content;
+    padding: 0.5em;
+}
