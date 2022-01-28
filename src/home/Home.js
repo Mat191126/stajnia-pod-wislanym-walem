@@ -9,6 +9,7 @@ import OwnerSection from './sections/OwnerSection';
 
 function Home() {
 
+    // refactor (put into lifecycle method)
     document.addEventListener('DOMContentLoaded', function(event) {
         document.querySelector('video').playbackRate = 0.5;
     });

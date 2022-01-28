@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+// Stash with other idea 904d325 Add link to Gallery page from Gallery Section
 
 function SingleNews() {
 

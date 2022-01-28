@@ -5,8 +5,10 @@ import './curiositiesSlider.css';
 
 const len = sliderCuriosities.length - 1;
 
-function NewsSlider(props) {
+function NewsSlider() {
+
   const [activeIndex, setActiveIndex] = useState(0);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
@@ -14,10 +16,11 @@ function NewsSlider(props) {
     return () => clearInterval(interval);
   }, [activeIndex]);
 
+
   return (
     <div className="curiosities-slider-container">
-      <CuriositiesSliderContent 
-        activeIndex={activeIndex} 
+      <CuriositiesSliderContent
+        activeIndex={activeIndex}
         sliderCuriosities={sliderCuriosities}
       />
     </div>

@@ -6,10 +6,11 @@ import sliderNews from "./sliderNews";
 import "./slider.css";
 import waitForElementTransition from 'wait-for-element-transition';
 
-const len = sliderNews.length - 1;
+function NewsSlider() {
 
-function NewsSlider(props) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const len = sliderNews.length - 1;
+
   document.addEventListener('DOMContentLoaded', function(event) {
     window.onload = function() {
       if(document.readyState === 'complete') {

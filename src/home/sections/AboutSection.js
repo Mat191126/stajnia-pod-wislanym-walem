@@ -4,13 +4,13 @@ import aboutVideo from "../../assets/video/about-video-cut.mp4";
 
 function AboutSection() {
 
-
+    
     return (
         <>
             <div id="about_section">
                 <div id="about_content">
                     <div id="about-video" >
-                        <video id="about-video-main" autoPlay loop muted playsInline src={aboutVideo}/>
+                        <video id="about-video-main" autoPlay loop muted playsInline src={aboutVideo} />
                     </div>
                     <div id="about_description">
                         <h1 id="about_header">Poznaj naszą stajnię!</h1>
