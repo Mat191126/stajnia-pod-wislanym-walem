@@ -13,6 +13,7 @@ function GallerySection() {
     return (
         <>
             <div id="gallery_section">
+            <a id='link-to-gallery' href='/gallery'> </a>
                 <div className="gallery">
                     <figure className="gallery-item gallery-item-1">
                         <img src={Image1} alt="" className="gallery-img"/>
