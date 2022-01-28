@@ -104,9 +104,10 @@ function Prices() {
                             </tbody>
                         </table>
                     </div>
-                    <p></p>
-                    <p>*Grafik jazd jest stały. Dodatkowe zapisy na jazdy odbywają się poprzez SMS z kilkudniowym wyprzedzeniem.</p>
-                    <p>**Odwołanie jazdy przez klienta później niż 24 h przed jej planowanym termin skutkuje koniecznością wpłaty 50 % jej wartości lub skreśleniem z karnetu. Bez względu na przyczynę odwołania.</p>
+                    <div id="additional-info">
+                        <p>*Grafik jazd jest stały. Dodatkowe zapisy na jazdy odbywają się poprzez SMS z kilkudniowym wyprzedzeniem.</p>
+                        <p>**Odwołanie jazdy przez klienta później niż 24 h przed jej planowanym termin skutkuje koniecznością wpłaty 50 % jej wartości lub skreśleniem z karnetu. Bez względu na przyczynę odwołania.</p>
+                    </div>
                 </div>
             </div>
         </>

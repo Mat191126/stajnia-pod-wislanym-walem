@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import sliderNews from "../home/sections/newsSlider/sliderNews";
 
+
 function News() {
 
     useEffect(() => {
