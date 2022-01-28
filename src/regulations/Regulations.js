@@ -43,12 +43,12 @@ function Regulations() {
                         <img className="regulation-star" src={Star} alt="gwiazdka"/>
 
                         <p className="single-regulation">Zabrania się:</p>
-                        <p className="single-forbidden-info">palenia tytoniu w stajni</p>
-                        <p className="single-forbidden-info">otwierania boksów koni bez zgody Instruktora</p>
-                        <p className="single-forbidden-info">wchodzenia do koni na pastwiska/padoki</p>
-                        <p className="single-forbidden-info">dokarmiania koni bez zgody Instruktora</p>
-                        <p className="single-forbidden-info">używania sprzętu bez zgody Instruktora</p>
-                        <p className="single-forbidden-info">wchodzenia na ujeżdżalnię osób trzecich</p>
+                        <p className="single-forbidden-info">- Palenia tytoniu w stajni</p>
+                        <p className="single-forbidden-info">- Otwierania boksów koni bez zgody Instruktora</p>
+                        <p className="single-forbidden-info">- Wchodzenia do koni na pastwiska/padoki</p>
+                        <p className="single-forbidden-info">- Dokarmiania koni bez zgody Instruktora</p>
+                        <p className="single-forbidden-info">- Używania sprzętu bez zgody Instruktora</p>
+                        <p className="single-forbidden-info">- Wchodzenia na ujeżdżalnię osób trzecich</p>
                     
                         <img className="regulation-star" src={Star} alt="gwiazdka"/>
                         <p className="single-regulation">W stajni obowiązuje stały grafik jazd. Wszelkie zmiany należy zgłaszać poprzez SMS lub telefon. 665 246 359.</p>
