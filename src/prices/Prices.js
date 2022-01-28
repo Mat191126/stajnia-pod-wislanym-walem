@@ -58,7 +58,7 @@ function Prices() {
                             </tbody>
                         </table>
                     </div>
-                    <div className="membership-table">
+                    <div id="membership-table">
                     <table>
                             <thead>
                                 <tr>
@@ -72,25 +72,25 @@ function Prices() {
                             <tbody>
                                 <tr>
                                     <td rowspan="5" className="vertical-table-header">Karnety</td>
-                                    <td>Karnet Huculski</td>
+                                    <td>Karnet Huculski 1</td>
                                     <td>8x 30min</td>
                                     <td>8 tygodni</td>
                                     <td>440zł</td>
                                 </tr>
                                 <tr>
-                                    <td>Karnet Huculski</td>
+                                    <td>Karnet Huculski 2</td>
                                     <td>8x 30min</td>
                                     <td>4 tygodnie</td>
                                     <td>400zł</td>
                                 </tr>
                                 <tr>
-                                    <td>Karnet Albino</td>
+                                    <td>Karnet Albino 1</td>
                                     <td>8x 60min</td>
                                     <td>8 tygodni</td>
                                     <td>650zł</td>
                                 </tr>
                                 <tr>
-                                    <td>Karnet Albino</td>
+                                    <td>Karnet Albino 2</td>
                                     <td>8x 60min</td>
                                     <td>4 tygodnie</td>
                                     <td>620zł</td>

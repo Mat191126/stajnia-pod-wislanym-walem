@@ -9,7 +9,7 @@
 #gallery-content {
     display: flex;
     flex-direction: column;
-    margin-top: 4rem;
+    margin-top: 7rem;
     margin-bottom: 4rem;
     margin-left: var(--section-margin);
     margin-right: var(--section-margin);

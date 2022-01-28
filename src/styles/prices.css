@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 2em;
+    margin-top: 4rem;
     margin-bottom: 2em;
     margin-left: var(--section-margin);
     margin-right: var(--section-margin);
@@ -15,18 +15,23 @@
 
 #prices-header {
     font-size: 3em;
+    display: flex;
+    justify-content: center;
 }
 
 .vertical-table-header {
-    text-align:center;
-    white-space:nowrap;
     transform-origin:50% 50%;
     transform: rotate(90deg);
+    width: 15vw;
+    height: 2em;
+    text-align: center;
+    font-weight: bolder;
+    border-style: none;
 }
 
-table {
+#single-rides-table, #membership-table {
     color: black;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     padding: 1rem;
     font-size: 1.5em;
@@ -35,8 +40,14 @@ table {
     background-repeat: no-repeat;
 }
 
-td {
+td, th {
     width: fit-content;
     height: fit-content;
-    padding: 0.5em;
+    padding: 1em;
+    text-align: start;
+    border-collapse: collapse;
+}
+
+td {
+    border-top-style: solid;
 }
