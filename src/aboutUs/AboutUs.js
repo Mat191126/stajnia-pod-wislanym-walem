@@ -18,7 +18,7 @@ function AboutUs() {
             <div id="content">
                 <div id="section-menu-buttons">
                     <a id='about-us-button' className='link-to-section' href='#scroll-to-about-description-element'> O nas </a>
-                    <a id='instructors-button' className='link-to-section' href='#scroll-to-instructors-element'> Nasi Instruktorzy </a>
+                    <a id='instructors-button' className='link-to-section' href='#scroll-to-instructors-element'>Instruktorzy </a>
                     <a id='horses-button' className='link-to-section' href='#scroll-to-horses-element'> Konie </a>
                     <a id='animals-button' className='link-to-section' href='#scroll-to-animals-element'> Inne Zwierzęta </a>
                 </div>

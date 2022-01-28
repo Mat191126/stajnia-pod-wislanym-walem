@@ -2,7 +2,7 @@
 1.1 GLOBAL SETTINGS
 .................*/
 :root {
-  --section-margin: 16rem;
+  --section-margin: 10vw;
   --headers-font-family: 'Aka Posse';
   --second-headers-font-family: 'Pirata One';
 }

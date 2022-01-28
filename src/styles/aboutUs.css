@@ -24,10 +24,10 @@
 }
 
 .link-to-section {
-    width: calc(var(--section-margin) - 3em);
-    height: 2.5em;
-    margin: 0em 5em 5em 0;
-    margin-left: -9em;
+    width: calc(var(--section-margin) - 1vw);
+    height: 4vh;
+    margin: 0em 5vw 5vw 0;
+    margin-left: -6vw;
     padding-left: 0.5em;
     color: white;
     text-decoration: none;
