@@ -27,8 +27,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
   gap: 1em;
 }
 
@@ -153,5 +153,35 @@
     display: flex;
     justify-content: center;
     z-index: 200;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .slider-container {
+    height: 60%;
+    width: 100%;
+    position: relative;
+    margin: var(--mobile-section-margin);
+    overflow: hidden;
+  }
+
+  .active {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .all-dots {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+  }
+
+  .prev,
+  .next {
+    padding: 1vh;
   }
 }

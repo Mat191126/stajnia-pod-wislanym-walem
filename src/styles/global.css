@@ -3,6 +3,7 @@
 .................*/
 :root {
   --section-margin: 10vw;
+  --mobile-section-margin: 2vw;
   --headers-font-family: 'Aka Posse';
   --second-headers-font-family: 'Pirata One';
 }
@@ -49,13 +50,13 @@ h1, h2 {
 }
 
 #top-bar-logo {
-  width: 12rem;
+  width: 45vw;
   height: auto;
   z-index: 10;
 }
 
 #top-bar-logo-image {
-  width: 12rem;
+  width: 45vw;
   height: auto;
   padding: 0.5rem;
   border-radius: 60% 60% 100% 100%;
@@ -199,8 +200,9 @@ h1, h2 {
 /*MOBILE PHONE STYLING*/
 
 @media screen and (max-width: 480px){
+
   html, body {
-    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   #normal_size_video {
@@ -218,6 +220,10 @@ h1, h2 {
 }
 
 @media screen and (max-width: 845px) {
+
+  html, body {
+    box-sizing: border-box;
+  }
 
   #header_and_navbar {
     width: 100%;
@@ -246,8 +252,20 @@ h1, h2 {
     z-index: 0;
   }
 
+  #top-bar-social-media-icons {
+    display: none;
+  }
+
+  #top-bar-logo-container {
+    position: absolute;
+    top: 0;
+    left: var(--mobile-section-margin);
+    z-index: 200;
+  }
+
   #hamburger_menu {
     display: block;
+    z-index: 250;
   }
 
   #menuToggle {
@@ -440,7 +458,7 @@ h1, h2 {
 }
 
 .footer-address-line {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 #footer-address-social-media-icons {
@@ -476,4 +494,33 @@ h1, h2 {
   text-decoration: none;
   font-size: 1.5rem;
   color: white;
+}
+
+@media screen and (max-width: 845px) {
+
+  #footer-contact {
+    margin-left: var(--mobile-section-margin);
+    margin-right: var(--mobile-section-margin);
+  }
+
+  #footer-contact-part {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vh;
+  }
+
+  #footer-address-content > address, 
+  #footer-email-phone-content > h3, 
+  #footer-email-phone-content > p, 
+  #footer-address-social-media-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #footer-address-social-media-icons-container {
+    gap: 1em;
+  }
+
 }
