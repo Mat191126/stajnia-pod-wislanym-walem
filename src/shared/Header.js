@@ -2,6 +2,8 @@ import React from 'react';
 import MainMenu from "./MainMenu";
 import headerVideo from "../assets/video/header_video.mp4";
 import headerVideoMobile from "../assets/video/header_video_mobile_cutted.mp4";
+import headerVideoImage from "../assets/video/main_video_image.png"
+import headerVideoMobileImage from "../assets/video/mobile_video_image.png"
 import InstagramIcon from "../assets/images/icons/insta_icon_top.png";
 import FacebookIcon from "../assets/images/icons/fb_icon_top.png";
 import YouTubeIcon from "../assets/images/icons/yt_icon_top.png";
@@ -35,6 +37,8 @@ function Header() {
                     <div className="main-video-wrapper">
                         <video id="normal_size_video" autoPlay loop muted playsInline src={headerVideo}/>
                         <video id="mobile_size_video" autoPlay loop muted playsInline src={headerVideoMobile}/>
+                        <img id='normal_size_video_image' src={headerVideoImage} alt=""/>
+                        <img id='mobile_size_video_image' src={headerVideoMobileImage} alt=""/>
                     </div>
                     <MainMenu />
                 </div>

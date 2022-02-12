@@ -98,6 +98,10 @@ h1, h2 {
 }
 
 #normal_size_video {
+  display: none;
+}
+
+#normal_size_video_image {
   margin-top: -8rem;
   width: 100%;
   height: 108vh;
@@ -107,6 +111,10 @@ h1, h2 {
 
 #mobile_size_video {
     display: none;
+}
+
+#mobile_size_video_image {
+  display: none;
 }
 
 #hamburger_menu {
@@ -209,7 +217,15 @@ h1, h2 {
     display: none;
   }
 
+  #normal_size_video_image {
+    display: none;
+  }
+
   #mobile_size_video {
+    display: none;
+  }
+
+  #mobile_size_video_image {
     display: block;
     margin-top: -2.5rem;
     width: 100%;
@@ -245,6 +261,10 @@ h1, h2 {
   }
 
   #normal_size_video {
+    display: none;
+  }
+
+  #normal_size_video_image {
     margin-top: 0;
     width: 100%;
     height: 100%;
