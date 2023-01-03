@@ -2,6 +2,8 @@ import React from 'react';
 import MainMenu from "./MainMenu";
 import headerVideo from "../assets/video/header_video.mp4";
 import headerVideoMobile from "../assets/video/header_video_mobile_cutted.mp4";
+import headerVideoImage from "../assets/video/main_video_image.png";
+import headerVideoMobileImage from "../assets/video/mobile_video_image.png";
 import InstagramIcon from "../assets/images/icons/insta_icon_top.png";
 import FacebookIcon from "../assets/images/icons/fb_icon_top.png";
 import YouTubeIcon from "../assets/images/icons/yt_icon_top.png";
@@ -13,6 +15,35 @@ function Header() {
     document.addEventListener('DOMContentLoaded', function(event) {
         document.querySelector('video').playbackRate = 0.5;
     });
+
+    function play_pause() {
+        const playButton = document.getElementById("video_play_button");
+        const normalSizeVideo = document.getElementById("normal_size_video");
+        const normalSizeVideoImage = document.getElementById("normal_size_video_image");
+        const mobileSizeVideo = document.getElementById("mobile_size_video");
+        const mobileSizeVideoImage = document.getElementById("mobile_size_video_image");
+        if (playButton.classList.contains('video_play_icon')) {
+            playButton.classList.remove('video_play_icon');
+            playButton.classList.add('video_pause_icon');
+            if (window.innerWidth < 845) {
+                mobileSizeVideo.style.display = 'block';
+                mobileSizeVideoImage.style.display = 'none';
+            } else {
+                normalSizeVideo.style.display = 'block';
+                normalSizeVideoImage.style.display = 'none';
+            }
+        } else {
+            playButton.classList.remove('video_pause_icon');
+            playButton.classList.add('video_play_icon');
+            if (window.innerWidth < 845) {
+                mobileSizeVideo.style.display = 'none';
+                mobileSizeVideoImage.style.display = 'block';
+            } else {
+                normalSizeVideo.style.display = 'none';
+                normalSizeVideoImage.style.display = 'block';
+            }
+        }
+    }
 
     return (
         <>
@@ -35,6 +66,9 @@ function Header() {
                     <div className="main-video-wrapper">
                         <video id="normal_size_video" autoPlay loop muted playsInline src={headerVideo}/>
                         <video id="mobile_size_video" autoPlay loop muted playsInline src={headerVideoMobile}/>
+                        <img id='normal_size_video_image' src={headerVideoImage} alt=""/>
+                        <img id='mobile_size_video_image' src={headerVideoMobileImage} alt=""/>
+                        <button id='video_play_button' className='video_play_icon' onClick={play_pause}></button>
                     </div>
                     <MainMenu />
                 </div>
