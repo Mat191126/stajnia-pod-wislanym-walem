@@ -238,6 +238,8 @@ h1, h2 {
 
   html, body {
     box-sizing: border-box;
+    margin-right: 0px;
+    padding-right: 0px;
   }
 
   #normal_size_video {
@@ -352,8 +354,8 @@ h1, h2 {
 
   #menuToggle input {
     display: block;
-    width: 8vw;
-    height: 8vw;
+    width: 12vw;
+    height: 9vw;
     position: absolute;
     top: 0;
     right: 0;

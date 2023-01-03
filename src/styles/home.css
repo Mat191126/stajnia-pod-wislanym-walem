@@ -179,8 +179,9 @@
     height: 90vh;
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: 1024px) {
     #owner-section {
+        box-sizing: border-box;
         width: 100%;
         margin-top: 2vh;
         margin-bottom: 2vh;
