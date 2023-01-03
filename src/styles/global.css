@@ -1,12 +1,6 @@
 /*.................
 1.1 GLOBAL SETTINGS
 .................*/
-:root {
-  --section-margin: 10vw;
-  --mobile-section-margin: 2vw;
-  --headers-font-family: 'Aka Posse';
-  --second-headers-font-family: 'Pirata One';
-}
 
 body {
   font-family: 'Arima Madurai', sans-serif;
@@ -240,7 +234,7 @@ h1, h2 {
 
 /*MOBILE PHONE STYLING*/
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 1024px){
 
   html, body {
     box-sizing: border-box;
@@ -275,13 +269,6 @@ h1, h2 {
   #video_play_button {
     top: 86vh;
   }
-}
-
-@media screen and (max-width: 845px) {
-
-  html, body {
-    box-sizing: border-box;
-  }
 
   #header_and_navbar {
     width: 100%;
@@ -292,7 +279,7 @@ h1, h2 {
 
   #top-bar {
     background-image: url("../assets/images/board.png");
-    height: 2.5rem;
+    height: 7vh;
     width: 100%;
     z-index: 1;
     box-shadow: -1px 5px 5px black;
@@ -323,7 +310,7 @@ h1, h2 {
   }
   
   #top-bar-logo-image {
-    width: 45vw;
+    width: 35vw;
   }
 
   #top-bar-logo-container {
@@ -339,6 +326,9 @@ h1, h2 {
   }
 
   #menuToggle {
+    margin-top: 0.8vh;
+    margin-right: 0.8vh;
+    height: 8vh;
     display: block;
     position: absolute;
     top: 0;
@@ -362,8 +352,8 @@ h1, h2 {
 
   #menuToggle input {
     display: block;
-    width: 40px;
-    height: 32px;
+    width: 8vw;
+    height: 8vw;
     position: absolute;
     top: 0;
     right: 0;
@@ -375,13 +365,14 @@ h1, h2 {
 
 
   #menuToggle .hamburger_part {
+    /* Ask Dominika why it transforms unevenly */
     display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
+    width: 7vh;
+    height: 0.7vh;
+    margin-bottom: 1vh;
     position: relative;
-    top: 0.5rem;
-    right: 0.4rem;
+    top: 0.5vh;
+    right: 0.4vw;
     background: white;
     border-radius: 3px;
     z-index: 1;
@@ -432,7 +423,7 @@ h1, h2 {
    */
   #menu {
     position: absolute;
-    width: 15rem;
+    width: 60vw;
     height: fit-content;
     top: -1rem;
     right: 0;
@@ -445,9 +436,13 @@ h1, h2 {
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
 
+  #menu li:first-of-type {
+    margin-top: 9vh;
+  }
+
   #menu li {
-    padding: 1rem 0;
-    font-size: 1.2rem;
+    padding: 1vh 0;
+    font-size: 3vh;
   }
 
   /*

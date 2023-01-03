@@ -25,7 +25,7 @@ function Header() {
         if (playButton.classList.contains('video_play_icon')) {
             playButton.classList.remove('video_play_icon');
             playButton.classList.add('video_pause_icon');
-            if (window.innerWidth < 845) {
+            if (window.innerWidth <= 1024) {
                 mobileSizeVideo.style.display = 'block';
                 mobileSizeVideoImage.style.display = 'none';
             } else {
@@ -35,7 +35,7 @@ function Header() {
         } else {
             playButton.classList.remove('video_pause_icon');
             playButton.classList.add('video_play_icon');
-            if (window.innerWidth < 845) {
+            if (window.innerWidth <= 1024) {
                 mobileSizeVideo.style.display = 'none';
                 mobileSizeVideoImage.style.display = 'block';
             } else {

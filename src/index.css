@@ -1,3 +1,4 @@
+@import "./styles/variables.css";
 @import "./styles/global.css";
 @import "./styles/home.css";
 @import "./styles/contact.css";
@@ -17,6 +18,7 @@
 }
 
 /*--------------------------------------------------
+0. GLOBAL VARIABLES
 1. GLOBAL
     1.1 GLOBAL SETTINGS
     1.2 HEADER AND MENU
