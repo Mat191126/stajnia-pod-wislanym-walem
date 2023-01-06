@@ -116,22 +116,6 @@ h1, h2 {
   display: none;
 }
 
-#video_play_button {
-  width: 5em;
-  height: 5em;
-  position: absolute;
-  top: 83vh;
-  left: 1vw;
-  z-index: 5;
-  /* make background transparent */
-  border: none;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-}
-
 .video_play_icon {
   background-image: url("../assets/images/icons/play-video-icon.png");
   background-size: 50% 90%;
@@ -266,10 +250,6 @@ h1, h2 {
     height: 100vh;
     object-fit: cover;
     z-index: 0;
-  }
-
-  #video_play_button {
-    top: 86vh;
   }
 
   #header_and_navbar {

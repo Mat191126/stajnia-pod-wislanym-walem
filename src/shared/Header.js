@@ -12,19 +12,51 @@ import logo from "../assets/images/logo.png";
 
 function Header() {
 
-    document.addEventListener('DOMContentLoaded', function(event) {
-        document.querySelector('video').playbackRate = 0.5;
+    let intervalId;
+
+    document.addEventListener('DOMContentLoaded', function() {
+        intervalId = window.setInterval(function(){
+            play_pause();
+          }, 2500);
     });
 
     function play_pause() {
-        const playButton = document.getElementById("video_play_button");
-        const normalSizeVideo = document.getElementById("normal_size_video");
-        const normalSizeVideoImage = document.getElementById("normal_size_video_image");
+        const videoWrapper = document.getElementsByClassName("main-video-wrapper")[0];
+        addVideos(videoWrapper);
+
         const mobileSizeVideo = document.getElementById("mobile_size_video");
+        const normalSizeVideo = document.getElementById("normal_size_video");
+
+        document.querySelector('video').playbackRate = 0.5;
+
+        const normalSizeVideoImage = document.getElementById("normal_size_video_image");
         const mobileSizeVideoImage = document.getElementById("mobile_size_video_image");
-        if (playButton.classList.contains('video_play_icon')) {
-            playButton.classList.remove('video_play_icon');
-            playButton.classList.add('video_pause_icon');
+        changeStyling(mobileSizeVideo, mobileSizeVideoImage, normalSizeVideo, normalSizeVideoImage);
+    }
+
+    function addVideos(videoWrapper) {
+        const normalSizeVideo = document.createElement("video");
+        normalSizeVideo.id ="normal_size_video";
+        normalSizeVideo.src = headerVideo;
+        normalSizeVideo.autoplay = true;
+        normalSizeVideo.loop = true;
+        normalSizeVideo.muted = true;
+        normalSizeVideo.playsInline = true;
+        const mobileSizeVideo = document.createElement("video");
+        mobileSizeVideo.id = "mobile_size_video";
+        mobileSizeVideo.src = headerVideoMobile;
+        mobileSizeVideo.autoplay = true;
+        mobileSizeVideo.loop = true;
+        mobileSizeVideo.muted = true;
+        mobileSizeVideo.playsInline = true;
+
+        videoWrapper.appendChild(normalSizeVideo);
+        videoWrapper.appendChild(mobileSizeVideo);
+    }
+
+    function changeStyling(mobileSizeVideo, mobileSizeVideoImage, normalSizeVideo, normalSizeVideoImage) {
+        if (mobileSizeVideo.readyState === 4 && normalSizeVideo.readyState === 4) {
+            clearInterval(intervalId);
             if (window.innerWidth <= 1024) {
                 mobileSizeVideo.style.display = 'block';
                 mobileSizeVideoImage.style.display = 'none';
@@ -33,8 +65,6 @@ function Header() {
                 normalSizeVideoImage.style.display = 'none';
             }
         } else {
-            playButton.classList.remove('video_pause_icon');
-            playButton.classList.add('video_play_icon');
             if (window.innerWidth <= 1024) {
                 mobileSizeVideo.style.display = 'none';
                 mobileSizeVideoImage.style.display = 'block';
@@ -64,11 +94,8 @@ function Header() {
                                 <img id="top-bar-youtube-icon" src={YouTubeIcon} alt="youtube icon"/></a>
                         </div>
                     <div className="main-video-wrapper">
-                        <video id="normal_size_video" autoPlay loop muted playsInline src={headerVideo}/>
-                        <video id="mobile_size_video" autoPlay loop muted playsInline src={headerVideoMobile}/>
                         <img id='normal_size_video_image' src={headerVideoImage} alt=""/>
                         <img id='mobile_size_video_image' src={headerVideoMobileImage} alt=""/>
-                        <button id='video_play_button' className='video_play_icon' onClick={play_pause}></button>
                     </div>
                     <MainMenu />
                 </div>
