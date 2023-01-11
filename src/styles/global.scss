@@ -116,6 +116,22 @@ h1, h2 {
   display: none;
 }
 
+// #video_play_button {
+//   width: 5em;
+//   height: 5em;
+//   position: absolute;
+//   top: 83vh;
+//   left: 1vw;
+//   z-index: 5;
+//   /* make background transparent */
+//   border: none;
+//   background-color: transparent;
+//   background-repeat: no-repeat;
+//   cursor: pointer;
+//   overflow: hidden;
+//   outline: none;
+// }
+
 .video_play_icon {
   background-image: url("../assets/images/icons/play-video-icon.png");
   background-size: 50% 90%;
@@ -179,7 +195,7 @@ h1, h2 {
 }
 
 .navigation-link:hover {
-  color: #996633;
+  color: #dfd5cb;
 }
 
 
@@ -251,6 +267,10 @@ h1, h2 {
     object-fit: cover;
     z-index: 0;
   }
+
+  // #video_play_button {
+  //   top: 86vh;
+  // }
 
   #header_and_navbar {
     width: 100%;
@@ -499,16 +519,17 @@ h1, h2 {
 }
 
 #footer-company-header, #footer-email-and-phone-header, #footer-address-social-media-header {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .footer-address-line {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 #footer-address-social-media-icons {
   display: flex;
   flex-direction: column;
+  gap: 0.5em;
 }
 
 #footer-address-social-media-icons-container {
@@ -516,10 +537,11 @@ h1, h2 {
   flex-direction: row;
   align-content: center;
   justify-content: space-around;
+  gap: 0.5em;
 }
 
 #footer-contact-instagram-icon, #footer-contact-facebook-icon, #footer-contact-youtube-icon {
-  width: 4rem;
+  width: 2rem;
   height: auto;
   transition: all 0.3s ease-in-out;
 }
@@ -530,14 +552,14 @@ h1, h2 {
 
 #footer-email-phone-content > p > a, #footer-email-phone-content > p > a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: white;
   display: inline;
 }
 
 #footer-email-phone-content > p, #footer-email-phone-content > p {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: white;
 }
 
