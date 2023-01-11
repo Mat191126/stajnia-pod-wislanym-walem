@@ -1,9 +1,13 @@
-import React from 'react';
-import {Link} from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
 function MainMenu() {
-    document.addEventListener('DOMContentLoaded', function(event) {
+    const [isOpen, setIsOpen] = useState(false);
+    const handleIsOpen = () => {
+        setIsOpen((current) => !current);
+    };
+    document.addEventListener("DOMContentLoaded", function (event) {
         // Get the navbar
         let navbar = document.getElementById("navbar");
 
@@ -14,14 +18,16 @@ function MainMenu() {
         let navbarOffsetTop = navbar.offsetTop;
 
         // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
+        window.onscroll = function () {
+            myFunction();
+        };
 
         // Add the sticky class to the navbar when you reach its scroll position.
         // Remove "sticky" when you leave the scroll position
         function myFunction() {
             if (window.innerWidth > 845) {
                 if (window.pageYOffset >= navbarOffsetTop) {
-                    navbar.classList.add("sticky")
+                    navbar.classList.add("sticky");
                     navbar.style.marginTop = "0em";
                     logo.style.marginTop = "5.5em";
                     logo.style.borderRadius = "60% 60% 100% 100%";
@@ -52,8 +58,8 @@ function MainMenu() {
                     </Link>
                 </div>
                 <div id="center-menu">
-                    <Link id="logo" to='/'>
-                        <img id='logo-image' src={logo} alt=""/>
+                    <Link id="logo" to="/">
+                        <img id="logo-image" src={logo} alt="" />
                     </Link>
                 </div>
                 <div id="right-side-menu">
@@ -68,50 +74,53 @@ function MainMenu() {
                     </Link>
                 </div>
             </nav>
-            <nav id="hamburger_menu" role="navigation">
-                <div id="menuToggle">
-                    <input type="checkbox" />
-                    <span className="hamburger_part"></span>
-                    <span className="hamburger_part"></span>
-                    <span className="hamburger_part"></span>
+            <nav id="hamburger_menu" role="navigation" onClick={handleIsOpen}>
+                <div id="menuToggle" className={`${isOpen ? "open" : "close"}`}>
+                    <span className='menu-icon'></span>
+                    <span className='menu-icon'></span>
+                    <span className='menu-icon'></span>
 
-                    <ul id="menu">
-                        <li>
-                            <Link to="/">
-                                <span className="navigation-link">Strona główna</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/about-us">
-                                <span className="navigation-link">O nas</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/news">
-                                <span className="navigation-link">Aktualności</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/gallery">
-                                <span className="navigation-link">Galeria</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/prices">
-                                <span className="navigation-link">Cennik</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/regulations">
-                                <span className="navigation-link">Regulamin</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/contact">
-                                <span className="navigation-link">Kontakt</span>
-                            </Link>
-                        </li>
-                    </ul>
+                    {isOpen ? (
+                        <ul id="new-menu">
+                            <li>
+                                <Link to="/">
+                                    <span className="navigation-link">Strona główna</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/about-us">
+                                    <span className="navigation-link">O nas</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/news">
+                                    <span className="navigation-link">Aktualności</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/gallery">
+                                    <span className="navigation-link">Galeria</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/prices">
+                                    <span className="navigation-link">Cennik</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/regulations">
+                                    <span className="navigation-link">Regulamin</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/contact">
+                                    <span className="navigation-link">Kontakt</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    ) : (
+                        <div></div>
+                    )}
                 </div>
             </nav>
         </>
@@ -119,3 +128,4 @@ function MainMenu() {
 }
 
 export default MainMenu;
+
