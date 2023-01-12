@@ -1,17 +1,17 @@
 import React from "react";
 import { Helmet } from 'react-helmet-async';
-import Header from "./shared/Header";
-import Contact from "./contact/Contact";
-import News from "./news/News";
-import SingleNews from "./news/SingleNews";
-import Home from "./home/Home";
-import Prices from "./prices/Prices";
+import Header from "./components/shared/Header";
+import Contact from "./components/contact/Contact";
+import News from "./components/news/News";
+import SingleNews from "./components/news/SingleNews";
+import Home from "./components/home/Home";
+import Prices from "./components/prices/Prices";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollRestoration from "./config/ScrollRestoration";
-import Footer from "./shared/Footer";
-import Gallery from "./gallery/Gallery";
-import AboutUs from "./aboutUs/AboutUs";
-import Regulations from "./regulations/Regulations";
+import Footer from "./components/shared/Footer";
+import Gallery from "./components/gallery/Gallery";
+import AboutUs from "./components/aboutUs/AboutUs"
+import Regulations from "./components/regulations/Regulations";
 
 function App() {
   return (

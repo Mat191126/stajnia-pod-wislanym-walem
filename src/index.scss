@@ -1,12 +1,12 @@
-@import "./styles/variables.scss";
-@import "./styles/global.scss";
-@import "./styles/home.scss";
-@import "./styles/contact.scss";
-@import "./styles/news.scss";
-@import "./styles/gallery.scss";
-@import "./styles/prices.scss";
-@import "./styles/aboutUs.scss";
-@import "./styles/regulations.scss";
+@import "./variables.scss";
+@import "./components/shared/global.scss";
+@import "./components/home/home.scss";
+@import "./components/contact/contact.scss";
+@import "./components/news/news.scss";
+@import "./components/gallery/gallery.scss";
+@import "./components/prices/prices.scss";
+@import "./components/aboutUs/aboutUs.scss";
+@import "./components/regulations/regulations.scss";
 
 @font-face {
     font-family: 'Aka Posse';
