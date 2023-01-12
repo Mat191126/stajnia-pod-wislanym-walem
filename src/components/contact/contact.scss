@@ -75,6 +75,34 @@
     color: white;
 }
 
+#bank-account-number {
+    display: flex;
+}
+
+.copy-button {
+    z-index: 10;
+    margin-left: 0.5rem;
+    padding: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.copy-icon {
+    z-index: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.copy-icon:hover {
+    opacity: 0.6;
+}
+
 #map {
     margin-top: 4vh;
     width: 100%; 

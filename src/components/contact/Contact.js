@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import InstagramIcon from '../../assets/images/icons/inst_small.png';
 import FacebookIcon from '../../assets/images/icons/fb_small.png';
 import YouTubeIcon from '../../assets/images/icons/yt_small.png';
+import CopyIcon from '../../assets/images/icons/copy-icon.png';
 
 
 function Contact() {
@@ -10,6 +11,11 @@ function Contact() {
         const galleryContent = document.getElementById("scroll-to-element");
         galleryContent.scrollIntoView(true);
     });
+
+    function copyToClipboard() {
+        // set account number to clipboard
+        navigator.clipboard.writeText("111144442222555533330000");
+    }
 
     return (
         <>
@@ -29,6 +35,8 @@ function Contact() {
                             <h3 id="email-and-phone-header">Dane kontaktowe</h3>
                             <p>E-mail: <a href="mailto:stajnia@podwislanymwalem.pl">stajnia@podwislanymwalem.pl</a></p>
                             <p>Tel: <a href="tel:+48-665-246-359">665 246 359</a></p>
+                            <p>Numer konta bankowego mBank:</p>
+                            <p id="bank-account-number">111144442222555533330000<button className="copy-button" onClick={copyToClipboard()}><img className="copy-icon" src={CopyIcon}/></button></p>
                         </div>
                         <div id="address-social-media-icons">
                             <h3 id="address-social-media-header">Media Społecznościowe</h3>
@@ -43,7 +51,7 @@ function Contact() {
                         </div>
                     </div>
                     <div id="map-part">
-                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6261.616360813898!2d19.677688436099636!3d49.9714831525975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471660228cb9ad39%3A0x2db209c47be923f8!2sStajnia%20pod%20Wi%C5%9Blanym%20Wa%C5%82em!5e1!3m2!1sen!2spl!4v1642525891942!5m2!1sen!2spl" allowfullscreen="" loading="lazy" title="google map"></iframe>
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6261.616360813898!2d19.677688436099636!3d49.9714831525975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471660228cb9ad39%3A0x2db209c47be923f8!2sStajnia%20pod%20Wi%C5%9Blanym%20Wa%C5%82em!5e1!3m2!1sen!2spl!4v1642525891942!5m2!1sen!2spl" allowFullScreen="" loading="lazy" title="google map"></iframe>
                     </div>
                 </div>
             </div>
