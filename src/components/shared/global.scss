@@ -50,14 +50,14 @@ h1, h2 {
 }
 
 #top-bar-logo-image {
-  width: 11vw;
+  width: 13vw;
   height: auto;
   padding: 0.5rem;
   border-radius: 60% 60% 100% 100%;
   margin-bottom: 3rem;
-  box-shadow: -3px 0px 8px black;
+  // box-shadow: -3px 0px 8px black;
   transition: all 1s ease-in;
-  background-image: url("../../assets/images/section_board.jpg");
+  // background-image: url("../../assets/images/section_board.jpg");
   background-size: 100%;
 }
 
@@ -178,14 +178,16 @@ h1, h2 {
 }
 
 #logo-image {
-  width: 8rem;
+  width: 10rem;
+  //width: 8rem;
   height: auto;
   padding: 0.5rem;
   border-radius: 100% 100% 60% 60%;
-  margin-bottom: 3rem;
-  box-shadow: -3px 0px 8px black;
+  margin-bottom: 2rem;
+  //margin-bottom: 3rem;
+  // box-shadow: -3px 0px 8px black;
   transition: all 1s ease-in;
-  background-image: url("../../assets/images/section_board.jpg");
+  // background-image: url("../../assets/images/section_board.jpg");
   background-size: 100%;
 }
 
