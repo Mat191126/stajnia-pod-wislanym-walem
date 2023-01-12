@@ -26,6 +26,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-between;
+    row-gap: 2rem;
+    column-gap: 0.5rem;
 }
 
 #company-header, #email-and-phone-header, #address-social-media-header {
@@ -108,4 +112,38 @@
     width: 100%; 
     height: 59vh; 
     border: 0; 
+}
+
+@media screen and (max-width: 565px) {
+    #contact-page-header {
+        font-size: 2rem;
+    }
+
+    #company-header, #email-and-phone-header, #address-social-media-header {
+        font-size: 1.5rem;
+    }
+
+    .address-line {
+        font-size: 1rem;
+    }
+
+    #email-phone-content > p > a, #email-phone-content > p > a {
+        font-size: 1rem;
+    }
+    
+    #email-phone-content > p, #email-phone-content > p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #bank-account-number {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #bank-account-number {
+        font-size: 0.7rem !important;
+    }
 }
