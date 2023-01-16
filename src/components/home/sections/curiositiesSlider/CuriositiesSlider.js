@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CuriositiesSliderContent from "./CuriositiesSliderContent";
 import sliderCuriosities from "./sliderCuriosities";
-import './curiositiesSlider.css';
+import './curiositiesSlider.scss';
 
 const len = sliderCuriosities.length - 1;
 

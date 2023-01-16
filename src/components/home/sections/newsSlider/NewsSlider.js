@@ -3,7 +3,7 @@ import NewsSliderContent from "./NewsSliderContent";
 import Dots from "./Dots";
 import Arrows from "./Arrows";
 import sliderNews from "./sliderNews";
-import "./slider.css";
+import "../newsSlider/slider.scss";
 import waitForElementTransition from 'wait-for-element-transition';
 
 function NewsSlider() {

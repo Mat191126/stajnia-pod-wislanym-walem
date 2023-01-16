@@ -46,7 +46,7 @@ function MainMenu() {
     return (
         <>
             <nav id="navbar" role="navigation">
-                <div id="left-side-menu">
+                <div id="left-side-menu" className="menu">
                     <Link to="/about-us">
                         <span className="navigation-link">O nas</span>
                     </Link>
@@ -57,12 +57,12 @@ function MainMenu() {
                         <span className="navigation-link">Galeria</span>
                     </Link>
                 </div>
-                <div id="center-menu">
+                <div id="center-menu" className="menu">
                     <Link id="logo" to="/">
                         <img id="logo-image" src={logo} alt="" />
                     </Link>
                 </div>
-                <div id="right-side-menu">
+                <div id="right-side-menu" className="menu">
                     <Link to="/prices">
                         <span className="navigation-link">Cennik</span>
                     </Link>

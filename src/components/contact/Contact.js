@@ -36,7 +36,7 @@ function Contact() {
                             <p>E-mail: <a href="mailto:stajnia@podwislanymwalem.pl">stajnia@podwislanymwalem.pl</a></p>
                             <p>Tel: <a href="tel:+48-665-246-359">665 246 359</a></p>
                             <p>Numer konta bankowego mBank:</p>
-                            <p id="bank-account-number">50 2490 0005 0000 4530 4783 0561<button className="copy-button" onClick={copyToClipboard()}><img className="copy-icon" src={CopyIcon}/></button></p>
+                            <p id="bank-account-number">50 2490 0005 0000 4530 4783 0561<button className="copy-button" onClick={copyToClipboard()}><img className="copy-icon" src={CopyIcon} alt="copy-icon"/></button></p>
                         </div>
                         <div id="address-social-media-icons">
                             <h3 id="address-social-media-header">Media Społecznościowe</h3>

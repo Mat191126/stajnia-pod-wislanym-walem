@@ -1,25 +1,66 @@
+@import "../shared/mixins.scss";
+
 // /*......................
 // 6.1 MAIN PRICES SETTINGS
 // .......................*/
 
 #prices-content {
-	background-image: url("../../assets/images/paper.png");
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	color: rgb(33, 32, 32);
+	@include backgroundImg("../../assets/images/paper.png");
+	color: $dark-color;
 
-	h2 {
-		display: flex;
-		justify-content: center;
+	h2,
+	#prices-header {
 		padding-top: 4vh;
 		padding-bottom: 4vh;
 	}
 
+	h2 {
+		@include flexJustify(center);
+	}
+
 	#prices-header {
-		display: flex;
-		justify-content: center;
-		padding-top: 4vh;
-		padding-bottom: 4vh;
+		@include flexJustify(center);
+	}
+
+	table {
+		display: grid;
+		table-layout: fixed;
+		border-collapse: collapse;
+		margin: auto;
+		padding: 0;
+		width: 80%;
+
+		thead,
+		tbody,
+		tr-head,
+		.tr-body-1,
+		.tr-body-2 {
+			width: 100%;
+		}
+
+		.tr-head {
+			@include flexJustify(space-around);
+			border-bottom: 1px solid $dark-color;
+		}
+
+		tbody,
+		.tr-body-1,
+		.tr-body-2 {
+			display: grid;
+		}
+
+		tbody {
+			grid-template-rows: repeat(6, 1fr);
+			gap: 1em;
+		}
+
+		.tr-body-1 {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.tr-body-2 {
+			grid-template-columns: repeat(4, 1fr);
+		}
 	}
 
 	#additional-info {
@@ -28,52 +69,10 @@
 		font-size: 1.3vh;
 
 		p {
-			color: rgb(194, 2, 2);
+			color: $red-color;
 			font-weight: 600;
 			font-size: 2vh;
 		}
-	}
-}
-
-table {
-	border-collapse: collapse;
-	margin: auto;
-	padding: 0;
-	width: 80%;
-	table-layout: fixed;
-	display: grid;
-
-	thead,
-	tbody,
-	tr-head,
-	.tr-body-1,
-	.tr-body-2 {
-		width: 100%;
-	}
-
-	.tr-head {
-		display: flex;
-		justify-content: space-around;
-		border-bottom: 1px solid rgb(29, 28, 28);
-	}
-
-	tbody,
-	.tr-body-1,
-	.tr-body-2 {
-		display: grid;
-	}
-
-	tbody {
-		grid-template-rows: repeat(6, 1fr);
-		gap: 1em;
-	}
-
-	.tr-body-1 {
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	.tr-body-2 {
-		grid-template-columns: repeat(4, 1fr);
 	}
 }
 
@@ -94,8 +93,9 @@ table th {
 		border: 0;
 		font-size: 1.3vh;
 
-		.tr-body-1, .tr-body-2 {
-			border-bottom: 1px solid rgb(34, 33, 33);
+		.tr-body-1,
+		.tr-body-2 {
+			border-bottom: 1px solid $dark-color;
 		}
 	}
 

@@ -1,20 +1,17 @@
+@import '../../../shared/variables.scss';
+@import '../../../shared/mixins.scss';
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
-:root {
-  --heights: 50vh;
-  --widths: 80vw;
-  --main-theme-color: white;
-  --arrows-and-dots-hover-color: rgb(44, 44, 44);
-  --arrows-and-dots-color: rgb(153, 153, 153);
-  --arrows-and-dots-background-color: rgba(201, 201, 201, 0.349);
-}
+$heights: 50vh;
+$widths: 80vw;
 
 .slider-container {
-  height: var(--heights);
-  width: var(--widths);
+  height: $heights;
+  width: $widths;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -23,10 +20,8 @@
 }
 
 .active {
+  @include flexJustifyDirection(center, row);
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   padding-left: 10vw;
   padding-right: 10vw;
   gap: 1em;
@@ -37,18 +32,13 @@
 }
 
 .left-panel {
+  @include flexAlignDirection(left, flex-start, column);
   width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: flex-start;
 }
 
 .right-panel {
+  @include flexAlign(center, flex-start);
   width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .slide-title,
@@ -56,7 +46,7 @@
 .slide-text {
   width: fit-content;
   height: fit-content;
-  color: var(--main-theme-color);
+  color: $white-color;
   text-align: start;
 }
 
@@ -75,7 +65,7 @@
 
 .read-more-visible {
   display: block;
-  color: var(--main-theme-color);
+  color: $white-color;
   text-decoration: none;
   font-weight: bold;
   z-index: 100;
@@ -99,14 +89,13 @@
   font-size: 40px;
   font-weight: bold;
   border-radius: 10%;
-  color: var(--arrows-and-dots-color);
-}
+  color: $arrows-and-dots-color;
 
-.prev:hover,
-.next:hover {
-  color: var(--arrows-and-dots-hover-color);
-  background-color: var(--arrows-and-dots-background-color);
-  transition: all 0.5s ease-in;
+  &:hover {
+    color: $arrows-and-dots-hover-color;
+    background-color: $arrows-and-dots-background-color;
+    transition: all 0.5s ease-in;
+  }
 }
 
 .next {
@@ -114,13 +103,12 @@
 }
 
 .all-dots {
+  @include flexJustify(center);
   width: 100%;
   height: fit-content;
   position: absolute;
   top: 90%;
   right: 20%;
-  display: flex;
-  justify-content: center;
   z-index: 200;
 }
 
@@ -129,14 +117,14 @@
   height: 1.5rem;
   width: 1.5rem;
   margin: 0px 3px;
-  background-color: var(--arrows-and-dots-color);
+  background-color: $arrows-and-dots-color;
   border-radius: 50%;
   display: inline-block;
 }
 
 .active-dot,
 .dot:hover {
-  background-color: var(--arrows-and-dots-hover-color);
+  background-color: $arrows-and-dots-hover-color;
 }
 
 @media screen and (max-width: 1200px) {
@@ -145,13 +133,12 @@
   }
 
   .all-dots {
+    @include flexJustify(center);
     width: 100%;
     height: fit-content;
     position: absolute;
     top: 90%;
     right: 0%;
-    display: flex;
-    justify-content: center;
     z-index: 200;
   }
 }
@@ -161,7 +148,7 @@
     height: 60%;
     width: 100%;
     position: relative;
-    margin: var(--mobile-section-margin);
+    margin: $mobile-section-margin;
     overflow: hidden;
   }
 

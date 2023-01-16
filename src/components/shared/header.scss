@@ -1,0 +1,299 @@
+@import "../shared/mixins.scss";
+
+#header_and_navbar {
+	@include flexDirection(column);
+	position: relative;
+	z-index: 10;
+	font-family: $headers-font-family;
+	width: 100%;
+
+	#top-bar {
+		background-image: url("../../assets/images/board.png");
+		height: 2.5rem;
+		width: 100%;
+		z-index: 15;
+		box-shadow: -1px 5px 5px $black-color;
+		position: relative;
+	}
+
+	#top-bar-logo-container {
+		position: absolute;
+		top: 0;
+		left: $section-margin;
+		z-index: 200;
+
+		#top-bar-logo {
+			width: 11vw;
+			height: auto;
+			z-index: 10;
+
+			#top-bar-logo-image {
+				width: 13vw;
+				height: auto;
+				padding: 0.5rem;
+				border-radius: 60% 60% 100% 100%;
+				margin-bottom: 3rem;
+				// box-shadow: -3px 0px 8px black;
+				transition: all 1s ease-in;
+				// background-image: url("../../assets/images/section_board.jpg");
+				background-size: 100%;
+			}
+		}
+	}
+
+	#top-bar-social-media-icons {
+		@include flexAlignDirection(space-around, center, row);
+		position: absolute;
+		width: 13vw;
+		height: 10vh;
+		top: 0;
+		right: $section-margin;
+		z-index: 5;
+
+		#top-bar-instagram-icon,
+		#top-bar-facebook-icon,
+		#top-bar-youtube-icon {
+			width: 3rem;
+			height: auto;
+			margin-top: -3vh;
+			transition: margin-top 0.3s ease-in-out;
+
+			&:hover {
+				margin-top: 2vh;
+			}
+		}
+	}
+}
+
+#navbar {
+	@include flexAlignDirection(space-between, center, row);
+	margin-top: -3.5rem;
+	z-index: 1000;
+	height: 3.7rem;
+	font-weight: bold;
+	font-size: 1.4rem;
+	background-image: url("../../assets/images/board.png");
+	box-shadow: -1px -3px 5px $black-color, -1px 10px 5px $black-color;
+
+	#left-side-menu {
+		@include flexJustifyDirection(space-around, row);
+		width: 45%;
+	}
+
+	#center-menu {
+		@include flexJustifyDirection(space-around, row);
+		width: 10%;
+
+		#logo {
+			width: 7rem;
+			height: auto;
+			z-index: 10;
+
+			#logo-image {
+				width: 10rem;
+				//width: 8rem;
+				height: auto;
+				padding: 0.5rem;
+				border-radius: 100% 100% 60% 60%;
+				margin-bottom: 2rem;
+				//margin-bottom: 3rem;
+				// box-shadow: -3px 0px 8px black;
+				transition: all 1s ease-in;
+				// background-image: url("../../assets/images/section_board.jpg");
+				background-size: 100%;
+			}
+		}
+	}
+
+	#right-side-menu {
+		@include flexJustifyDirection(space-around, row);
+		width: 45%;
+	}
+
+	.menu {
+		.navigation-link {
+			float: left;
+			display: block;
+			color: $white-color;
+			text-align: center;
+			padding: 0.5rem;
+			text-decoration: none;
+
+			&:hover {
+				color: $beige-color;
+			}
+		}
+	}
+}
+
+#hamburger_menu {
+	display: none;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	@include flexAlignDirection(flex-start, center, row);
+	position: fixed;
+	z-index: 2;
+	margin-top: 3rem;
+	height: 5rem;
+	width: 100%;
+	background-image: url("../../assets/images/board.png");
+}
+
+@media screen and (max-width: 1024px) {
+	#header_and_navbar {
+		@include flexDirection(column);
+		width: 100%;
+		height: fit-content;
+
+		#top-bar {
+			background-image: url("../../assets/images/board.png");
+			height: 7vh;
+			width: 100%;
+			z-index: 1;
+			box-shadow: -1px 5px 5px $black-color;
+		}
+
+		#top-bar-logo-container {
+			position: absolute;
+			top: 0;
+			left: $mobile-section-margin;
+			z-index: 200;
+
+			#top-bar-logo {
+				width: 45vw;
+
+				#top-bar-logo-image {
+					width: 35vw;
+				}
+			}
+		}
+
+		#top-bar-social-media-icons {
+			display: none;
+		}
+	}
+
+	#navbar {
+		display: none;
+	}
+
+	#hamburger_menu {
+		display: block;
+		z-index: 250;
+
+		#menuToggle {
+			height: 6vw;
+			width: 7vh;
+			position: absolute;
+			top: 1.5vh;
+			right: 1vh;
+			z-index: 1;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transition: 0.55s ease-in-out;
+			-moz-transition: 0.55s ease-in-out;
+			-o-transition: 0.55s ease-in-out;
+			transition: 0.55s ease-in-out;
+			cursor: pointer;
+
+			ul {
+				@include flexJustifyDirection(flex-start, column);
+				transform: none;
+			}
+
+			a {
+				text-decoration: none;
+                
+				.navigation-link {
+					color: $white-color;
+					font-weight: bold;
+					font-size: 4vw;
+
+					&:hover {
+						color: $beige-color;
+					}
+				}
+			}
+
+			.menu-icon {
+				display: block;
+				position: absolute;
+				height: 0.5vh;
+				width: 7vh;
+				background: $white-color;
+				border-radius: 9px;
+				opacity: 1;
+				-webkit-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+				-webkit-transition: 0.55s ease-in-out;
+				-moz-transition: 0.55s ease-in-out;
+				-o-transition: 0.55s ease-in-out;
+				transition: 0.55s ease-in-out;
+
+				&:nth-child(1) {
+					top: 0;
+				}
+
+				&:nth-child(2) {
+					top: 2vh;
+				}
+
+				&:nth-child(3) {
+					top: 4vh;
+				}
+			}
+
+			#new-menu {
+				position: relative;
+				width: 50vw;
+				height: fit-content;
+				right: 30vw;
+				background: url("../../assets/images/board.png") repeat-y;
+				list-style-type: none;
+				z-index: -1;
+				padding: 1em;
+				/* to stop flickering of text in safari */
+
+				li:first-of-type {
+					margin-top: 9vh;
+				}
+
+				li {
+					padding: 1vh 0;
+					font-size: 3vh;
+				}
+			}
+		}
+
+		#menuToggle.open {
+			.menu-icon {
+				&:nth-child(1) {
+					top: 18px;
+					-webkit-transform: rotate(135deg);
+					-moz-transform: rotate(135deg);
+					-o-transform: rotate(135deg);
+					transform: rotate(135deg);
+				}
+
+				&:nth-child(2) {
+					display: none;
+				}
+
+				&:nth-child(3) {
+					top: 18px;
+					-webkit-transform: rotate(-135deg);
+					-moz-transform: rotate(-135deg);
+					-o-transform: rotate(-135deg);
+					transform: rotate(-135deg);
+				}
+			}
+		}
+	}
+}
+

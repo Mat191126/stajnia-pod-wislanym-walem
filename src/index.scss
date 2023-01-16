@@ -1,5 +1,6 @@
-@import "./variables.scss";
+@import "./components/shared/variables.scss";
 @import "./components/shared/global.scss";
+@import "./components/shared/tooltip.scss";
 @import "./components/home/home.scss";
 @import "./components/contact/contact.scss";
 @import "./components/news/news.scss";
@@ -7,14 +8,16 @@
 @import "./components/prices/prices.scss";
 @import "./components/aboutUs/aboutUs.scss";
 @import "./components/regulations/regulations.scss";
+@import "./components/shared/header.scss";
+@import "./components/shared/footer.scss";
 
 @font-face {
-    font-family: 'Aka Posse';
-    src: local('Aka Posse'), url(./fonts/akaPosse.ttf) format('truetype');
+	font-family: "Aka Posse";
+	src: local("Aka Posse"), url(./fonts/akaPosse.ttf) format("truetype");
 }
 @font-face {
-    font-family: 'Pirata One';
-    src: local('Pirata One'), url(./fonts/PirataOne-Regular.ttf) format('truetype');
+	font-family: "Pirata One";
+	src: local("Pirata One"), url(./fonts/PirataOne-Regular.ttf) format("truetype");
 }
 
 /*--------------------------------------------------
