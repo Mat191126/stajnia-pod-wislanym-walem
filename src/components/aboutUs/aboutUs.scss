@@ -8,49 +8,52 @@
 	margin-bottom: 4rem;
 }
 
+#section-menu-mobile-buttons {
+	display: none;
+}
+
 #section-menu-buttons {
 	@include flexJustifyDirection(flex-start, column);
 	position: fixed;
 	top: 20vh;
 	left: 0;
 	z-index: 0;
-	width: $section-margin;
+	width: 10em;
 	height: fit-content;
 
 	#about-us-button {
 		@include backgroundImg("../../assets/images/about_us.png");
-		margin-bottom: 4rem;
 	}
 
 	#instructors-button {
 		@include backgroundImg("../../assets/images/instructors.png");
-		margin-bottom: 4rem;
 	}
 
 	#horses-button {
 		@include backgroundImg("../../assets/images/horses.png");
-		margin-bottom: 4rem;
 	}
 
 	#animals-button {
 		@include backgroundImg("../../assets/images/animals.png");
+	}
+
+	#about-us-button, #instructors-button, #horses-button, #animals-button {
 		margin-bottom: 4rem;
 	}
 
 	.link-to-section {
 		@include flexAlign(flex-start, center);
 		font-size: 0.8vw;
-		width: calc($section-margin - 1vw);
-		height: 4vh;
+		width: 11rem;
+		height: 2.5rem;
 		margin: 0em 5vw 5vw 0;
-		margin-left: -6vw;
+		margin-left: -8rem;
 		padding-left: 0.5vw;
 		color: $white-color;
 		text-decoration: none;
 		transition: all 0.4s ease-in-out;
 
 		&:hover {
-			width: calc($section-margin - 1.5vw);
 			margin-left: 0;
 		}
 	}
@@ -208,6 +211,103 @@
 
 			.animal-description {
 				font-size: 1.5em;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#section-menu-buttons, #scroll-to-element, #regular-content {
+		display: none;
+	}
+
+	#section-menu-mobile-buttons {
+		@include flexJustifyDirection(space-around, column);
+		align-content: stretch;
+		width: 100%;
+	}
+
+	#about-us-section-content {
+	
+		#about-us-section-description {
+			font-size: 1rem;
+		}
+	
+		#about-us-section-image {
+			height: 10em;
+		}
+	}
+
+	#our-instructors-section-content {
+		.our-instructors-single-instructor {	
+			@include flexDirection(column);
+			
+			.our-instructors-instructor-image-part {	
+				.our-instructors-instructor-image {
+					width: 10em;
+					height: auto;
+				}
+			}
+	
+			.our-instructors-instructor-description-part {
+	
+				.our-instructors-instructor-data {
+					font-size: 1.5em;
+				}
+	
+				.our-instructors-instructor-description {
+					font-size: 1em;
+				}
+			}
+		}
+	}
+
+	#our-horses-section-content {
+	
+		.single-horse {
+			@include flexDirection(column);
+			.horse-image-part {	
+				.horse-image {
+					width: 10em;
+					height: auto;
+				}
+			}
+	
+			.horse-description-part {	
+				.horse-data {
+					font-size: 1.5em;
+				}
+	
+				.horse-description {
+					font-size: 1em;
+				}
+			}
+		}
+	}
+
+	#other-animals-section-content {
+		.single-animal {
+			@include flexDirection(column);
+			padding: 1em;
+			gap: 1em;
+	
+			.animal-image-part {
+				@include flexAlign(center, center);
+	
+				.animal-image {
+					width: 10em;
+					height: auto;
+				}
+			}
+	
+			.animal-description-part {	
+				.animal-data {
+					font-size: 1.5em;
+				}
+	
+				.animal-description {
+					font-size: 1em;
+				}
 			}
 		}
 	}
