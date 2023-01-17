@@ -4,11 +4,6 @@
 2.1 MAIN HOME SETTINGS
 ....................*/
 
-:root {
-	--section-top-shadow: -1px 7px 5px $black-color;
-	--section-bottom-shadow: -1px -7px 5px $black-color;
-}
-
 #content {
 	@include flexDirection(column);
 	align-items: stretch;
@@ -88,7 +83,7 @@
 	background-image: url("../../assets/images/footer_board.jpg");
 	background-size: cover;
 	position: relative;
-	box-shadow: var(--section-top-shadow), var(--section-bottom-shadow);
+	box-shadow: $section-top-shadow, $section-bottom-shadow;
 
 	#link-to-news {
 		position: absolute;
@@ -130,7 +125,7 @@
 	margin-bottom: 4rem;
 	padding: 2.5rem;
 	background-image: url("../../assets/images/footer_board.jpg");
-	box-shadow: var(--section-top-shadow), var(--section-bottom-shadow);
+	box-shadow: $section-top-shadow, $section-bottom-shadow;
 
 	#owner-description-part {
 		@include flexAlignDirection(flex-start, flex-start, column);
@@ -340,7 +335,7 @@
 	margin-bottom: 4rem;
 	padding: 1rem;
 	background-image: url("../../assets/images/footer_board.jpg");
-	box-shadow: var(--section-top-shadow), var(--section-bottom-shadow);
+	box-shadow: $section-top-shadow, $section-bottom-shadow;
 	filter: brightness(60%);
 
 	#banner {
