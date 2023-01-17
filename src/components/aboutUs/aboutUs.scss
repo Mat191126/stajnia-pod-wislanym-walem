@@ -12,6 +12,10 @@
 	display: none;
 }
 
+#instructors-section-page-header, #horses-section-page-header, #other-animals-section-page-header {
+	display: none;
+}
+
 #section-menu-buttons {
 	@include flexJustifyDirection(flex-start, column);
 	position: fixed;
@@ -56,10 +60,6 @@
 		&:hover {
 			margin-left: 0;
 		}
-	}
-
-	#instructors-section-page-header, #horses-section-page-header, #other-animals-section-page-header {
-		display: none;
 	}
 }
 
