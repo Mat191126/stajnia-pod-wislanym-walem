@@ -7,6 +7,7 @@ function OurHorsesSection() {
     return (
         <>
             <div id="our-horses-section-content">
+                <h1 id="horses-section-page-header">Konie</h1>
                 <div className="single-horse">
                     <div className="horse-image-part" >
                         <img className="horse-image" src={ExampleHorse} alt="" />

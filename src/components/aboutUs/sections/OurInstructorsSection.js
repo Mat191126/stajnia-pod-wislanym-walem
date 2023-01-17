@@ -7,6 +7,7 @@ function OurInstructorsSection() {
     return (
         <>
             <div id="our-instructors-section-content">
+                <h1 id="instructors-section-page-header">Instruktorzy</h1>
                 <div className="our-instructors-single-instructor">
                     <div className="our-instructors-instructor-image-part" >
                         <img className="our-instructors-instructor-image" src={ExampleImage} alt="" />

@@ -7,6 +7,7 @@ function OtherAnimalsSection() {
     return (
         <>
             <div id="other-animals-section-content">
+                <h1 id="other-animals-section-page-header">Inne Zwierzęta</h1>
                 <div className="single-animal">
                     <div className="animal-image-part" >
                         <img className="animal-image" src={ExampleAnimal} alt="" />

@@ -57,6 +57,10 @@
 			margin-left: 0;
 		}
 	}
+
+	#instructors-section-page-header, #horses-section-page-header, #other-animals-section-page-header {
+		display: none;
+	}
 }
 
 /*..................
@@ -221,30 +225,46 @@
 		display: none;
 	}
 
+	#instructors-section-page-header, #horses-section-page-header, #other-animals-section-page-header {
+		display: inline;
+		text-align: center
+	}
+
 	#section-menu-mobile-buttons {
 		@include flexJustifyDirection(space-around, column);
 		align-content: stretch;
 		width: 100%;
 	}
 
+	#about-us-section-page-header {
+		text-align: center;
+	}
+
 	#about-us-section-content {
+		margin-top: 0;
+		margin-left: 1vw;
+		margin-right: 1vw;
 	
 		#about-us-section-description {
 			font-size: 1rem;
 		}
 	
 		#about-us-section-image {
-			height: 10em;
+			height: 40vw;
 		}
 	}
 
 	#our-instructors-section-content {
+		margin-top: 0;
+		margin-left: 1vw;
+		margin-right: 1vw;
+
 		.our-instructors-single-instructor {	
 			@include flexDirection(column);
 			
 			.our-instructors-instructor-image-part {	
 				.our-instructors-instructor-image {
-					width: 10em;
+					width: 50vw;
 					height: auto;
 				}
 			}
@@ -253,22 +273,28 @@
 	
 				.our-instructors-instructor-data {
 					font-size: 1.5em;
+					text-align: center;
 				}
 	
 				.our-instructors-instructor-description {
 					font-size: 1em;
+					text-align: justify;
 				}
 			}
 		}
 	}
 
 	#our-horses-section-content {
+		margin-top: 0;
+		margin-left: 1vw;
+		margin-right: 1vw;
 	
 		.single-horse {
 			@include flexDirection(column);
+
 			.horse-image-part {	
 				.horse-image {
-					width: 10em;
+					width: 50vw;
 					height: auto;
 				}
 			}
@@ -276,16 +302,22 @@
 			.horse-description-part {	
 				.horse-data {
 					font-size: 1.5em;
+					text-align: center;
 				}
 	
 				.horse-description {
 					font-size: 1em;
+					text-align: justify;
 				}
 			}
 		}
 	}
 
 	#other-animals-section-content {
+		margin-top: 0;
+		margin-left: 1vw;
+		margin-right: 1vw;
+
 		.single-animal {
 			@include flexDirection(column);
 			padding: 1em;
@@ -295,7 +327,7 @@
 				@include flexAlign(center, center);
 	
 				.animal-image {
-					width: 10em;
+					width: 50vw;
 					height: auto;
 				}
 			}
@@ -303,13 +335,33 @@
 			.animal-description-part {	
 				.animal-data {
 					font-size: 1.5em;
+					text-align: center;
 				}
 	
 				.animal-description {
 					font-size: 1em;
+					text-align: justify;
 				}
 			}
 		}
+	}
+
+	// Tab menu settings
+
+	.MuiTabs-root.css-tkn350-MuiTabs-root {
+		background-image: url("../../assets/images/board.png");
+
+		@media screen and (max-width: 485px) {
+			.css-1vw5i9y-MuiButtonBase-root-MuiTab-root {
+				width: 10vw;
+				font-size: 0.5em;
+				padding: 1em;
+			}
+		}
+	}
+	
+	.css-11yukd5-MuiTabs-indicator {
+		background-color: $white-color;
 	}
 }
 
