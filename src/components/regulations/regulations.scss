@@ -7,9 +7,15 @@
 #background-image-container {
 	@include backgroundImg("../../assets/images/paper.png");
 	margin-top: 2rem;
-	margin-left: calc($section-margin - 4rem);
-	margin-right: calc($section-margin - 4rem);
+	margin-left: calc($section-margin - 5em);
+	margin-right: calc($section-margin - 5em);
     color: $black-color;
+
+	@media screen and (max-width: 1024px) {
+		margin-top: 0.5em;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+	}
 
 	#regulation-header-part {
 		@include flexJustify(center);
@@ -18,6 +24,10 @@
 			font-size: 3rem;
 			margin-top: 2rem;
 			margin-bottom: 2rem;
+
+			@media screen and (max-width: 1024px) {
+				margin-top: 4rem;
+			}
 		}
 	}
 
@@ -54,6 +64,26 @@
 			font-size: 0.9rem;
 			margin-top: 2rem;
 			margin-bottom: 2rem;
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		#regulations-content {
+			.single-regulation {
+				font-size: 1rem;
+			}
+
+			.regulation-star {
+				margin-left: 40%;
+			}
+	
+			.single-forbidden-info {
+				font-size: 0.7rem;
+			}
+	
+			#regulations-actualization-info {
+				font-size: 0.5rem;
+			}
 		}
 	}
 }
