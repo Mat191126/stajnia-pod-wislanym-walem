@@ -127,9 +127,6 @@
 		}
 	
 		#contact-part {
-			display: flex;
-			flex-direction: column;
-
 			#address-content {
 				address {
 					.address-line {
@@ -202,8 +199,12 @@
 }
 
 @media screen and (max-width: 330px) {
-	#bank-account-number {
-		font-size: 0.7rem !important;
+	#contact-content {
+		#contact-part {
+			#bank-account-number {
+				font-size: 0.6rem !important;
+			}
+		}
 	}
 }
 
