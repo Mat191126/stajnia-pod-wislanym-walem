@@ -9,7 +9,7 @@ function Contact() {
 
     useEffect(() => {
         const galleryContent = document.getElementById("scroll-to-element");
-        galleryContent.scrollIntoView(true);
+        galleryContent.scrollIntoView({ behavior: 'smooth' });
     });
 
     function copyToClipboard() {

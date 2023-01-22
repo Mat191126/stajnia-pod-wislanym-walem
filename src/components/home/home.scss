@@ -253,6 +253,14 @@
 				}
 			}
 
+			#link-to-instructors {
+				position: absolute;
+				cursor: pointer;
+				width: 17vw;
+				height: 100%;
+				z-index: 10;
+			}
+
 			.instructor-decor {
 				position: absolute;
 				width: 95%;

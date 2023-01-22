@@ -7,6 +7,7 @@
 #prices-content {
 	@include backgroundImg("../../assets/images/paper.png");
 	color: $dark-color;
+	margin-top: 2em;
 
 	h2,
 	#prices-header {

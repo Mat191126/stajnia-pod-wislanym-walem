@@ -56,7 +56,7 @@ function AboutUs() {
 
     useEffect(() => {
         const galleryContent = document.getElementById("scroll-to-element");
-        galleryContent.scrollIntoView(true);
+        galleryContent.scrollIntoView({ behavior: 'smooth' });
     });
     
     return (
@@ -82,7 +82,7 @@ function AboutUs() {
                                     aria-label="full width tabs example"
                                     scrollButtons={true} allowScrollButtonsMobile
                                     centered
-                                    wrapped
+                                    wrapped="true"
                                 >
                                     <Tab label="O nas" {...a11yProps(0)} />
                                     <Tab label="Instruktorzy" {...a11yProps(1)} />

@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 function Prices() {
 	useEffect(() => {
 		const galleryContent = document.getElementById("scroll-to-element");
-		galleryContent.scrollIntoView(true);
+		galleryContent.scrollIntoView({ behavior: 'smooth' });
 	});
 
 	return (

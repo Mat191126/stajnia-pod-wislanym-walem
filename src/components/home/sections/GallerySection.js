@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Image1 from '../../../assets/images/galleryImages/horse_1.jpg';
 import Image2 from '../../../assets/images/galleryImages/horse_2.jpg';
 import Image3 from '../../../assets/images/galleryImages/group_picture_vertical.jpg';
 import Image4 from '../../../assets/images/galleryImages/group_picture.jpg';
 import Image5 from '../../../assets/images/galleryImages/girl_on_horse.jpg';
 import Image6 from '../../../assets/images/galleryImages/horse_3.jpg';
-import { Link } from 'react-router-dom';
 
 
 function GallerySection() {

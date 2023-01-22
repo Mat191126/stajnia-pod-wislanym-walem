@@ -1,7 +1,13 @@
 import React from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import InstructorImage1 from "../../../assets/images/owner.jpg";
 
 function InstructorsSection() {
+
+    const history = useHistory();
+    const navigateToInstructors = () => {
+        history.push('/about-us');
+    }
 
 
     return (
@@ -9,7 +15,7 @@ function InstructorsSection() {
             <div id="instructor-section">
                 <h2 id="instructors-section-title">Nasi Instruktorzy</h2>
                 <div id="all-instructors">
-                    <div className="instructor">
+                    <div className="instructor" onClick={navigateToInstructors}>
                         <div className="instructor-decor"/>
                         <div className="instructor-photo">
                             <img className="instructor-image" src={InstructorImage1} alt=""/>
@@ -19,7 +25,7 @@ function InstructorsSection() {
                             <h3 className="instructor-role">Instruktor jazdy konnej</h3>
                         </div>
                     </div>
-                    <div className="instructor">
+                    <div className="instructor" onClick={navigateToInstructors}>
                         <div className="instructor-decor"/>
                         <div className="instructor-photo">
                             <img className="instructor-image" src={InstructorImage1} alt=""/>
@@ -29,7 +35,7 @@ function InstructorsSection() {
                             <h3 className="instructor-role">Instruktor jazdy konnej</h3>
                         </div>
                     </div>
-                    <div className="instructor">
+                    <div className="instructor" onClick={navigateToInstructors}>
                         <div className="instructor-decor"/>
                         <div className="instructor-photo">
                             <img className="instructor-image" src={InstructorImage1} alt=""/>

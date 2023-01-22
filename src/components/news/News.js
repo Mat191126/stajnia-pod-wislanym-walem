@@ -7,7 +7,7 @@ function News() {
 
     useEffect(() => {
         const newsContent = document.getElementById("scroll-to-element");
-        newsContent.scrollIntoView(true);
+        newsContent.scrollIntoView({ behavior: 'smooth' });
     });
 
     function saveNewsToLocalStorage(singleNews) {

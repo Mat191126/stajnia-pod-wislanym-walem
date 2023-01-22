@@ -5,7 +5,7 @@ function Regulations() {
 
     useEffect(() => {
         const galleryContent = document.getElementById("scroll-to-element");
-        galleryContent.scrollIntoView(true);
+        galleryContent.scrollIntoView({ behavior: 'smooth' });
     });
     
     return (
