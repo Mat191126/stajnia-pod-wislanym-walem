@@ -5,6 +5,7 @@ import Image3 from '../../../assets/images/galleryImages/group_picture_vertical.
 import Image4 from '../../../assets/images/galleryImages/group_picture.jpg';
 import Image5 from '../../../assets/images/galleryImages/girl_on_horse.jpg';
 import Image6 from '../../../assets/images/galleryImages/horse_3.jpg';
+import { Link } from 'react-router-dom';
 
 
 function GallerySection() {
@@ -14,7 +15,7 @@ function GallerySection() {
         <>
             <div id="gallery_section">
                 <div className="gallery">
-                    <a id='link-to-gallery' href='/gallery'> </a>
+                    <Link id='link-to-gallery' to='/gallery'> </Link>
                     <figure className="gallery-item gallery-item-1">
                         <img src={Image1} alt="" className="gallery-img"/>
                     </figure>
