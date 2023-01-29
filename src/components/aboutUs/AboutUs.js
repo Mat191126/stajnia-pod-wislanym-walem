@@ -74,7 +74,7 @@ function AboutUs() {
                         <Box>
                             <AppBar position="static"
                             sx={{
-                                backgroundColor: "#6d6e33"
+                                backgroundColor: "#19371c"
                             }}>
                                 <Tabs
                                     value={value}
@@ -88,7 +88,7 @@ function AboutUs() {
                                     wrapped="true"
                                     TabIndicatorProps={{
                                         style: {
-                                          backgroundColor: "#D97D54"
+                                          backgroundColor: "#FFFFFF"
                                         }
                                       }}
                                 >
