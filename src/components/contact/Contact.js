@@ -12,11 +12,6 @@ function Contact() {
         galleryContent.scrollIntoView({ behavior: 'smooth' });
     });
 
-    function copyToClipboard() {
-        // set account number to clipboard
-        navigator.clipboard.writeText("50249000050000453047830561");
-    }
-
     return (
         <>
             <p id="scroll-to-element"></p>

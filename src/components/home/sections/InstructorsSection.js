@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import InstructorImage1 from "../../../assets/images/owner.jpg";
 
 function InstructorsSection() {
