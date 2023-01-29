@@ -2,6 +2,8 @@ import React from 'react';
 import InstagramIcon from '../../assets/images/icons/inst_small.png';
 import FacebookIcon from '../../assets/images/icons/fb_small.png';
 import YouTubeIcon from '../../assets/images/icons/yt_small.png';
+import CopyButton from '../shared/CopyButton';
+
 
 function Footer() {
 
@@ -22,6 +24,10 @@ function Footer() {
                             <h3 id="footer-email-and-phone-header">Dane kontaktowe</h3>
                             <p>E-mail: <a href="mailto:stajnia@podwislanymwalem.pl">stajnia@podwislanymwalem.pl</a></p>
                             <p>Tel: <a href="tel:+48-665-246-359">665 246 359</a></p>
+                            <p>Numer konta bankowego mBank:</p>
+                            <p id="bank-account-number">50 2490 0005 0000 4530 4783 0561
+                                <CopyButton/>
+                            </p>
                         </div>
                         <div id="footer-address-social-media-icons">
                             <h3 id="footer-address-social-media-header">Media Społecznościowe</h3>

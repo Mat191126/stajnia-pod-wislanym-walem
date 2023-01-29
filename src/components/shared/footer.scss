@@ -81,6 +81,31 @@
 			display: inline;
 		}
 	}
+
+	#bank-account-number {
+		display: flex;
+
+		.copy-button {
+			@include flexAlign(center, center);
+			z-index: 10;
+			margin-left: 0.5rem;
+			padding: 0;
+			width: 1.5rem;
+			border: none;
+			background: transparent;
+			cursor: pointer;
+
+			.copy-icon {
+				z-index: 0;
+				height: 1.5rem;
+				width: 1.5rem;
+
+				&:hover {
+					opacity: 0.6;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 845px) {
