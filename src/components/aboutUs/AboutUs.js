@@ -86,10 +86,11 @@ function AboutUs() {
                                     scrollButtons={true} allowScrollButtonsMobile
                                     centered
                                     wrapped="true"
-
-                                    sx={{
-                                        "& .css-11yukd5-MuiTabs-indicator": {backgroundColor: 'white'}
-                                    }}
+                                    TabIndicatorProps={{
+                                        style: {
+                                          backgroundColor: "#D97D54"
+                                        }
+                                      }}
                                 >
                                     <Tab label="O nas" {...a11yProps(0)} />
                                     <Tab label="Instruktorzy" {...a11yProps(1)} />
