@@ -72,7 +72,10 @@ function AboutUs() {
                 <div id="section-menu-mobile-buttons">
                     <StyledEngineProvider injectFirst>
                         <Box>
-                            <AppBar position="static">
+                            <AppBar position="static"
+                            sx={{
+                                backgroundColor: "#19371c"
+                            }}>
                                 <Tabs
                                     value={value}
                                     onChange={handleChange}
@@ -83,6 +86,11 @@ function AboutUs() {
                                     scrollButtons={true} allowScrollButtonsMobile
                                     centered
                                     wrapped="true"
+                                    TabIndicatorProps={{
+                                        style: {
+                                          backgroundColor: "#FFFFFF"
+                                        }
+                                      }}
                                 >
                                     <Tab label="O nas" {...a11yProps(0)} />
                                     <Tab label="Instruktorzy" {...a11yProps(1)} />
