@@ -68,7 +68,11 @@ $widths: 80vw;
   color: $white-color;
   text-decoration: none;
   font-weight: bold;
-  z-index: 100;
+  z-index: 5;
+
+  &:hover {
+    color: $arrows-and-dots-color;
+  }
 }
 
 .news-image {
@@ -80,7 +84,7 @@ $widths: 80vw;
 .prev,
 .next {
   cursor: pointer;
-  z-index: 100;
+  z-index: 5;
   position: absolute;
   top: 50%;
   width: auto;
@@ -109,7 +113,7 @@ $widths: 80vw;
   position: absolute;
   top: 90%;
   right: 20%;
-  z-index: 200;
+  z-index: 5;
 }
 
 .dot {
@@ -139,7 +143,7 @@ $widths: 80vw;
     position: absolute;
     top: 90%;
     right: 0%;
-    z-index: 200;
+    z-index: 5;
   }
 }
 
@@ -164,7 +168,7 @@ $widths: 80vw;
     bottom: 0;
     display: flex;
     justify-content: center;
-    z-index: 200;
+    z-index: 5;
   }
 
   .prev,

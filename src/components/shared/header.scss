@@ -20,7 +20,7 @@
 		position: absolute;
 		top: 0;
 		left: $section-margin;
-		z-index: 200;
+		z-index: 20;
 
 		#top-bar-logo {
 			width: 11vw;
@@ -159,7 +159,7 @@
 			position: absolute;
 			top: 0;
 			left: $mobile-section-margin;
-			z-index: 200;
+			z-index: 2;
 
 			#top-bar-logo {
 				width: 45vw;
@@ -181,7 +181,7 @@
 
 	#hamburger_menu {
 		display: block;
-		z-index: 250;
+		z-index: 3;
 
 		#menuToggle {
 			height: 6vw;
