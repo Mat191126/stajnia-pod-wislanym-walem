@@ -292,7 +292,14 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 }
 
 .image-gallery-thumbnails-wrapper {
+	width: 70vw;
 	position: relative;
+	display: flex;
+	justify-content: center;
+
+	@media (max-width: $ig-small-screen) {
+		width: 90vw;
+	}
 
 	&.thumbnails-swipe-horizontal {
 		touch-action: pan-y;
@@ -347,6 +354,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 }
 
 .image-gallery-thumbnails {
+	width: fit-content;
 	overflow: hidden;
 	padding: 5px 0;
 
@@ -355,9 +363,13 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 	}
 
 	.image-gallery-thumbnails-container {
+		width: fit-content;
 		cursor: pointer;
 		text-align: center;
-		white-space: nowrap;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 }
 
