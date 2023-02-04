@@ -1,0 +1,90 @@
+@import "../shared/mixins.scss";
+
+/*......................
+8.1 MAIN REGULATIONS SETTINGS
+.......................*/
+
+#background-image-container {
+	@include backgroundImg("../../assets/images/paper.png");
+	margin-top: 2rem;
+	margin-left: calc($section-margin - 5em);
+	margin-right: calc($section-margin - 5em);
+    color: $black-color;
+
+	@media screen and (max-width: 1024px) {
+		margin-top: 0.5em;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+	}
+
+	#regulation-header-part {
+		@include flexJustify(center);
+
+		#regulations-header {
+			font-size: 3rem;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+
+			@media screen and (max-width: 1024px) {
+				margin-top: 4rem;
+			}
+		}
+	}
+
+	#regulations-content {
+		@include flexJustifyDirection(center, column);
+		margin-top: 2em;
+		margin-bottom: 2em;
+		margin-left: 4rem;
+		margin-right: 4rem;
+		font-weight: bold;
+
+		.regulation-star {
+			@include flexJustify(center);
+			width: 2rem;
+			margin-left: 49%;
+		}
+
+		.single-regulation {
+			@include flexJustify(center);
+			text-align: center;
+			margin-top: 0.5rem;
+			font-size: 1.5rem;
+		}
+
+		.single-forbidden-info {
+			@include flexJustify(center);
+			font-size: 1.2rem;
+			margin: 0;
+			color: $red-color;
+		}
+
+		#regulations-actualization-info {
+			@include flexJustify(flex-end);
+			font-size: 0.9rem;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		#regulations-content {
+			.single-regulation {
+				font-size: 1rem;
+			}
+
+			.regulation-star {
+				margin-left: 40%;
+			}
+	
+			.single-forbidden-info {
+				font-size: 0.7rem;
+			}
+	
+			#regulations-actualization-info {
+				font-size: 0.5rem;
+			}
+		}
+	}
+}
+

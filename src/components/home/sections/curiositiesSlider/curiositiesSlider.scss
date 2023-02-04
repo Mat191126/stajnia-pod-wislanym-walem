@@ -1,0 +1,34 @@
+@import "../../../shared/variables.scss";
+@import "../../../shared/mixins.scss";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.curiosities-slider-container {
+	@include flexAlign(center, center);
+	width: 100%;
+	height: 100%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+	.curiosity-active {
+		@include flexAlign(center, center);
+		width: 100%;
+	}
+
+	.curiosity-inactive {
+		display: none;
+	}
+
+	.curiosity {
+		@include flexAlign(center, center);
+
+		.curiosity-text {
+			font-size: 2rem;
+			color: $white-color;
+		}
+	}
+}
+

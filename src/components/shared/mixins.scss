@@ -1,0 +1,43 @@
+@mixin flex($align) {
+	display: flex;
+	align-items: $align;
+}
+ 
+@mixin flexJustify($justify) {
+	display: flex;
+	justify-content: $justify;
+}
+
+@mixin flexAlign($justify, $align) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin flexDirection($direction) {
+	display: flex;
+	flex-direction: $direction;
+}
+
+@mixin flexAlignDirection($justify, $align, $direction) {
+	@include flexAlign($justify, $align);
+	flex-direction: $direction;
+}
+
+@mixin flexJustifyDirection($justify, $direction) {
+	@include flexJustify($justify);
+	flex-direction: $direction;
+}
+
+@mixin backgroundImg($url) {
+	background-image: url($url);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+@mixin gridTemplate($colStart, $colEnd, $rowStart, $rowEnd) {
+	grid-column-start: $colStart;
+	grid-column-end: $colEnd;
+	grid-row-start: $rowStart;
+	grid-row-end: $rowEnd;
+}

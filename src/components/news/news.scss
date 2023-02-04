@@ -1,0 +1,126 @@
+@import "../shared/mixins.scss";
+
+/*..................
+4.1 MAIN NEWS SETTINGS
+...................*/
+
+#news-page-content {
+	@include flexDirection(column);
+	gap: 5rem;
+	margin-top: 4em;
+	margin-bottom: 2em;
+	margin-left: $section-margin;
+	margin-right: $section-margin;
+	font-size: 1.5rem;
+
+	.single-news {
+		@include flexDirection(column);
+		gap: 2rem;
+		padding: 1rem;
+		background-color: $main-color;
+
+		.single-news-content {
+			@include flexDirection(row);
+			gap: 2rem;
+
+			.single-news-left-panel {
+				@include flexAlignDirection(flex-start, flex-start, column);
+			}
+
+			.single-news-right-panel {
+				@include flexAlign(center, center);
+
+				.single-news-image {
+					width: 30rem;
+					height: 30rem;
+				}
+			}
+			@media screen and (max-width: 1024px) {
+				flex-direction: column;
+		
+				.single-news-right-panel {		
+					.single-news-image {
+						width: 90vw;
+						height: auto;
+					}
+				}
+			}
+		}
+
+		.news-navigation-link {
+			background-image: url(../../assets/images/board.png);
+			background-size: cover;
+			float: left;
+			display: block;
+			text-align: center;
+			color: $white-color;
+			font-family: $headers-font-family;
+			padding: 0.5rem;
+			text-decoration: none;
+			box-shadow: 5px 5px 10px $black-color;
+
+			&:hover {
+				color: $beige-color;
+			}
+		}
+	}
+}
+
+/*..................
+4.2 SINGLE NEWS SETTINGS
+...................*/
+
+#single-news-page-content {
+	@include flexDirection(column);
+	gap: 2rem;
+	margin-top: 4em;
+	margin-bottom: 2em;
+	margin-left: $section-margin;
+	margin-right: $section-margin;
+	font-size: 1.5rem;
+	padding: 0.5em;
+	background-color: $main-color;
+
+	.single-news-regular-content {
+		@include flexDirection(row);
+		gap: 2rem;
+
+		.single-news-page-left-panel {
+			@include flexAlignDirection(flex-start, flex-start, column);
+		}
+
+		.single-news-page-right-panel {
+			@include flexAlign(center, center);
+
+			.single-news-page-image {
+				width: 30rem;
+				height: 30rem;
+			}
+		}
+
+		@media screen and (max-width: 1024px) {
+			flex-direction: column;
+	
+			.single-news-page-right-panel {	
+				.single-news-page-image {
+					width: 90vw;
+					height: auto;
+				}
+			}
+		}
+	}
+
+	.single-news-additional-content {
+		@include flexAlign(center, center);
+		margin-top: 2rem;
+		height: fit-content;
+
+		.single-news-page-addon-image {
+			width: 80%;
+
+			@media screen and (max-width: 1024px) {	
+				width: 90vw;
+			}
+		}
+	}
+}

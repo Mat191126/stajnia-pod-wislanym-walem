@@ -1,0 +1,109 @@
+@import "../shared/mixins.scss";
+
+// /*......................
+// 6.1 MAIN PRICES SETTINGS
+// .......................*/
+
+#prices-content {
+	@include backgroundImg("../../assets/images/paper.png");
+	color: $dark-color;
+	margin-top: 2em;
+
+	h2,
+	#prices-header {
+		padding-top: 4vh;
+		padding-bottom: 4vh;
+	}
+
+	h2 {
+		@include flexJustify(center);
+	}
+
+	#prices-header {
+		@include flexJustify(center);
+	}
+
+	table {
+		display: grid;
+		table-layout: fixed;
+		border-collapse: collapse;
+		margin: auto;
+		padding: 0;
+		width: 80%;
+
+		thead,
+		tbody,
+		tr-head,
+		.tr-body-1,
+		.tr-body-2 {
+			width: 100%;
+		}
+
+		.tr-head {
+			@include flexJustify(space-around);
+			border-bottom: 1px solid $dark-color;
+		}
+
+		tbody,
+		.tr-body-1,
+		.tr-body-2 {
+			display: grid;
+		}
+
+		tbody {
+			grid-template-rows: repeat(6, 1fr);
+			gap: 1em;
+		}
+
+		.tr-body-1 {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.tr-body-2 {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	#additional-info {
+		padding: 4vh;
+		margin: 4vh;
+		font-size: 1.3vh;
+
+		p {
+			color: $red-color;
+			font-weight: 600;
+			font-size: 2vh;
+		}
+	}
+}
+
+table th,
+table td {
+	padding: 0.625em;
+	text-align: center;
+}
+
+table th {
+	font-size: 0.85em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+	table {
+		border: 0;
+		font-size: 1.3vh;
+
+		.tr-body-1,
+		.tr-body-2 {
+			border-bottom: 1px solid $dark-color;
+		}
+	}
+
+	#prices-content {
+		#additional-info {
+			padding-bottom: 8vh;
+		}
+	}
+}
+
