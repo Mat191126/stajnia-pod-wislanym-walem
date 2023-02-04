@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import AboutDescriptionSection from './sections/AboutDescriptionSection';
-import OtherAnimalsSection from './sections/OtherAnimalsSection';
-import OurHorsesSection from './sections/OurHorsesSection';
-import OurInstructorsSection from './sections/OurInstructorsSection';
+import AboutUsSection from './sections/AboutUsSection';
 import {Box, Tabs, Tab, Typography, AppBar, StyledEngineProvider} from '@mui/material';
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
 import { useTheme } from '@mui/material/styles';
+import aboutUsContent from '../../assets/data/aboutUsContent';
+
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -21,7 +21,9 @@ function TabPanel(props) {
         >
             {value === index && (
                 <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
+                    <Typography component={"div"}>
+                        {children}
+                    </Typography>
                 </Box>
             )}
         </div>
@@ -107,13 +109,22 @@ function AboutUs() {
                                     <AboutDescriptionSection />
                                 </TabPanel>
                                 <TabPanel value={value} index={1}>
-                                    <OurInstructorsSection />
+                                    <AboutUsSection
+                                        sectionKey={"INSTRUCTORS"}
+                                        aboutUsContent={aboutUsContent}
+                                    />
                                 </TabPanel>
                                 <TabPanel value={value} index={2}>
-                                    <OurHorsesSection />
+                                    <AboutUsSection
+                                        sectionKey={"HORSES"}
+                                        aboutUsContent={aboutUsContent}
+                                    />
                                 </TabPanel>
                                 <TabPanel value={value} index={3}>
-                                    <OtherAnimalsSection />
+                                    <AboutUsSection
+                                        sectionKey={"ANIMALS"}
+                                        aboutUsContent={aboutUsContent}
+                                    />
                                 </TabPanel>
                             </SwipeableViews>
                         </Box>
@@ -123,11 +134,20 @@ function AboutUs() {
                     <p id="scroll-to-about-description-element"></p>
                     <AboutDescriptionSection />
                     <p id="scroll-to-instructors-element"></p>
-                    <OurInstructorsSection />
+                    <AboutUsSection
+                        sectionKey={"INSTRUCTORS"}
+                        aboutUsContent={aboutUsContent}
+                    />
                     <p id="scroll-to-horses-element"></p>
-                    <OurHorsesSection />
+                    <AboutUsSection
+                        sectionKey={"HORSES"}
+                        aboutUsContent={aboutUsContent}
+                    />
                     <p id="scroll-to-animals-element"></p>
-                    <OtherAnimalsSection />
+                    <AboutUsSection
+                        sectionKey={"ANIMALS"}
+                        aboutUsContent={aboutUsContent}
+                    />
                 </div>
             </div>
         </>
