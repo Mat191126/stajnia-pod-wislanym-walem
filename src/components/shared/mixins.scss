@@ -41,3 +41,9 @@
 	grid-row-start: $rowStart;
 	grid-row-end: $rowEnd;
 }
+
+@mixin lightBoxShadowPaddingAndRadius($radius, $padding) {
+	border-radius: $radius;
+	padding: $padding;
+	box-shadow: $lightBoxShadow;
+}

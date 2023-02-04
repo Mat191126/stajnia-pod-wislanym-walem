@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NewsSliderContent from "./NewsSliderContent";
 import Dots from "./Dots";
 import Arrows from "./Arrows";
-import sliderNews from "./sliderNews";
+import sliderNews from "../../../../assets/data/news";
 import "../newsSlider/slider.scss";
 import waitForElementTransition from 'wait-for-element-transition';
 

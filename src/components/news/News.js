@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import sliderNews from "../home/sections/newsSlider/sliderNews";
+import sliderNews from "../../assets/data/news";
 
 
 function News() {

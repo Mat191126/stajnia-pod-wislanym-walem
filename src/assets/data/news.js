@@ -1,5 +1,5 @@
-import ExampleImage1 from "../../../../assets/images/sliderImages/image1.jpg";
-import ExampleImage2 from "../../../../assets/images/sliderImages/image2.jpg";
+import ExampleImage1 from "../images/sliderImages/image1.jpg";
+import ExampleImage2 from "../images/sliderImages/image2.jpg";
 
 const sliderNews = [
     {
