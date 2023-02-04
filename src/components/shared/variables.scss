@@ -2,6 +2,8 @@
 0.0 GLOBAL VARIABLES
 .................*/
 
+$mobile-width-start: 1024px;
+
 $main-color: #6d6e33;
 $green-color: #19371c;
 $red-color: rgb(195, 1, 1);
@@ -20,3 +22,5 @@ $section-bottom-shadow: -1px -7px 5px $black-color;
 $arrows-and-dots-hover-color: rgb(44, 44, 44);
 $arrows-and-dots-color: rgb(153, 153, 153);
 $arrows-and-dots-background-color: rgba(201, 201, 201, 0.349);
+
+$lightBoxShadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

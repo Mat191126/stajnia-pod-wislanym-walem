@@ -233,12 +233,10 @@
 
 		.instructor {
 			@include flexAlignDirection(center, center, column);
+			@include lightBoxShadowPaddingAndRadius(0.5em, 1em);
 			position: relative;
 			width: 17vw;
 			background-color: $main-color;
-			border-radius: 0.5em;
-			padding: 1em;
-			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 			&:hover {
 				> .instructor-decor {
