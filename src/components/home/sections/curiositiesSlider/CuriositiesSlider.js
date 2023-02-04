@@ -24,20 +24,20 @@ function NewsSlider() {
       return myArray;
   }
 
-  let numbersArray = createArrayOfNumbers(0, curiosistiesLength);
-
-  //main method running generation of random non-repeating index
-  function getRandomNonRepeatingIndex() {
-    if (numbersArray.length === 0) {
-      numbersArray = createArrayOfNumbers(0, curiosistiesLength);
-    }
-    let randomIndex = getRandomNumber(0, numbersArray.length-1);
-    let randomNumber = numbersArray[randomIndex];
-    numbersArray.splice(randomIndex, 1)
-    return randomNumber;
-  }
-
   useEffect(() => {
+    let numbersArray = createArrayOfNumbers(0, curiosistiesLength);
+
+    //main method running generation of random non-repeating index
+    const getRandomNonRepeatingIndex = () => {
+      if (numbersArray.length === 0) {
+        numbersArray = createArrayOfNumbers(0, curiosistiesLength);
+      }
+      let randomIndex = getRandomNumber(0, numbersArray.length-1);
+      let randomNumber = numbersArray[randomIndex];
+      numbersArray.splice(randomIndex, 1)
+      return randomNumber;
+    }
+    
     const interval = setInterval(() => {
       setActiveIndex(getRandomNonRepeatingIndex());
     }, 10000);
