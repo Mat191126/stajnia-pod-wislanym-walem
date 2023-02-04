@@ -1,0 +1,350 @@
+@import "../shared/mixins.scss";
+
+/*..................
+7.1 MAIN ABOUT US SETTINGS
+...................*/
+
+#scroll-to-about-description-element, #scroll-to-instructors-element, 
+#scroll-to-horses-element, #scroll-to-animals-element {
+	height: 4em;
+}
+
+#section-menu-mobile-buttons {
+	display: none;
+}
+
+#instructors-section-page-header, #horses-section-page-header, #other-animals-section-page-header {
+	display: none;
+}
+
+#section-menu-buttons {
+	@include flexJustifyDirection(flex-start, column);
+	position: fixed;
+	top: 20vh;
+	left: 0;
+	z-index: 0;
+	width: 10em;
+	height: fit-content;
+
+	#about-us-button {
+		@include backgroundImg("../../assets/images/about_us.png");
+	}
+
+	#instructors-button {
+		@include backgroundImg("../../assets/images/instructors.png");
+	}
+
+	#horses-button {
+		@include backgroundImg("../../assets/images/horses.png");
+	}
+
+	#animals-button {
+		@include backgroundImg("../../assets/images/animals.png");
+	}
+
+	#about-us-button, #instructors-button, #horses-button, #animals-button {
+		margin-bottom: 4rem;
+	}
+
+	.link-to-section {
+		@include flexAlign(flex-start, center);
+		font-size: 0.8vw;
+		width: 11rem;
+		height: 2.5rem;
+		margin: 0em 5vw 5vw 0;
+		margin-left: -8rem;
+		padding-left: 0.5vw;
+		color: $white-color;
+		text-decoration: none;
+		transition: all 0.4s ease-in-out;
+
+		&:hover {
+			margin-left: 0;
+		}
+	}
+}
+
+/*..................
+7.2 ABOUT US DESCRIPTION SECTION SETTINGS
+...................*/
+#about-us-section-content {
+	@include flexDirection(column);
+	margin-top: 4em;
+	margin-bottom: 2em;
+	margin-left: $section-margin;
+	margin-right: $section-margin;
+	padding: 1rem;
+	background-color: $main-color;
+
+	#about-us-section-description {
+		font-size: 1.6rem;
+		text-justify: inter-word;
+
+		p {
+			margin-top: 2rem;
+		}
+	}
+
+	#about-us-section-image {
+		float: left;
+		height: 25rem;
+		width: auto;
+		margin: 2rem 2rem 1rem 0;
+		box-shadow: 5px 5px 25px $black-color;
+		overflow: hidden;
+	}
+}
+
+/*..................
+7.3 OUR INSTRUCTORS SECTION SETTINGS
+...................*/
+
+#our-instructors-section-content {
+	@include flexDirection(column);
+	gap: 3em;
+	margin-top: 4em;
+	margin-bottom: 2em;
+	margin-left: $section-margin;
+	margin-right: $section-margin;
+
+	.our-instructors-single-instructor {
+		@include flexDirection(row-reverse);
+		gap: 1rem;
+		background-color: $main-color;
+		padding: 1rem;
+
+		.our-instructors-instructor-image-part {
+			@include flexAlign(center, center);
+
+			.our-instructors-instructor-image {
+				width: 25em;
+				height: 35em;
+				box-shadow: 5px 5px 25px $black-color;
+			}
+		}
+
+		.our-instructors-instructor-description-part {
+			@include flexDirection(column);
+
+			.our-instructors-instructor-data {
+				font-size: 3em;
+			}
+
+			.our-instructors-instructor-description {
+				font-size: 1.5em;
+			}
+		}
+	}
+}
+
+/*..................
+7.4 OUR HORSES SECTION SETTINGS
+...................*/
+
+#our-horses-section-content {
+	@include flexDirection(column);
+	margin-top: 4em;
+	margin-bottom: 2em;
+	gap: 3rem;
+	margin-left: $section-margin;
+	margin-right: $section-margin;
+
+	.single-horse {
+		@include flexDirection(row);
+		background-color: $main-color;
+		padding: 1rem;
+		gap: 1rem;
+
+		.horse-image-part {
+			@include flexAlign(center, center);
+
+			.horse-image {
+				width: 20em;
+				height: 30em;
+				box-shadow: 5px 5px 25px $black-color;
+			}
+		}
+
+		.horse-description-part {
+			@include flexDirection(column);
+
+			.horse-data {
+				font-size: 3em;
+			}
+
+			.horse-description {
+				font-size: 1.5em;
+			}
+		}
+	}
+}
+
+/*..................
+7.5 OTHER ANIMALS SECTION SETTINGS
+...................*/
+
+#other-animals-section-content {
+	@include flexDirection(column);
+	margin-top: 4em;
+	margin-bottom: 2em;
+	gap: 3rem;
+	margin-left: $section-margin;
+	margin-right: $section-margin;
+
+	.single-animal {
+		@include flexDirection(row-reverse);
+		background-color: $main-color;
+		padding: 1rem;
+		gap: 1rem;
+
+		.animal-image-part {
+			@include flexAlign(center, center);
+
+			.animal-image {
+				width: 20em;
+				height: 30em;
+				box-shadow: 5px 5px 25px $black-color;
+			}
+		}
+
+		.animal-description-part {
+			@include flexDirection(column);
+
+			.animal-data {
+				font-size: 3em;
+			}
+
+			.animal-description {
+				font-size: 1.5em;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#section-menu-buttons, #scroll-to-element, #regular-content {
+		display: none;
+	}
+
+	#instructors-section-page-header, #horses-section-page-header, #other-animals-section-page-header {
+		display: inline;
+		text-align: center
+	}
+
+	#section-menu-mobile-buttons {
+		@include flexJustifyDirection(space-around, column);
+		align-content: stretch;
+		width: 100%;
+	}
+
+	#about-us-section-page-header {
+		text-align: center;
+	}
+
+	#about-us-section-content {
+		margin-top: 0;
+		margin-left: 1vw;
+		margin-right: 1vw;
+	
+		#about-us-section-description {
+			font-size: 1rem;
+		}
+	
+		#about-us-section-image {
+			height: 40vw;
+		}
+	}
+
+	#our-instructors-section-content {
+		margin-top: 0;
+		margin-left: 1vw;
+		margin-right: 1vw;
+
+		.our-instructors-single-instructor {	
+			@include flexDirection(column);
+			
+			.our-instructors-instructor-image-part {	
+				.our-instructors-instructor-image {
+					width: 50vw;
+					height: auto;
+				}
+			}
+	
+			.our-instructors-instructor-description-part {
+	
+				.our-instructors-instructor-data {
+					font-size: 1.5em;
+					text-align: center;
+				}
+	
+				.our-instructors-instructor-description {
+					font-size: 1em;
+					text-align: justify;
+				}
+			}
+		}
+	}
+
+	#our-horses-section-content {
+		margin-top: 0;
+		margin-left: 1vw;
+		margin-right: 1vw;
+	
+		.single-horse {
+			@include flexDirection(column);
+
+			.horse-image-part {	
+				.horse-image {
+					width: 50vw;
+					height: auto;
+				}
+			}
+	
+			.horse-description-part {	
+				.horse-data {
+					font-size: 1.5em;
+					text-align: center;
+				}
+	
+				.horse-description {
+					font-size: 1em;
+					text-align: justify;
+				}
+			}
+		}
+	}
+
+	#other-animals-section-content {
+		margin-top: 0;
+		margin-left: 1vw;
+		margin-right: 1vw;
+
+		.single-animal {
+			@include flexDirection(column);
+			padding: 1em;
+			gap: 1em;
+	
+			.animal-image-part {
+				@include flexAlign(center, center);
+	
+				.animal-image {
+					width: 50vw;
+					height: auto;
+				}
+			}
+	
+			.animal-description-part {	
+				.animal-data {
+					font-size: 1.5em;
+					text-align: center;
+				}
+	
+				.animal-description {
+					font-size: 1em;
+					text-align: justify;
+				}
+			}
+		}
+	}
+}
+

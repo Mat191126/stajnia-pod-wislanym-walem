@@ -1,0 +1,29 @@
+.tooltip {
+	position: relative;
+	display: inline-block;
+
+	.tooltiptext {
+		position: absolute;
+		text-align: center;
+		padding: 0.5vw 0.3vh;
+		background-color: rgb(217, 216, 216);
+		color: rgb(125, 125, 125);
+		border-radius: 6px;
+		left: 150%;
+		z-index: 1;
+		transition: opacity 0.3s;
+		font-size: 1vh;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 30%;
+			right: 99%;
+			border-width: 5px;
+			border-style: solid;
+			border-color: rgb(217, 216, 216) transparent transparent transparent;
+			transform: rotate(90deg);
+			-webkit-transform: rotate(90deg);
+		}
+	}
+}

@@ -1,0 +1,210 @@
+@import "../shared/mixins.scss";
+
+/*......................
+3.1 MAIN CONTACT SETTINGS
+.......................*/
+
+#contact-content {
+	@include flexJustify(center);
+	flex-direction: column;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: $section-margin;
+	margin-right: $section-margin;
+
+	#contact-page-header {
+		@include flexJustify(center);
+		font-size: 3rem;
+		margin-top: 2vh;
+		margin-bottom: 4vh;
+	}
+
+	#contact-part {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		align-content: space-between;
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-align: center;
+		width: 100%;
+		row-gap: 2rem;
+		column-gap: 0.5rem;
+
+		#address-content {
+			address {
+				font-style: normal;
+
+				.address-line {
+					font-size: 1.5rem;
+				}
+			}
+		}
+
+		#email-phone-content {
+			p {
+				text-decoration: none;
+				font-size: 1.5rem;
+				color: $white-color;
+
+				a {
+					text-decoration: none;
+					font-size: 1.5rem;
+					color: $white-color;
+					display: inline;
+				}
+			}
+
+			#bank-account-number {
+				display: flex;
+
+				.copy-button {
+					@include flexAlign(center, center);
+					z-index: 10;
+					margin-left: 0.5rem;
+					padding: 0;
+					width: 1.5rem;
+					border: none;
+					background: transparent;
+					cursor: pointer;
+
+					.copy-icon {
+						z-index: 0;
+						height: 1.5rem;
+						width: 1.5rem;
+
+						&:hover {
+							opacity: 0.6;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#address-social-media-icons {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		#address-social-media-icons-container {
+			@include flexJustify(center);
+			flex-direction: row;
+			gap: 2em;
+
+			#contact-instagram-icon,
+			#contact-facebook-icon,
+			#contact-youtube-icon {
+				width: 3rem;
+				height: auto;
+				transition: all 0.3s ease-in-out;
+
+				&:hover {
+					filter: brightness(75%);
+				}
+			}
+		}
+	}
+
+	#company-header,
+	#email-and-phone-header,
+	#address-social-media-header {
+		font-size: 2rem;
+	}
+
+	#map {
+		margin-top: 4vh;
+		width: 100%;
+		height: 59vh;
+		border: 0;
+	}
+}
+
+@media screen and (max-width: 565px) {
+	#contact-content {
+		#contact-page-header {
+			font-size: 2rem;
+		}
+	
+		#contact-part {
+			#address-content {
+				address {
+					.address-line {
+						font-size: 1rem;
+					}
+				}
+			}
+	
+			#email-phone-content {
+				p {
+					font-size: 1rem;
+					a {
+						font-size: 1rem;
+					}
+				}
+	
+				#bank-account-number {
+					justify-content: center;
+				}
+			}
+		}
+		
+		#company-header,
+		#email-and-phone-header,
+		#address-social-media-header {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#contact-content {
+		#contact-page-header {
+			font-size: 2rem;
+		}
+	
+		#contact-part {
+			#address-content {
+				address {
+					.address-line {
+						font-size: 1rem;
+					}
+				}
+			}
+	
+			#email-phone-content {
+				p {
+					font-size: 1rem;
+					a {
+						font-size: 1rem;
+					}
+				}
+	
+				#bank-account-number {
+					justify-content: center;
+				}
+			}
+		}
+		
+		#company-header,
+		#email-and-phone-header,
+		#address-social-media-header {
+			font-size: 1.5rem;
+		}
+
+		#bank-account-number {
+			font-size: 0.8rem !important;
+		}
+	}
+}
+
+@media screen and (max-width: 330px) {
+	#contact-content {
+		#contact-part {
+			#bank-account-number {
+				font-size: 0.6rem !important;
+			}
+		}
+	}
+}
+

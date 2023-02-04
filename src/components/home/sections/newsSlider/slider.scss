@@ -1,0 +1,178 @@
+@import '../../../shared/variables.scss';
+@import '../../../shared/mixins.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+$heights: 50vh;
+$widths: 80vw;
+
+.slider-container {
+  height: $heights;
+  width: $widths;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.active {
+  @include flexJustifyDirection(center, row);
+  width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  gap: 1em;
+}
+
+.inactive {
+  display: none;
+}
+
+.left-panel {
+  @include flexAlignDirection(left, flex-start, column);
+  width: 60%;
+}
+
+.right-panel {
+  @include flexAlign(center, flex-start);
+  width: 40%;
+}
+
+.slide-title,
+.slide-date,
+.slide-text {
+  width: fit-content;
+  height: fit-content;
+  color: $white-color;
+  text-align: start;
+}
+
+.slide-text {
+  margin-top: 2rem;
+}
+
+.slide-text-cutted {
+  height: 20vh;
+  overflow: hidden;
+}
+
+.read-more {
+  display: none;
+}
+
+.read-more-visible {
+  display: block;
+  color: $white-color;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 5;
+
+  &:hover {
+    color: $arrows-and-dots-color;
+  }
+}
+
+.news-image {
+  width: 100%;
+  height: auto;
+  flex-shrink: 3;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -3rem;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 10%;
+  color: $arrows-and-dots-color;
+
+  &:hover {
+    color: $arrows-and-dots-hover-color;
+    background-color: $arrows-and-dots-background-color;
+    transition: all 0.5s ease-in;
+  }
+}
+
+.next {
+  right: 0;
+}
+
+.all-dots {
+  @include flexJustify(center);
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 90%;
+  right: 20%;
+  z-index: 5;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0px 3px;
+  background-color: $arrows-and-dots-color;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active-dot,
+.dot:hover {
+  background-color: $arrows-and-dots-hover-color;
+}
+
+@media screen and (max-width: 1200px) {
+  .right-panel {
+    display: none;
+  }
+
+  .all-dots {
+    @include flexJustify(center);
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 90%;
+    right: 0%;
+    z-index: 5;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .slider-container {
+    height: 60%;
+    width: 100%;
+    position: relative;
+    margin: $mobile-section-margin;
+    overflow: hidden;
+  }
+
+  .active {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .all-dots {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+  }
+
+  .prev,
+  .next {
+    padding: 1vh;
+  }
+}
