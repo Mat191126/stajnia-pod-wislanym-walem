@@ -19,6 +19,10 @@ h2 {
 
 #scroll-to-element {
 	height: 6em;
+
+	@media screen and (max-width: 1024px) {
+		height: 0.5em;
+	}
 }
 
 /*...............

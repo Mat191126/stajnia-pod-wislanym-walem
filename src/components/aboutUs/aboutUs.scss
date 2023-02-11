@@ -222,7 +222,11 @@
 }
 
 @media screen and (max-width: 1024px) {
-	#section-menu-buttons, #scroll-to-element, #regular-content {
+	.about-us-scroll-to-element {
+		height: 0 !important;
+	}
+
+	#section-menu-buttons, #regular-content {
 		display: none;
 	}
 
