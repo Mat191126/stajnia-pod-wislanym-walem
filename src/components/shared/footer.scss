@@ -108,7 +108,7 @@
 	}
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: $mobile-width-start-tablet) {
 	#footer {
 		#footer-contact {
 			margin-left: $mobile-section-margin;
@@ -134,7 +134,7 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $mobile-width-start) {
 	#footer {
 		@include flexDirection(column);
 		color: $white-color;

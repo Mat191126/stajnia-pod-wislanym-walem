@@ -141,7 +141,7 @@
 	background-image: url("../../assets/images/board.png");
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $mobile-width-start) {
 	#header_and_navbar {
 		@include flexDirection(column);
 		width: 100%;

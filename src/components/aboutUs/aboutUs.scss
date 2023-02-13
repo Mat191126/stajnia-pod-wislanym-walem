@@ -221,7 +221,7 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $mobile-width-start) {
 	.about-us-scroll-to-element {
 		height: 0 !important;
 	}
