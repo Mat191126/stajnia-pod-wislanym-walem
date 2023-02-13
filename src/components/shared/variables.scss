@@ -2,6 +2,7 @@
 0.0 GLOBAL VARIABLES
 .................*/
 
+//WIDTHS
 $mobile-width-start: 1024px;
 $mobile-width-start-tablet: 845px;
 $horse-in-circle-max-width: 1300px;
@@ -10,6 +11,11 @@ $contact-big-width-breakpoint: 565px;
 $contact-medium-width-breakpoint: 400px;
 $contact-small-width-breakpoint: 300px;
 
+//FONTS
+$headers-font-family: "Aka Posse";
+$second-headers-font-family: "Pirata One";
+
+//COLORS
 $main-color: #6d6e33;
 $green-color: #19371c;
 $red-color: rgb(195, 1, 1);
@@ -17,12 +23,17 @@ $dark-color: rgb(29, 28, 28);
 $white-color: white;
 $beige-color: #f6dfc9;
 $black-color: black;
+$arrows-and-dots-hover-color: rgb(44, 44, 44);
+$arrows-and-dots-color: rgb(153, 153, 153);
+$arrows-and-dots-background-color: rgba(201, 201, 201, 0.349);
+$light-shadow-color: rgba(0, 0, 0, 0.24);
 
+//MARGINS
 $section-margin: 10vw;
 $mobile-section-margin: 2vw;
-$headers-font-family: "Aka Posse";
-$second-headers-font-family: "Pirata One";
 
+
+//BOX SHADOWS
 $section-top-shadow: -1px 7px 5px $black-color;
 $section-bottom-shadow: -1px -7px 5px $black-color;
 $about-us-shadow: 5px 5px 25px $black-color;
@@ -31,8 +42,4 @@ $news-shadow: 5px 5px 10px $black-color;
 $footer-shadow: -1px -3px 5px $black-color;
 $header-top-bar-shadow: -1px 5px 5px $black-color;
 $menu-navnar-shadow: -1px -3px 5px $black-color, -1px 10px 5px $black-color;
-$lightBoxShadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-$arrows-and-dots-hover-color: rgb(44, 44, 44);
-$arrows-and-dots-color: rgb(153, 153, 153);
-$arrows-and-dots-background-color: rgba(201, 201, 201, 0.349);
+$lightBoxShadow: $light-shadow-color 0px 3px 8px;
