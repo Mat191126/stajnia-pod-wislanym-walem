@@ -8,7 +8,7 @@
 	background-image: url("../../assets/images/footer_board.jpg");
 	background-size: cover;
 	width: 100%;
-	box-shadow: -1px -3px 5px $black-color;
+	box-shadow: $footer-shadow;
 	opacity: 0.9;
 
 	#footer-contact {
@@ -141,7 +141,7 @@
 		margin-top: 3em;
 		background-image: url("../../assets/images/footer_board.jpg");
 		background-repeat: repeat-x;
-		box-shadow: -1px -3px 5px $black-color;
+		box-shadow: $footer-shadow;
 		opacity: 0.9;
 	}
 }

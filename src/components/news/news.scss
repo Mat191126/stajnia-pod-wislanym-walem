@@ -68,7 +68,7 @@
 			font-family: $headers-font-family;
 			padding: 0.5rem;
 			text-decoration: none;
-			box-shadow: 5px 5px 10px $black-color;
+			box-shadow: $news-shadow;
 
 			&:hover {
 				color: $beige-color;

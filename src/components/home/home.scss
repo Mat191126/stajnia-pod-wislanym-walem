@@ -37,7 +37,7 @@
 			transform: scale();
 			-webkit-transform: translateZ(0);
 			margin-right: 5em;
-			box-shadow: -10px 25px 25px $black-color;
+			box-shadow: $about-section-video-shadow;
 
 			#about-video-main {
 				width: 440px;

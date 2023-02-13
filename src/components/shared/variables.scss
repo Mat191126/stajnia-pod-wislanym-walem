@@ -22,11 +22,17 @@ $section-margin: 10vw;
 $mobile-section-margin: 2vw;
 $headers-font-family: "Aka Posse";
 $second-headers-font-family: "Pirata One";
+
 $section-top-shadow: -1px 7px 5px $black-color;
 $section-bottom-shadow: -1px -7px 5px $black-color;
+$about-us-shadow: 5px 5px 25px $black-color;
+$about-section-video-shadow: -10px 25px 25px $black-color;
+$news-shadow: 5px 5px 10px $black-color;
+$footer-shadow: -1px -3px 5px $black-color;
+$header-top-bar-shadow: -1px 5px 5px $black-color;
+$menu-navnar-shadow: -1px -3px 5px $black-color, -1px 10px 5px $black-color;
+$lightBoxShadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 $arrows-and-dots-hover-color: rgb(44, 44, 44);
 $arrows-and-dots-color: rgb(153, 153, 153);
 $arrows-and-dots-background-color: rgba(201, 201, 201, 0.349);
-
-$lightBoxShadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
