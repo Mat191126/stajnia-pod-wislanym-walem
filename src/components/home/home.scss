@@ -108,10 +108,14 @@
 #curiosities_slider_section {
 	@include flexAlign(center, center);
 	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-bottom: 4rem;
 	margin-left: $section-margin;
 	margin-right: $section-margin;
 	height: 10rem;
+
+	@media screen and (max-width: $mobile-width-start) {
+		height: 20rem;
+	}
 }
 
 /*.................
