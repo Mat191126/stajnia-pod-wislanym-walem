@@ -131,7 +131,7 @@ $widths: 80vw;
   background-color: $arrows-and-dots-hover-color;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: $mobile-width-start) {
   .right-panel {
     display: none;
   }
@@ -147,7 +147,7 @@ $widths: 80vw;
   }
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: $mobile-width-start-tablet) {
   .slider-container {
     height: 60%;
     width: 100%;

@@ -45,7 +45,7 @@
 					height: 30rem;
 				}
 			}
-			@media screen and (max-width: 1024px) {
+			@media screen and (max-width: $mobile-width-start) {
 				flex-direction: column;
 		
 				.single-news-right-panel {		
@@ -68,7 +68,7 @@
 			font-family: $headers-font-family;
 			padding: 0.5rem;
 			text-decoration: none;
-			box-shadow: 5px 5px 10px $black-color;
+			box-shadow: $news-shadow;
 
 			&:hover {
 				color: $beige-color;
@@ -123,7 +123,7 @@
 			}
 		}
 
-		@media screen and (max-width: 1024px) {
+		@media screen and (max-width: $mobile-width-start) {
 			flex-direction: column;
 	
 			.single-news-page-right-panel {	
@@ -145,7 +145,7 @@
 			max-width: 100%;
 			width: 80%;
 
-			@media screen and (max-width: 1024px) {	
+			@media screen and (max-width: $mobile-width-start) {	
 				max-width: 100%;
 				width: 90vw;
 			}

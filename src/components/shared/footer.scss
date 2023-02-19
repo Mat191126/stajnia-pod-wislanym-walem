@@ -8,7 +8,7 @@
 	background-image: url("../../assets/images/footer_board.jpg");
 	background-size: cover;
 	width: 100%;
-	box-shadow: -1px -3px 5px $black-color;
+	box-shadow: $footer-shadow;
 	opacity: 0.9;
 
 	#footer-contact {
@@ -108,7 +108,7 @@
 	}
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: $mobile-width-start-tablet) {
 	#footer {
 		#footer-contact {
 			margin-left: $mobile-section-margin;
@@ -134,14 +134,14 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $mobile-width-start) {
 	#footer {
 		@include flexDirection(column);
 		color: $white-color;
 		margin-top: 3em;
 		background-image: url("../../assets/images/footer_board.jpg");
 		background-repeat: repeat-x;
-		box-shadow: -1px -3px 5px $black-color;
+		box-shadow: $footer-shadow;
 		opacity: 0.9;
 	}
 }

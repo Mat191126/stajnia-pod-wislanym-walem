@@ -90,7 +90,7 @@
 		height: 25rem;
 		width: auto;
 		margin: 2rem 2rem 1rem 0;
-		box-shadow: 5px 5px 25px $black-color;
+		box-shadow: $about-us-shadow;
 		overflow: hidden;
 	}
 }
@@ -119,7 +119,7 @@
 			.our-instructors-instructor-image {
 				width: 25em;
 				height: 35em;
-				box-shadow: 5px 5px 25px $black-color;
+				box-shadow: $about-us-shadow;
 			}
 		}
 
@@ -161,7 +161,7 @@
 			.horse-image {
 				width: 20em;
 				height: 30em;
-				box-shadow: 5px 5px 25px $black-color;
+				box-shadow: $about-us-shadow;
 			}
 		}
 
@@ -203,7 +203,7 @@
 			.animal-image {
 				width: 20em;
 				height: 30em;
-				box-shadow: 5px 5px 25px $black-color;
+				box-shadow: $about-us-shadow;
 			}
 		}
 
@@ -221,8 +221,12 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
-	#section-menu-buttons, #scroll-to-element, #regular-content {
+@media screen and (max-width: $mobile-width-start) {
+	.about-us-scroll-to-element {
+		height: 0 !important;
+	}
+
+	#section-menu-buttons, #regular-content {
 		display: none;
 	}
 

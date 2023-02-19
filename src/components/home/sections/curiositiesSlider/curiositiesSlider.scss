@@ -28,7 +28,10 @@
 		.curiosity-text {
 			font-size: 2rem;
 			color: $white-color;
+
+			@media screen and (max-width: $mobile-width-start) {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
-

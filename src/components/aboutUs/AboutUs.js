@@ -63,7 +63,7 @@ function AboutUs() {
     
     return (
         <>
-            <p id="scroll-to-element"></p>
+            <p id="scroll-to-element" className="about-us-scroll-to-element"></p>
             <div id="content">
                 <div id="section-menu-buttons">
                     <a id='about-us-button' className='link-to-section' href='#scroll-to-about-description-element'> O nas </a>

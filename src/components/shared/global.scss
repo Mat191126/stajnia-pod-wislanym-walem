@@ -19,6 +19,10 @@ h2 {
 
 #scroll-to-element {
 	height: 6em;
+
+	@media screen and (max-width: $mobile-width-start) {
+		height: 0.5em;
+	}
 }
 
 /*...............
@@ -52,7 +56,7 @@ h2 {
 
 /*MOBILE PHONE STYLING*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $mobile-width-start) {
 	html,
 	body {
 		box-sizing: border-box;
