@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutVideo from "../../../assets/video/about-video-cut.mp4";
+import aboutVideo from "../../../assets/video/about-video.mp4";
 
 
 function AboutSection() {

@@ -38,7 +38,7 @@ h2 {
 	z-index: 0;
 }
 
-#normal_size_video_image {
+#normal_size_image {
 	margin-top: -8rem;
 	width: 100%;
 	height: 108vh;
@@ -50,7 +50,7 @@ h2 {
 	display: none;
 }
 
-#mobile_size_video_image {
+#mobile_size_image {
 	display: none;
 }
 
@@ -68,7 +68,7 @@ h2 {
 		display: none;
 	}
 
-	#normal_size_video_image {
+	#normal_size_image {
 		display: none;
 	}
 
@@ -81,7 +81,7 @@ h2 {
 		z-index: 0;
 	}
 
-	#mobile_size_video_image {
+	#mobile_size_image {
 		display: block;
 		margin-top: -2.5rem;
 		width: 100%;
@@ -94,7 +94,7 @@ h2 {
 		display: none;
 	}
 
-	#normal_size_video_image {
+	#normal_size_image {
 		margin-top: 0;
 		width: 100%;
 		height: 100%;
