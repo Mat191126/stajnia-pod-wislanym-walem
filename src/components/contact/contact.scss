@@ -120,7 +120,7 @@
 	}
 }
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: $contact-big-width-breakpoint) {
 	#contact-content {
 		#contact-page-header {
 			font-size: 2rem;
@@ -157,7 +157,7 @@
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: $contact-medium-width-breakpoint) {
 	#contact-content {
 		#contact-page-header {
 			font-size: 2rem;
@@ -198,7 +198,7 @@
 	}
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: $contact-small-width-breakpoint) {
 	#contact-content {
 		#contact-part {
 			#bank-account-number {

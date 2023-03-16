@@ -12,7 +12,7 @@
 		height: 2.5rem;
 		width: 100%;
 		z-index: 15;
-		box-shadow: -1px 5px 5px $black-color;
+		box-shadow: $header-top-bar-shadow;
 		position: relative;
 	}
 
@@ -73,7 +73,7 @@
 	font-weight: bold;
 	font-size: 1.4rem;
 	background-image: url("../../assets/images/board.png");
-	box-shadow: -1px -3px 5px $black-color, -1px 10px 5px $black-color;
+	box-shadow: $menu-navnar-shadow;
 
 	#left-side-menu {
 		@include flexJustifyDirection(space-around, row);
@@ -141,7 +141,7 @@
 	background-image: url("../../assets/images/board.png");
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $mobile-width-start) {
 	#header_and_navbar {
 		@include flexDirection(column);
 		width: 100%;
@@ -152,7 +152,7 @@
 			height: 7vh;
 			width: 100%;
 			z-index: 1;
-			box-shadow: -1px 5px 5px $black-color;
+			box-shadow: $header-top-bar-shadow;
 		}
 
 		#top-bar-logo-container {

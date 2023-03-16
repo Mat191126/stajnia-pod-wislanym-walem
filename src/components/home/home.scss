@@ -37,7 +37,7 @@
 			transform: scale();
 			-webkit-transform: translateZ(0);
 			margin-right: 5em;
-			box-shadow: -10px 25px 25px $black-color;
+			box-shadow: $about-section-video-shadow;
 
 			#about-video-main {
 				width: 440px;
@@ -52,7 +52,7 @@
 	}
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: $horse-in-circle-max-width) {
 	#about_section {
 		#about_content {
 			#about-video {
@@ -62,7 +62,7 @@
 	}
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: $mobile-width-start-tablet) {
 	#about_section {
 		margin-top: 1vh;
 		margin-left: $mobile-section-margin;
@@ -94,7 +94,7 @@
 	}
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: $mobile-width-start-tablet) {
 	#news_slider_section {
 		height: 95vh;
 	}
@@ -108,10 +108,14 @@
 #curiosities_slider_section {
 	@include flexAlign(center, center);
 	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-bottom: 4rem;
 	margin-left: $section-margin;
 	margin-right: $section-margin;
 	height: 10rem;
+
+	@media screen and (max-width: $mobile-width-start) {
+		height: 20rem;
+	}
 }
 
 /*.................
@@ -162,7 +166,7 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $mobile-width-start) {
 	#owner-section {
 		@include flexAlignDirection(center, center, column-reverse);
 		box-sizing: border-box;
@@ -233,12 +237,10 @@
 
 		.instructor {
 			@include flexAlignDirection(center, center, column);
+			@include lightBoxShadowPaddingAndRadius(0.5em, 1em);
 			position: relative;
 			width: 17vw;
 			background-color: $main-color;
-			border-radius: 0.5em;
-			padding: 1em;
-			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 			&:hover {
 				> .instructor-decor {
@@ -304,7 +306,7 @@
 	}
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: $mobile-width-start-tablet) {
 	#instructor-section {
 		@include flexAlignDirection(center, flex-start, column);
 		margin: 3vh $mobile-section-margin 3vh $mobile-section-margin;
@@ -357,7 +359,7 @@
 	}
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: $mobile-width-start-tablet) {
 	#banner-section {
 		margin-top: 3vh;
 		margin-bottom: 3vh;
@@ -456,7 +458,7 @@
 	}
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: $mobile-width-start-tablet) {
 	#gallery_section {
 		@include flexDirection(column);
 		margin-left: $mobile-section-margin;

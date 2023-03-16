@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 function SingleNews() {
 
-    const [news, setNews] = useState(JSON.parse(localStorage.getItem("news")));
+    const [news] = useState(JSON.parse(localStorage.getItem("news")));
     
     useEffect(() => {
         const galleryContent = document.getElementById("scroll-to-element");
