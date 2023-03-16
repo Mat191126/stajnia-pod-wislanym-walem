@@ -1,8 +1,9 @@
 # Stajnia pod wiślanym wałem
 
-Project for my friend's horse riding company
+It's a project for my friend's horse riding company.
+The site is not ready yet due to the need to fill it with the right content and in the future replace the current version of the site.
 
-# Test version of page is available at
+Test version of page is available at:
 [https://stajnia-pod-wislanym-walem.onrender.com/](https://stajnia-pod-wislanym-walem.onrender.com/)
 
 # Brief summary
